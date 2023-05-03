@@ -1,0 +1,70 @@
+@font-face {
+  font-family: aerospace;
+  src: url(./../res/fonts/Aerospace.ttf);
+}
+@font-face {
+  font-family: mono-display;
+  src: url(./../res/fonts/MajorMonoDisplay-Regular.ttf);
+}
+body {
+  background-color: #333;
+  margin: 0;
+  min-width: 800px;
+}
+
+p {
+  font-family: mono-display;
+  font-size: 30px;
+  font-weight: 200;
+}
+
+.head {
+  position: relative;
+  background-color: black;
+  height: 50px;
+  padding: 20px 0 0 0;
+}
+
+h1 {
+  position: absolute;
+  display: inline;
+  color: white;
+  width: 260px;
+  left: calc(50% - 130px);
+  font-family: aerospace;
+  font-size: 50px;
+  margin: 0;
+}
+
+.header-element {
+  position: absolute;
+  display: inline;
+  color: white;
+  width: 200px;
+  font-family: mono-display;
+  font-size: 30px;
+  margin: 0 0 0 20px;
+}
+
+div.section {
+  margin: 50px 0 100px 0;
+  background-color: white;
+}
+
+.hero {
+  padding: 200px 0 200px 0;
+  height: 100px;
+  text-align: center;
+}
+
+.store {
+  padding: 200px 0 200px 0;
+  height: 100px;
+  text-align: center;
+}
+
+.contacts {
+  padding: 200px 0 200px 0;
+  height: 100px;
+  text-align: center;
+}/*# sourceMappingURL=App.css.map */

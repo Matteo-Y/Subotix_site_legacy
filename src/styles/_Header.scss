@@ -1,0 +1,28 @@
+.head {
+    position: relative;
+    background-color: black;
+    height: 50px;
+    padding: 20px 0 0 0;
+    
+}
+
+h1 {
+    position: absolute;
+    display: inline;
+    color: white;
+    width: 260px;
+    left: calc(50% - 130px);
+    font-family: aerospace;
+    font-size: 50px;
+    margin: 0;
+}
+
+.header-element {
+    position: absolute;
+    display: inline;
+    color: white;
+    width: 200px;
+    font-family: mono-display;
+    font-size: 30px;
+    margin: 0 0 0 20px;
+}

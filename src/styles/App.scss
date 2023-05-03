@@ -1,0 +1,26 @@
+@font-face {
+    font-family: aerospace;
+    src: url(./../res/fonts/Aerospace.ttf);
+}
+
+@font-face {
+    font-family: mono-display;
+    src: url(./../res/fonts/MajorMonoDisplay-Regular.ttf);
+}
+
+$pallette-1: #333;
+
+body {
+    background-color: $pallette-1;
+    margin: 0;
+    min-width: 800px;
+}
+
+p {
+    font-family: mono-display;
+    font-size: 30px;
+    font-weight: 200;
+}
+
+@import 'Header.scss';
+@import 'landing.scss';
