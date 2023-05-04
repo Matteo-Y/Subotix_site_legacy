@@ -1,9 +1,10 @@
+import BASE_URL from '../App.js';
 
 export default function Header() {
     return (
         <>
             <div className="head">
-                <h2 className="header-element">home</h2>
+                <a href="/home" className="header-element">home</a>
                 <h1>SUBOTIX</h1>
             </div>
         </>

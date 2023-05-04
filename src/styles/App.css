@@ -44,6 +44,7 @@ h1 {
   font-family: mono-display;
   font-size: 30px;
   margin: 0 0 0 20px;
+  text-decoration: none;
 }
 
 div.section {
@@ -64,6 +65,12 @@ div.section {
 }
 
 .contacts {
+  padding: 200px 0 200px 0;
+  height: 100px;
+  text-align: center;
+}
+
+.store-tab {
   padding: 200px 0 200px 0;
   height: 100px;
   text-align: center;
