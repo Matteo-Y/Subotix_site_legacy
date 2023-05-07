@@ -6,6 +6,7 @@ export default function Landing() {
                 <p>[insert hero content]</p>
             </div>
             <div className="store section">
+                <a className="overlay-link" href="/store"></a>
                 <p>[insert store content]</p>
             </div>
             <div className="contacts section">
