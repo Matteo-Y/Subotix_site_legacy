@@ -15,7 +15,8 @@ function App() {
         <Routes>
           <Route path="/" element={<Navigate to="/home"/>} />
           <Route path="/home" element={<Landing/>}/>
-          <Route path="/store" element={<StorePage/>}/>
+          <Route path="/store" element={<StorePage view='hub'/>}/>
+          <Route path="/store/:category" element={<StorePage view='products'/>}/>
         </Routes>
       </BrowserRouter>
       
