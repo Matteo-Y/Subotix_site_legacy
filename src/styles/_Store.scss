@@ -3,3 +3,22 @@
     height: 100px;
     text-align: center;
 }
+
+.product-card {
+    position: relative;
+    background-color: white;
+    width: 200px;
+    height: 280px;
+    margin: 50px;
+    text-align: center;
+}
+
+.product-name {
+    position: relative;
+    top: 170px;
+}
+
+.product-description {
+    position: relative;
+    top: 160px;
+}
