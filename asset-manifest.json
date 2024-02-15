@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/Subotix_site/static/css/main.33dec7d4.css",
+    "main.js": "/Subotix_site/static/js/main.a6c29e8a.js",
+    "static/media/MajorMonoDisplay-Regular.ttf": "/Subotix_site/static/media/MajorMonoDisplay-Regular.3383070b9a8c70af4a86.ttf",
+    "static/media/Aerospace.ttf": "/Subotix_site/static/media/Aerospace.0342d6f9ff59f84eda4b.ttf",
+    "index.html": "/Subotix_site/index.html",
+    "main.33dec7d4.css.map": "/Subotix_site/static/css/main.33dec7d4.css.map",
+    "main.a6c29e8a.js.map": "/Subotix_site/static/js/main.a6c29e8a.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.33dec7d4.css",
+    "static/js/main.a6c29e8a.js"
+  ]
+}
