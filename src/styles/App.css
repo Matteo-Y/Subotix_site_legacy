@@ -8,12 +8,12 @@
 }
 body {
   background-color: #333;
+  font-family: mono-display;
   margin: 0;
   min-width: 800px;
 }
 
 p {
-  font-family: mono-display;
   font-size: 30px;
   font-weight: 200;
 }
@@ -31,7 +31,7 @@ h2 {
   height: 100%;
 }
 
-div.section {
+.section {
   position: relative;
   margin: 50px 0 100px 0;
   background-color: white;
@@ -82,29 +82,4 @@ h1 {
   padding: 200px 0 200px 0;
   height: 100px;
   text-align: center;
-}
-
-.store-tab {
-  padding: 200px 0 200px 0;
-  height: 100px;
-  text-align: center;
-}
-
-.product-card {
-  position: relative;
-  background-color: white;
-  width: 200px;
-  height: 280px;
-  margin: 50px;
-  text-align: center;
-}
-
-.product-name {
-  position: relative;
-  top: 170px;
-}
-
-.product-description {
-  position: relative;
-  top: 160px;
 }/*# sourceMappingURL=App.css.map */

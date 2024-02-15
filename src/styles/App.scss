@@ -12,12 +12,12 @@ $pallette-1: #333;
 
 body {
     background-color: $pallette-1;
+    font-family: mono-display;
     margin: 0;
     min-width: 800px;
 }
 
 p {
-    font-family: mono-display;
     font-size: 30px;
     font-weight: 200;
 }
@@ -35,7 +35,7 @@ h2 {
     height: 100%;
 }
 
-div.section {
+.section {
     position: relative;
     margin: 50px 0 100px 0;
     background-color: white;
@@ -43,4 +43,3 @@ div.section {
 
 @import 'Header.scss';
 @import 'Landing.scss';
-@import 'Store.scss';
