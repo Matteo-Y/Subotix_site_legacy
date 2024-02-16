@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/Subotix_site/static/css/main.33dec7d4.css",
-    "main.js": "/Subotix_site/static/js/main.f477abd4.js",
+    "main.js": "/Subotix_site/static/js/main.6870794d.js",
     "static/media/MajorMonoDisplay-Regular.ttf": "/Subotix_site/static/media/MajorMonoDisplay-Regular.3383070b9a8c70af4a86.ttf",
     "static/media/Aerospace.ttf": "/Subotix_site/static/media/Aerospace.0342d6f9ff59f84eda4b.ttf",
     "index.html": "/Subotix_site/index.html",
     "main.33dec7d4.css.map": "/Subotix_site/static/css/main.33dec7d4.css.map",
-    "main.f477abd4.js.map": "/Subotix_site/static/js/main.f477abd4.js.map"
+    "main.6870794d.js.map": "/Subotix_site/static/js/main.6870794d.js.map"
   },
   "entrypoints": [
     "static/css/main.33dec7d4.css",
-    "static/js/main.f477abd4.js"
+    "static/js/main.6870794d.js"
   ]
 }
