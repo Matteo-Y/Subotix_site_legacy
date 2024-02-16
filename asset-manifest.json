@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/Subotix_site/static/css/main.33dec7d4.css",
-    "main.js": "/Subotix_site/static/js/main.6870794d.js",
-    "static/media/MajorMonoDisplay-Regular.ttf": "/Subotix_site/static/media/MajorMonoDisplay-Regular.3383070b9a8c70af4a86.ttf",
-    "static/media/Aerospace.ttf": "/Subotix_site/static/media/Aerospace.0342d6f9ff59f84eda4b.ttf",
-    "index.html": "/Subotix_site/index.html",
-    "main.33dec7d4.css.map": "/Subotix_site/static/css/main.33dec7d4.css.map",
-    "main.6870794d.js.map": "/Subotix_site/static/js/main.6870794d.js.map"
+    "main.css": "/sawysawy.com/static/css/main.15f9d16c.css",
+    "main.js": "/sawysawy.com/static/js/main.c83a4756.js",
+    "static/media/MajorMonoDisplay-Regular.ttf": "/sawysawy.com/static/media/MajorMonoDisplay-Regular.3383070b9a8c70af4a86.ttf",
+    "static/media/Aerospace.ttf": "/sawysawy.com/static/media/Aerospace.0342d6f9ff59f84eda4b.ttf",
+    "index.html": "/sawysawy.com/index.html",
+    "main.15f9d16c.css.map": "/sawysawy.com/static/css/main.15f9d16c.css.map",
+    "main.c83a4756.js.map": "/sawysawy.com/static/js/main.c83a4756.js.map"
   },
   "entrypoints": [
-    "static/css/main.33dec7d4.css",
-    "static/js/main.6870794d.js"
+    "static/css/main.15f9d16c.css",
+    "static/js/main.c83a4756.js"
   ]
 }
