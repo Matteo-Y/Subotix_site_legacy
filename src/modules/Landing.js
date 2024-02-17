@@ -10,7 +10,7 @@ export default function Landing() {
                 </div>
             </div>
             <div className="sawysawy section">
-                <a className="overlay-link" href="/store"></a>
+                <a className="overlay-link" href="/sawy-sawy"></a>
                 <p>[insert store content]</p>
             </div>
             <div className="contacts section">
