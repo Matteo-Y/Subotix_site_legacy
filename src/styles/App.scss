@@ -8,7 +8,7 @@
     src: url(./../res/fonts/MajorMonoDisplay-Regular.ttf);
 }
 
-$pallette-1: #333;
+$pallette-1: #555;
 
 body {
     background-color: $pallette-1;
@@ -18,13 +18,16 @@ body {
 }
 
 p {
-    font-size: 30px;
+    font-size: 1em;
     font-weight: 200;
+    color: white;
 }
 
 h2 {
     font-family: mono-display;
-    font-size: 30px;
+    font-size: 2rem;
+    font-weight: 200;
+    color: white;
 }
 
 .overlay-link {
@@ -36,9 +39,17 @@ h2 {
 }
 
 .section {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
     position: relative;
     margin: 50px 0 100px 0;
-    background-color: white;
+    background-color: black;
+}
+
+.banner {
+    height: 100%;
+    object-fit: fill;
 }
 
 @import 'Header.scss';

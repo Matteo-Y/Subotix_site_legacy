@@ -7,20 +7,23 @@
   src: url(./../res/fonts/MajorMonoDisplay-Regular.ttf);
 }
 body {
-  background-color: #333;
+  background-color: #555;
   font-family: mono-display;
   margin: 0;
   min-width: 800px;
 }
 
 p {
-  font-size: 30px;
+  font-size: 1em;
   font-weight: 200;
+  color: white;
 }
 
 h2 {
   font-family: mono-display;
-  font-size: 30px;
+  font-size: 2rem;
+  font-weight: 200;
+  color: white;
 }
 
 .overlay-link {
@@ -32,9 +35,18 @@ h2 {
 }
 
 .section {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
   position: relative;
   margin: 50px 0 100px 0;
-  background-color: white;
+  background-color: black;
+}
+
+.banner {
+  height: 100%;
+  -o-object-fit: fill;
+     object-fit: fill;
 }
 
 .head {
@@ -67,12 +79,16 @@ h1 {
 }
 
 .hero {
-  padding: 200px 0 200px 0;
-  height: 100px;
-  text-align: center;
+  height: 500px;
+  text-align: left;
 }
 
-.store {
+#about-us-textbox {
+  padding: 4em 0 4em 0;
+  width: 30%;
+}
+
+.sawysawy {
   padding: 200px 0 200px 0;
   height: 100px;
   text-align: center;
