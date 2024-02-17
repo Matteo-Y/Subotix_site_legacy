@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/sawysawy.com/static/css/main.15f9d16c.css",
-    "main.js": "/sawysawy.com/static/js/main.c83a4756.js",
-    "static/media/MajorMonoDisplay-Regular.ttf": "/sawysawy.com/static/media/MajorMonoDisplay-Regular.3383070b9a8c70af4a86.ttf",
-    "static/media/Aerospace.ttf": "/sawysawy.com/static/media/Aerospace.0342d6f9ff59f84eda4b.ttf",
-    "index.html": "/sawysawy.com/index.html",
-    "main.15f9d16c.css.map": "/sawysawy.com/static/css/main.15f9d16c.css.map",
-    "main.c83a4756.js.map": "/sawysawy.com/static/js/main.c83a4756.js.map"
+    "main.css": "/static/css/main.cbab6d81.css",
+    "main.js": "/static/js/main.c83a4756.js",
+    "static/media/MajorMonoDisplay-Regular.ttf": "/static/media/MajorMonoDisplay-Regular.3383070b9a8c70af4a86.ttf",
+    "static/media/Aerospace.ttf": "/static/media/Aerospace.0342d6f9ff59f84eda4b.ttf",
+    "index.html": "/index.html",
+    "main.cbab6d81.css.map": "/static/css/main.cbab6d81.css.map",
+    "main.c83a4756.js.map": "/static/js/main.c83a4756.js.map"
   },
   "entrypoints": [
-    "static/css/main.15f9d16c.css",
+    "static/css/main.cbab6d81.css",
     "static/js/main.c83a4756.js"
   ]
 }
