@@ -8,7 +8,7 @@
     src: url(./../res/fonts/MajorMonoDisplay-Regular.ttf);
 }
 
-$pallette-1: #555;
+$pallette-1: #333;
 
 body {
     background-color: $pallette-1;
@@ -30,6 +30,13 @@ h2 {
     color: white;
 }
 
+h3 {
+    font-family: mono-display;
+    font-size: 2rem;
+    font-weight: 200;
+    color: white;
+}
+
 .overlay-link {
     position: absolute;
     left: 0;
@@ -43,7 +50,7 @@ h2 {
     flex-direction: row;
     justify-content: center;
     position: relative;
-    margin: 50px 0 100px 0;
+    margin: 0 0 100px 0;
     background-color: black;
 }
 
@@ -54,3 +61,4 @@ h2 {
 
 @import 'Header.scss';
 @import 'Landing.scss';
+@import 'Sawy.scss';

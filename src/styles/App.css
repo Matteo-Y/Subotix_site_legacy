@@ -7,7 +7,7 @@
   src: url(./../res/fonts/MajorMonoDisplay-Regular.ttf);
 }
 body {
-  background-color: #555;
+  background-color: #333;
   font-family: mono-display;
   margin: 0;
   min-width: 800px;
@@ -20,6 +20,13 @@ p {
 }
 
 h2 {
+  font-family: mono-display;
+  font-size: 2rem;
+  font-weight: 200;
+  color: white;
+}
+
+h3 {
   font-family: mono-display;
   font-size: 2rem;
   font-weight: 200;
@@ -39,7 +46,7 @@ h2 {
   flex-direction: row;
   justify-content: center;
   position: relative;
-  margin: 50px 0 100px 0;
+  margin: 0 0 100px 0;
   background-color: black;
 }
 
@@ -88,14 +95,46 @@ h1 {
   width: 30%;
 }
 
+#sawy-textbox {
+  padding: 4em 0 4em 0;
+  width: 30%;
+}
+
 .sawysawy {
-  padding: 200px 0 200px 0;
-  height: 100px;
-  text-align: center;
+  height: 400px;
+  text-align: left;
 }
 
 .contacts {
   padding: 200px 0 200px 0;
   height: 100px;
   text-align: center;
+}
+
+.sawy-banner {
+  height: 400px;
+}
+
+.project-card {
+  display: flex;
+  flex-direction: row-reverse;
+  background-color: black;
+  margin: auto;
+  margin-bottom: 50px;
+  width: 60%;
+  height: 400px;
+}
+
+.project-textbox {
+  flex-grow: 2;
+  padding: 10px;
+  padding-left: 10%;
+  width: 30%;
+  height: 100%;
+}
+
+.project-image {
+  color: white;
+  flex-grow: 1;
+  height: 100%;
 }/*# sourceMappingURL=App.css.map */

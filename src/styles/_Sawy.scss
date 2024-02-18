@@ -1,0 +1,27 @@
+.sawy-banner {
+    height: 400px;
+}
+
+.project-card {
+    display: flex;
+    flex-direction: row-reverse;
+    background-color: black;
+    margin: auto;
+    margin-bottom: 50px;
+    width: 60%;
+    height: 400px;
+}
+
+.project-textbox {
+    flex-grow: 2;
+    padding: 10px;
+    padding-left: 10%;
+    width: 30%;
+    height:100%;
+}
+
+.project-image {
+    color: white;
+    flex-grow: 1;
+    height:100%;
+}
