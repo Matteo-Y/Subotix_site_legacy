@@ -1,29 +1,69 @@
+@media only screen and (max-width: 600px) {
+    .head { height: 50px; padding: 20px 0 0 20px; }
+    #subotix-header { position: absolute; display: inline; right: calc(50% - 100px); margin: 0 }
+    .dropdown { width: 100% }
+    .header-element { visibility: hidden }
+}
+
+@media only screen and (min-width: 600px) {
+    .head { height: 50px; padding: 20px 0 0 20px; }
+    #subotix-header { position: absolute; display: inline; right: calc(50% - 100px); margin: 0 }
+    .dropdown { width: 100% }
+    .header-element { visibility: hidden }
+}
+
+@media only screen and (min-width: 768px) {
+    .head { height: 50px; padding: 20px 0 0 20px; }
+    #subotix-header { position: absolute; display: inline; right: calc(50% - 100px); margin: 0 }
+    .dropdown { width: 30% }
+    .header-element { visibility: hidden }
+}
+
+@media only screen and (min-width: 992px) {
+    .head { height: 50px; padding: 20px 0 0 20px; }
+    #subotix-header { position: absolute; display: inline; right: calc(50% - 130px); margin: 0 }
+    .dropdown { width: 30% }
+    .header-element { visibility: visible;  color: white; font-family: mono-display; font-size: 30px; margin: 0 10px 0 10px; text-decoration: none }
+}
+
 .head {
     position: relative;
+    display: flex;
+    justify-content: left;
+    flex-direction: row;
     background-color: black;
-    height: 50px;
-    padding: 20px 0 0 0;
-    
 }
 
-h1 {
-    position: absolute;
-    display: inline;
+.dropdown-element {
     color: white;
-    width: 260px;
-    left: calc(50% - 130px);
-    font-family: aerospace;
-    font-size: 50px;
-    margin: 0;
-}
-
-.header-element {
-    position: relative;
-    display: inline;
-    color: white;
-    width: 200px;
     font-family: mono-display;
     font-size: 30px;
     margin: 0 10px 0 20px;
     text-decoration: none;
+}
+
+#dropdown-toggle {
+    background-color: black;
+    border: none;
+}
+
+.dropdown {
+    position: absolute;
+    z-index: 1;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;  
+    height: 100px;
+    transition: all 0.3s;
+}
+
+.collapsed {
+    height: 0;
+}
+
+#subotix-header {
+    position: absolute;
+    display: inline;
+    margin: 0;
 }

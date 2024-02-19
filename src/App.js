@@ -4,7 +4,7 @@ import Landing from './modules/Landing';
 import PageNotFound from './modules/PageNotFound';
 import Sawy from './modules/Sawy';
 
-import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom';
+import { HashRouter, Routes, Route, Navigate } from 'react-router-dom';
 
 
 const BASE_PATH = "/";
@@ -16,14 +16,14 @@ export default function App() {
   return (
     <div className="App">
       <Header/>
-      <BrowserRouter>
+      <HashRouter>
         <Routes>
           <Route path={BASE_PATH} element={<Landing/>}/>
           <Route path={SAWY_PATH} element={<Sawy/>}/>
 
           <Route path={"*"} element={<PageNotFound/>}/>
         </Routes>
-      </BrowserRouter>
+      </HashRouter>
     </div>
   );
 }

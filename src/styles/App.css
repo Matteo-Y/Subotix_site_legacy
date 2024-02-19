@@ -6,17 +6,40 @@
   font-family: mono-display;
   src: url(./../res/fonts/MajorMonoDisplay-Regular.ttf);
 }
+@media only screen and (max-width: 600px) {
+  h1 {
+    font-size: 35px;
+  }
+}
+@media only screen and (min-width: 600px) {
+  h1 {
+    font-size: 35px;
+  }
+}
+@media only screen and (min-width: 768px) {
+  h1 {
+    font-size: 50px;
+  }
+}
+@media only screen and (min-width: 992px) {
+  h1 {
+    font-size: 50px;
+  }
+}
 body {
   background-color: #333;
   font-family: mono-display;
   margin: 0;
-  min-width: 800px;
 }
 
 p {
-  font-size: 1em;
   font-weight: 200;
   color: white;
+}
+
+h1 {
+  color: white;
+  font-family: aerospace;
 }
 
 h2 {
@@ -50,64 +73,234 @@ h3 {
   background-color: black;
 }
 
-.banner {
-  height: 100%;
-  -o-object-fit: fill;
-     object-fit: fill;
+@media only screen and (max-width: 600px) {
+  .head {
+    height: 50px;
+    padding: 20px 0 0 20px;
+  }
+  #subotix-header {
+    position: absolute;
+    display: inline;
+    right: calc(50% - 100px);
+    margin: 0;
+  }
+  .dropdown {
+    width: 100%;
+  }
+  .header-element {
+    visibility: hidden;
+  }
 }
-
+@media only screen and (min-width: 600px) {
+  .head {
+    height: 50px;
+    padding: 20px 0 0 20px;
+  }
+  #subotix-header {
+    position: absolute;
+    display: inline;
+    right: calc(50% - 100px);
+    margin: 0;
+  }
+  .dropdown {
+    width: 100%;
+  }
+  .header-element {
+    visibility: hidden;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .head {
+    height: 50px;
+    padding: 20px 0 0 20px;
+  }
+  #subotix-header {
+    position: absolute;
+    display: inline;
+    right: calc(50% - 100px);
+    margin: 0;
+  }
+  .dropdown {
+    width: 30%;
+  }
+  .header-element {
+    visibility: hidden;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .head {
+    height: 50px;
+    padding: 20px 0 0 20px;
+  }
+  #subotix-header {
+    position: absolute;
+    display: inline;
+    right: calc(50% - 130px);
+    margin: 0;
+  }
+  .dropdown {
+    width: 30%;
+  }
+  .header-element {
+    visibility: visible;
+    color: white;
+    font-family: mono-display;
+    font-size: 30px;
+    margin: 0 10px 0 10px;
+    text-decoration: none;
+  }
+}
 .head {
   position: relative;
+  display: flex;
+  justify-content: left;
+  flex-direction: row;
   background-color: black;
-  height: 50px;
-  padding: 20px 0 0 0;
 }
 
-h1 {
-  position: absolute;
-  display: inline;
+.dropdown-element {
   color: white;
-  width: 260px;
-  left: calc(50% - 130px);
-  font-family: aerospace;
-  font-size: 50px;
-  margin: 0;
-}
-
-.header-element {
-  position: relative;
-  display: inline;
-  color: white;
-  width: 200px;
   font-family: mono-display;
   font-size: 30px;
   margin: 0 10px 0 20px;
   text-decoration: none;
 }
 
+#dropdown-toggle {
+  background-color: black;
+  border: none;
+}
+
+.dropdown {
+  position: absolute;
+  z-index: 1;
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  height: 100px;
+  transition: all 0.3s;
+}
+
+.collapsed {
+  height: 0;
+}
+
+#subotix-header {
+  position: absolute;
+  display: inline;
+  margin: 0;
+}
+
+@media only screen and (max-width: 600px) {
+  .hero {
+    flex-direction: column;
+  }
+  .sawysawy {
+    flex-direction: column-reverse;
+  }
+  .contacts {
+    height: 10rem;
+  }
+  .banner {
+    width: 100%;
+  }
+  #about-us-textbox {
+    padding: 0 2em 0 2em;
+    width: 100%;
+  }
+  #sawy-textbox {
+    padding: 0 2em 0 2em;
+    width: 100%;
+  }
+}
+@media only screen and (min-width: 600px) {
+  .hero {
+    flex-direction: column;
+  }
+  .sawysawy {
+    flex-direction: column-reverse;
+  }
+  .contacts {
+    height: 10rem;
+  }
+  .banner {
+    width: 100%;
+  }
+  #about-us-textbox {
+    padding: 0 2em 0 2em;
+    width: 100%;
+  }
+  #sawy-textbox {
+    padding: 0 2em 0 2em;
+    width: 100%;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .hero {
+    height: 400px;
+    flex-direction: row;
+  }
+  .sawysawy {
+    height: 400px;
+    flex-direction: row;
+  }
+  .contacts {
+    height: 100px;
+  }
+  .banner {
+    width: -moz-fit-content;
+    width: fit-content;
+    height: 100%;
+  }
+  #about-us-textbox {
+    padding: 4em 0 4em 0;
+    width: 30%;
+  }
+  #sawy-textbox {
+    padding: 4em 0 4em 0;
+    width: 30%;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .hero {
+    height: 500px;
+    flex-direction: row;
+  }
+  .sawysawy {
+    height: 500px;
+    flex-direction: row;
+  }
+  .contacts {
+    height: 100px;
+  }
+  .banner {
+    height: 100%;
+  }
+  #about-us-textbox {
+    padding: 4em 0 4em 0;
+    width: 30%;
+  }
+  #sawy-textbox {
+    padding: 4em 0 4em 0;
+    width: 30%;
+  }
+}
+.banner {
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
 .hero {
-  height: 500px;
   text-align: left;
 }
 
-#about-us-textbox {
-  padding: 4em 0 4em 0;
-  width: 30%;
-}
-
-#sawy-textbox {
-  padding: 4em 0 4em 0;
-  width: 30%;
-}
-
 .sawysawy {
-  height: 400px;
   text-align: left;
 }
 
 .contacts {
   padding: 200px 0 200px 0;
-  height: 100px;
   text-align: center;
 }
 

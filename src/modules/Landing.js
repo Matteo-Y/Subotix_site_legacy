@@ -11,12 +11,12 @@ export default function Landing() {
                 </div>
             </div>
             <div className="sawysawy section">
-                <a className="overlay-link" href={SAWY_PATH}></a>
+                <a className="overlay-link" href={"#" + SAWY_PATH}></a>
                 <div id="sawy-textbox">
                     <h2>sawy sawy</h2>
                     <p>[filler text]</p>
                 </div>
-                <img style={{marginLeft: "0%"}} className="banner" src={require("../res/Banner_0.jpg")}/>
+                <img className="banner" src={require("../res/Banner_0.jpg")}/>
             </div>
             <div className="contacts section">
                 <p>[insert contacts content]</p>

@@ -1,27 +1,60 @@
 
 
+
+@media only screen and (max-width: 600px) {
+    .hero { flex-direction: column }
+    .sawysawy { flex-direction: column-reverse }
+    .contacts { height: 10rem }
+    .banner {width: 100% }
+    #about-us-textbox { padding: 0 2em 0 2em; width: 100% }
+    #sawy-textbox { padding: 0 2em 0 2em; width: 100% }
+}
+
+@media only screen and (min-width: 600px) {
+    .hero { flex-direction: column }
+    .sawysawy { flex-direction: column-reverse }
+    .contacts { height: 10rem }
+    .banner {width: 100% }
+    #about-us-textbox { padding: 0 2em 0 2em; width: 100% }
+    #sawy-textbox { padding: 0 2em 0 2em; width: 100% }
+}
+
+@media only screen and (min-width: 768px) {
+    .hero { height: 400px; flex-direction: row }
+    .sawysawy { height: 400px; flex-direction: row }
+    .contacts { height: 100px }
+    .banner { width: fit-content; height: 100% }
+    #about-us-textbox { padding: 4em 0 4em 0; width: 30% }
+    #sawy-textbox { padding: 4em 0 4em 0; width: 30% }
+}
+
+@media only screen and (min-width: 992px) {
+    .hero { height: 500px; flex-direction: row }
+    .sawysawy { height: 500px; flex-direction: row }
+    .contacts { height: 100px }
+    .banner { height: 100% }
+    #about-us-textbox { padding: 4em 0 4em 0; width: 30% }
+    #sawy-textbox { padding: 4em 0 4em 0; width: 30% }
+}
+
+.banner {
+    object-fit: cover;
+}
+
 .hero {
-    height: 500px;
     text-align: left;
 }
 
-#about-us-textbox {
-    padding: 4em 0 4em 0;
-    width: 30%;
-}
-
-#sawy-textbox {
-    padding: 4em 0 4em 0;
-    width: 30%;
-}
-
 .sawysawy {
-    height: 400px;
     text-align: left;
 }
 
 .contacts {
     padding: 200px 0 200px 0;
-    height: 100px;
     text-align: center;
 }
+
+
+
+
+

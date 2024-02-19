@@ -10,17 +10,36 @@
 
 $pallette-1: #333;
 
+@media only screen and (max-width: 600px) {
+    h1 {font-size: 35px}
+}
+
+@media only screen and (min-width: 600px) {
+    h1 {font-size: 35px}
+}
+
+@media only screen and (min-width: 768px) {
+    h1 {font-size: 50px}
+}
+
+@media only screen and (min-width: 992px) {
+    h1 {font-size: 50px}
+}
+
 body {
     background-color: $pallette-1;
     font-family: mono-display;
     margin: 0;
-    min-width: 800px;
 }
 
 p {
-    font-size: 1em;
     font-weight: 200;
     color: white;
+}
+
+h1 {
+    color: white;
+    font-family: aerospace;
 }
 
 h2 {
@@ -52,11 +71,6 @@ h3 {
     position: relative;
     margin: 0 0 100px 0;
     background-color: black;
-}
-
-.banner {
-    height: 100%;
-    object-fit: fill;
 }
 
 @import 'Header.scss';

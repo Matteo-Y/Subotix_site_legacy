@@ -26,7 +26,6 @@ const projectData = [
 let projectCards = [];
 
 projectData.forEach((data) => {
-    console.log(projectCards);
     projectCards.push(<ProjectCard title={data.title} description={data.description} imgSrc={data.imageURL} imgAlt={data.title + " image"}/>);
 })
 
