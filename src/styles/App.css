@@ -56,6 +56,11 @@ h3 {
   color: white;
 }
 
+img {
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
 .overlay-link {
   position: absolute;
   left: 0;

@@ -3,8 +3,7 @@ import { useState, useLayoutEffect } from 'react';
 import { BASE_PATH, SAWY_PATH } from '../App.js';
 
 export default function Header() {
-    const [showDropdown, setShowDropdown] = useState(true);
-    const [showHeadermenu, setShowHeadermenu] = useState(true);
+    const [showDropdown, setShowDropdown] = useState(false);
 
     function toggleDropdown() {
         setShowDropdown(!showDropdown);
@@ -12,7 +11,7 @@ export default function Header() {
 
     return (<>
         <div className="head">
-            <button id="dropdown-toggle" onClick={toggleDropdown}><img style={{width: "40px"}} src={require("../res/dropdown.png")} alt="menu"/></button>
+            <button id="dropdown-toggle" onClick={toggleDropdown}><img style={{width: "40px"}} src={require("../res/pictures/ui/dropdown.png")} alt="menu"/></button>
             <a href={"#" + BASE_PATH} className="header-element">home</a>
             <a href={"#" + SAWY_PATH} className="header-element">sawysawy</a>
             <h1 id="subotix-header">SUBOTIX</h1>
