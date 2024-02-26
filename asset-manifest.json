@@ -1,20 +1,21 @@
 {
   "files": {
     "main.css": "/static/css/main.441be2a2.css",
-    "main.js": "/static/js/main.15962cab.js",
+    "main.js": "/static/js/main.5a07f66d.js",
     "static/media/robot_hand_0.jpg": "/static/media/robot_hand_0.9859ad8779c005b5108e.jpg",
     "static/media/printers_0.jpg": "/static/media/printers_0.b510460db08148a55756.jpg",
+    "static/media/controller_0.jpeg": "/static/media/controller_0.3fc4d2d3bb89b9aea7d5.jpeg",
     "static/media/Banner_0.jpg": "/static/media/Banner_0.545520f8299beabeb6e9.jpg",
+    "static/media/cube_solver_1.jpg": "/static/media/cube_solver_1.4881b7619b2331745e76.jpg",
     "static/media/MajorMonoDisplay-Regular.ttf": "/static/media/MajorMonoDisplay-Regular.3383070b9a8c70af4a86.ttf",
     "static/media/piano_0.jpg": "/static/media/piano_0.cb02346d75880b733f41.jpg",
-    "static/media/cube_solver_0.jpg": "/static/media/cube_solver_0.8a37540b7cfa3ec4c125.jpg",
     "static/media/Aerospace.ttf": "/static/media/Aerospace.0342d6f9ff59f84eda4b.ttf",
     "index.html": "/index.html",
     "main.441be2a2.css.map": "/static/css/main.441be2a2.css.map",
-    "main.15962cab.js.map": "/static/js/main.15962cab.js.map"
+    "main.5a07f66d.js.map": "/static/js/main.5a07f66d.js.map"
   },
   "entrypoints": [
     "static/css/main.441be2a2.css",
-    "static/js/main.15962cab.js"
+    "static/js/main.5a07f66d.js"
   ]
 }
