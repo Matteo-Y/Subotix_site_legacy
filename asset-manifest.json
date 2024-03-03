@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "/static/css/main.a4b8f65a.css",
-    "main.js": "/static/js/main.82fb2371.js",
+    "main.css": "/static/css/main.91149893.css",
+    "main.js": "/static/js/main.c7465837.js",
+    "static/media/solver_video_0.mp4": "/static/media/solver_video_0.678f427ba1cf89b7b322.mp4",
     "static/media/robot_hand_0.jpg": "/static/media/robot_hand_0.9859ad8779c005b5108e.jpg",
     "static/media/printers_0.jpg": "/static/media/printers_0.b510460db08148a55756.jpg",
     "static/media/controller_0.jpeg": "/static/media/controller_0.3fc4d2d3bb89b9aea7d5.jpeg",
     "static/media/Banner_0.jpg": "/static/media/Banner_0.545520f8299beabeb6e9.jpg",
-    "static/media/cube_solver_1.jpg": "/static/media/cube_solver_1.4881b7619b2331745e76.jpg",
     "static/media/bg.png": "/static/media/bg.908a0a50bc58401e6f24.png",
     "static/media/MajorMonoDisplay-Regular.ttf": "/static/media/MajorMonoDisplay-Regular.3383070b9a8c70af4a86.ttf",
     "static/media/piano_0.jpg": "/static/media/piano_0.cb02346d75880b733f41.jpg",
     "static/media/Aerospace.ttf": "/static/media/Aerospace.0342d6f9ff59f84eda4b.ttf",
     "index.html": "/index.html",
-    "main.a4b8f65a.css.map": "/static/css/main.a4b8f65a.css.map",
-    "main.82fb2371.js.map": "/static/js/main.82fb2371.js.map"
+    "main.91149893.css.map": "/static/css/main.91149893.css.map",
+    "main.c7465837.js.map": "/static/js/main.c7465837.js.map"
   },
   "entrypoints": [
-    "static/css/main.a4b8f65a.css",
-    "static/js/main.82fb2371.js"
+    "static/css/main.91149893.css",
+    "static/js/main.c7465837.js"
   ]
 }
