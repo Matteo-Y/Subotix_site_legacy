@@ -28,6 +28,7 @@
 }
 body {
   background-color: #333;
+  background-image: url(../res/pictures/bg.png);
   font-family: mono-display;
   margin: 0;
 }
@@ -69,13 +70,18 @@ img {
   height: 100%;
 }
 
-.section {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  position: relative;
-  margin: 0 0 100px 0;
+#footer {
   background-color: black;
+  margin: 0;
+  padding: 10px;
+}
+
+#freepik-attr {
+  color: white;
+  margin: 0;
+}
+#freepik-attr :visited {
+  color: #999;
 }
 
 @media only screen and (max-width: 600px) {
@@ -197,9 +203,19 @@ img {
   margin: 0;
 }
 
+.section {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  position: relative;
+  margin-bottom: 100px;
+  background-color: black;
+}
+
 @media only screen and (max-width: 600px) {
   .hero {
     flex-direction: column;
+    margin-top: 30px;
   }
   .sawysawy {
     flex-direction: column-reverse;
@@ -222,6 +238,7 @@ img {
 @media only screen and (min-width: 600px) {
   .hero {
     flex-direction: column;
+    margin-top: 30px;
   }
   .sawysawy {
     flex-direction: column-reverse;
@@ -245,9 +262,10 @@ img {
   .hero {
     height: 400px;
     flex-direction: row;
+    margin-top: 60px;
   }
   .sawysawy {
-    height: 400px;
+    height: 300px;
     flex-direction: row;
   }
   .contacts {
@@ -271,6 +289,7 @@ img {
   .hero {
     height: 500px;
     flex-direction: row;
+    margin-top: 60px;
   }
   .sawysawy {
     height: 500px;
@@ -302,6 +321,7 @@ img {
 
 .sawysawy {
   text-align: left;
+  text-decoration: none;
 }
 
 .contacts {
@@ -309,18 +329,40 @@ img {
   text-align: center;
 }
 
+@media only screen and (max-width: 600px) {
+  .project-card {
+    flex-direction: column-reverse;
+  }
+}
+@media only screen and (min-width: 600px) {
+  .project-card {
+    flex-direction: column-reverse;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .project-card {
+    flex-direction: column-reverse;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .project-card {
+    flex-direction: row-reverse;
+    max-height: 400px;
+  }
+  .project-vid {
+    margin-right: -80px;
+  }
+}
 .sawy-banner {
   height: 400px;
 }
 
 .project-card {
   display: flex;
-  flex-direction: row-reverse;
   background-color: black;
   margin: auto;
   margin-bottom: 50px;
   width: 60%;
-  height: 400px;
 }
 
 .project-textbox {
@@ -334,5 +376,9 @@ img {
 .project-image {
   color: white;
   flex-grow: 1;
-  height: 100%;
+  max-width: 50%;
+}
+
+.project-vid {
+  flex-grow: 1;
 }/*# sourceMappingURL=App.css.map */

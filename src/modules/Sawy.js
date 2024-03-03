@@ -1,35 +1,23 @@
 import ProjectCard from "./ProjectCard";
 
-import piano from "../res/pictures/misc/piano_0.jpg"
-import hand from "../res/pictures/misc/robot_hand_0.jpg"
-import cube from "../res/pictures/misc/cube_solver_0.jpg"
+import piano from "../res/pictures/misc/piano_0.jpg";
+import robotHand from "../res/pictures/misc/robot_hand_0.jpg";
+import cubeSolver from "../res/videos/solver_video_0.mp4";
 
 const projectData = [
     {
-        key: 1,
         title: "piano",
-        description: "[filler text]",
-        imageURL: piano
+        description: "",
     },
     {
-        key: 2,
         title: "robot hand",
-        description: "[filler text]",
-        imageURL: hand
+        description: "",
     },
     {
-        key: 3,
         title: "rubik's cube solver",
-        description: "[filler text]",
-        imageURL: cube
+        description: "",
     },
 ]
-
-let projectCards = [];
-
-projectData.forEach((data) => {
-    projectCards.push(<ProjectCard key={data.key} title={data.title} description={data.description} imgSrc={data.imageURL} imgAlt={data.title + " image"}/>);
-})
 
 export default function Sawy() {
 
@@ -37,6 +25,15 @@ export default function Sawy() {
         <div className="sawy-banner section">
             <img id="sawy-page-banner" className="banner" src={require("../res/pictures/misc/printers_0.jpg")} alt="sawy banner"/>
         </div>
-        {projectCards}
+
+        <ProjectCard title={projectData[0].title} description={projectData[0].description}>
+            <img className="project-image" src={piano} alt={projectData[0].title + " content"}/>
+        </ProjectCard>
+        <ProjectCard title={projectData[1].title} description={projectData[1].description}>
+            <img className="project-image" src={robotHand} alt={projectData[0].title + " content"}/>
+        </ProjectCard>
+        <ProjectCard title={projectData[2].title} description={projectData[2].description}>
+            <video className="project-vid" src={cubeSolver} type="video/mp4" autoPlay muted/>
+        </ProjectCard>
     </>);
 }

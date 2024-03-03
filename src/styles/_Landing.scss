@@ -1,8 +1,15 @@
 
-
+.section {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    position: relative;
+    margin-bottom: 100px;
+    background-color: black;
+}
 
 @media only screen and (max-width: 600px) {
-    .hero { flex-direction: column }
+    .hero { flex-direction: column; margin-top: 30px }
     .sawysawy { flex-direction: column-reverse }
     .contacts { height: 10rem }
     .banner {width: 100% }
@@ -11,7 +18,7 @@
 }
 
 @media only screen and (min-width: 600px) {
-    .hero { flex-direction: column }
+    .hero { flex-direction: column; margin-top: 30px }
     .sawysawy { flex-direction: column-reverse }
     .contacts { height: 10rem }
     .banner {width: 100% }
@@ -20,8 +27,8 @@
 }
 
 @media only screen and (min-width: 768px) {
-    .hero { height: 400px; flex-direction: row }
-    .sawysawy { height: 400px; flex-direction: row }
+    .hero { height: 400px; flex-direction: row; margin-top: 60px }
+    .sawysawy { height: 300px; flex-direction: row }
     .contacts { height: 100px }
     .banner { width: fit-content; height: 100% }
     #about-us-textbox { padding: 4em 0 4em 0; width: 30% }
@@ -29,7 +36,7 @@
 }
 
 @media only screen and (min-width: 992px) {
-    .hero { height: 500px; flex-direction: row }
+    .hero { height: 500px; flex-direction: row; margin-top: 60px }
     .sawysawy { height: 500px; flex-direction: row }
     .contacts { height: 100px }
     .banner { height: 100% }
@@ -42,17 +49,21 @@
 }
 
 .hero {
+    
     text-align: left;
 }
 
 .sawysawy {
     text-align: left;
+    text-decoration: none;
 }
 
 .contacts {
     padding: 200px 0 200px 0;
     text-align: center;
 }
+
+
 
 
 

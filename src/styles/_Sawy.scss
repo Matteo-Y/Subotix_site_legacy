@@ -1,15 +1,30 @@
+@media only screen and (max-width: 600px) {
+    .project-card { flex-direction: column-reverse }
+}
+
+@media only screen and (min-width: 600px) {
+    .project-card { flex-direction: column-reverse }
+}
+
+@media only screen and (min-width: 768px) {
+    .project-card { flex-direction: column-reverse }
+}
+
+@media only screen and (min-width: 992px) {
+    .project-card { flex-direction: row-reverse; max-height: 400px}
+    .project-vid {  margin-right: -80px }
+}
+
 .sawy-banner {
     height: 400px;
 }
 
 .project-card {
     display: flex;
-    flex-direction: row-reverse;
     background-color: black;
     margin: auto;
     margin-bottom: 50px;
     width: 60%;
-    height: 400px;
 }
 
 .project-textbox {
@@ -23,5 +38,9 @@
 .project-image {
     color: white;
     flex-grow: 1;
-    height:100%;
+    max-width: 50%;
+}
+
+.project-vid {
+    flex-grow: 1;
 }
