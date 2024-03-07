@@ -11,10 +11,13 @@ export default function Landing() {
                 </div>
             </div>
             <a className="sawysawy section" href={"#" + SAWY_PATH}>
-                
                 <div id="sawy-textbox">
                     <h2>sawy sawy</h2>
-                    <p>[filler text]</p>
+                    <p>
+                        the perfect tool for beginners.<br/>
+                        a good lesson in conductivity, <br/>
+                        and basic circuitry.
+                    </p>
                 </div>
                 <img className="banner" src={require("../res/pictures/misc/controller_0.jpeg")} alt="sawy banner"/>
             </a>

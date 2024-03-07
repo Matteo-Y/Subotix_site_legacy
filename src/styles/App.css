@@ -10,20 +10,46 @@
   h1 {
     font-size: 35px;
   }
+  p {
+    line-height: 1rem;
+    padding-bottom: 30px;
+  }
+  h2 {
+    margin-bottom: 2rem;
+  }
 }
 @media only screen and (min-width: 600px) {
   h1 {
     font-size: 35px;
+  }
+  p {
+    line-height: 1rem;
+    padding-bottom: 30px;
+  }
+  h2 {
+    margin-bottom: 2rem;
   }
 }
 @media only screen and (min-width: 768px) {
   h1 {
     font-size: 50px;
   }
+  p {
+    line-height: 1.5rem;
+  }
+  h2 {
+    margin-bottom: 0.5rem;
+  }
 }
 @media only screen and (min-width: 992px) {
   h1 {
     font-size: 50px;
+  }
+  p {
+    line-height: 2rem;
+  }
+  h2 {
+    margin-bottom: 2rem;
   }
 }
 body {
@@ -34,7 +60,8 @@ body {
 }
 
 p {
-  font-weight: 200;
+  font-size: 0.8rem;
+  font-weight: bold;
   color: white;
 }
 
@@ -45,7 +72,7 @@ h1 {
 
 h2 {
   font-family: mono-display;
-  font-size: 2rem;
+  font-size: 3rem;
   font-weight: 200;
   color: white;
 }
@@ -62,18 +89,11 @@ img {
      object-fit: contain;
 }
 
-.overlay-link {
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-}
-
 #footer {
   background-color: black;
   margin: 0;
   padding: 10px;
+  font-size: x-small;
 }
 
 #freepik-attr {
@@ -81,7 +101,7 @@ img {
   margin: 0;
 }
 #freepik-attr :visited {
-  color: #999;
+  color: #ddd;
 }
 
 @media only screen and (max-width: 600px) {
@@ -281,7 +301,7 @@ img {
     width: 30%;
   }
   #sawy-textbox {
-    padding: 4em 0 4em 0;
+    padding: 0 0 0 0;
     width: 30%;
   }
 }
@@ -306,8 +326,8 @@ img {
     width: 30%;
   }
   #sawy-textbox {
-    padding: 4em 0 4em 0;
-    width: 30%;
+    padding: 4em 2em 4em 2em;
+    width: 20%;
   }
 }
 .banner {
