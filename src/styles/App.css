@@ -373,10 +373,6 @@ img {
     margin-right: -80px;
   }
 }
-.sawy-banner {
-  height: 400px;
-}
-
 .project-card {
   display: flex;
   background-color: black;
@@ -401,4 +397,44 @@ img {
 
 .project-vid {
   flex-grow: 1;
+}
+
+.slideshow {
+  background-color: black;
+  margin: 0 auto;
+  overflow: hidden;
+  margin-bottom: 50px;
+}
+
+.slideshow-slider {
+  white-space: nowrap;
+  transition: ease 2s;
+}
+
+.slide {
+  display: inline-block;
+  overflow: hidden;
+  text-align: center;
+  width: 100%;
+}
+
+@media only screen and (max-width: 600px) {
+  .slide-image {
+    height: 300px;
+  }
+}
+@media only screen and (min-width: 600px) {
+  .slide-image {
+    height: 300px;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .slide-image {
+    height: 400px;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .slide-image {
+    height: 400px;
+  }
 }/*# sourceMappingURL=App.css.map */
