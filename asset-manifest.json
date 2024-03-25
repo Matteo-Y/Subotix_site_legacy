@@ -1,7 +1,8 @@
 {
   "files": {
-    "main.css": "/static/css/main.3298256a.css",
-    "main.js": "/static/js/main.1136a0c6.js",
+    "main.css": "/static/css/main.a7a1ba49.css",
+    "main.js": "/static/js/main.6b169db7.js",
+    "static/media/sawy-sawy_commercial.mp4": "/static/media/sawy-sawy_commercial.03bc436ca826fe1bf1ee.mp4",
     "static/media/solver_video_0.mp4": "/static/media/solver_video_0.678f427ba1cf89b7b322.mp4",
     "static/media/robot_hand_0.jpg": "/static/media/robot_hand_0.9859ad8779c005b5108e.jpg",
     "static/media/printers_0.jpg": "/static/media/printers_0.b510460db08148a55756.jpg",
@@ -13,12 +14,16 @@
     "static/media/bg.png": "/static/media/bg.908a0a50bc58401e6f24.png",
     "static/media/MajorMonoDisplay-Regular.ttf": "/static/media/MajorMonoDisplay-Regular.3383070b9a8c70af4a86.ttf",
     "static/media/Aerospace.ttf": "/static/media/Aerospace.0342d6f9ff59f84eda4b.ttf",
+    "static/media/X-logo.webp": "/static/media/X-logo.4c8a3b47c6f341cc768e.webp",
+    "static/media/INSTA-logo.webp": "/static/media/INSTA-logo.5f2d71822c6f50fe57ac.webp",
+    "static/media/YT-logo.webp": "/static/media/YT-logo.0db8c8a07c9d63d01e4f.webp",
+    "static/media/FB-logo.webp": "/static/media/FB-logo.ee7793fa5997b12f0afb.webp",
     "index.html": "/index.html",
-    "main.3298256a.css.map": "/static/css/main.3298256a.css.map",
-    "main.1136a0c6.js.map": "/static/js/main.1136a0c6.js.map"
+    "main.a7a1ba49.css.map": "/static/css/main.a7a1ba49.css.map",
+    "main.6b169db7.js.map": "/static/js/main.6b169db7.js.map"
   },
   "entrypoints": [
-    "static/css/main.3298256a.css",
-    "static/js/main.1136a0c6.js"
+    "static/css/main.a7a1ba49.css",
+    "static/js/main.6b169db7.js"
   ]
 }
