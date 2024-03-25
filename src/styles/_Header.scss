@@ -1,26 +1,26 @@
 @media only screen and (max-width: 600px) {
-    .head { height: 50px; padding: 20px 0 0 20px; }
+    .head { height: 50px; padding: 10px 0 0 20px; }
     #subotix-header { position: absolute; display: inline; right: calc(50% - 100px); margin: 0 }
     .dropdown { width: 100% }
     .header-element { visibility: hidden }
 }
 
 @media only screen and (min-width: 600px) {
-    .head { height: 50px; padding: 20px 0 0 20px; }
+    .head { height: 50px; padding: 10px 0 0 20px; }
     #subotix-header { position: absolute; display: inline; right: calc(50% - 100px); margin: 0 }
     .dropdown { width: 100% }
     .header-element { visibility: hidden }
 }
 
 @media only screen and (min-width: 768px) {
-    .head { height: 50px; padding: 20px 0 0 20px; }
+    .head { height: 50px; padding: 10px 0 0 20px; }
     #subotix-header { position: absolute; display: inline; right: calc(50% - 100px); margin: 0 }
     .dropdown { width: 30% }
     .header-element { visibility: hidden }
 }
 
 @media only screen and (min-width: 992px) {
-    .head { height: 50px; padding: 20px 0 0 20px; }
+    .head { height: 50px; padding: 10px 0 0 20px; }
     #subotix-header { position: absolute; display: inline; right: calc(50% - 130px); margin: 0 }
     .dropdown { width: 30% }
     .header-element { visibility: visible;  color: white; font-family: mono-display; font-size: 30px; margin: 0 10px 0 10px; text-decoration: none }
@@ -34,6 +34,33 @@
     background-color: black;
 }
 
+#header-menu {
+    flex: 1 1 0;
+    display: flex;
+    justify-content: left;
+}
+
+#header-title {
+    flex: 1 1 0;
+    display: flex;
+    justify-content: center;
+    h1 {
+        margin: 0;
+    }
+}
+
+#header-socials {
+    flex: 1 1 0;
+    display: flex;
+    justify-content: right;
+}
+
+#subotix-header {
+    position: absolute;
+    display: inline;
+    margin: 0;
+}
+
 .dropdown-element {
     color: white;
     font-family: mono-display;
@@ -45,6 +72,7 @@
 #dropdown-toggle {
     background-color: black;
     border: none;
+    margin-top: -5px;
 }
 
 .dropdown {
@@ -60,10 +88,4 @@
 
 .collapsed {
     height: 0;
-}
-
-#subotix-header {
-    position: absolute;
-    display: inline;
-    margin: 0;
 }

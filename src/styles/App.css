@@ -96,7 +96,7 @@ img {
 @media only screen and (max-width: 600px) {
   .head {
     height: 50px;
-    padding: 20px 0 0 20px;
+    padding: 10px 0 0 20px;
   }
   #subotix-header {
     position: absolute;
@@ -114,7 +114,7 @@ img {
 @media only screen and (min-width: 600px) {
   .head {
     height: 50px;
-    padding: 20px 0 0 20px;
+    padding: 10px 0 0 20px;
   }
   #subotix-header {
     position: absolute;
@@ -132,7 +132,7 @@ img {
 @media only screen and (min-width: 768px) {
   .head {
     height: 50px;
-    padding: 20px 0 0 20px;
+    padding: 10px 0 0 20px;
   }
   #subotix-header {
     position: absolute;
@@ -150,7 +150,7 @@ img {
 @media only screen and (min-width: 992px) {
   .head {
     height: 50px;
-    padding: 20px 0 0 20px;
+    padding: 10px 0 0 20px;
   }
   #subotix-header {
     position: absolute;
@@ -178,6 +178,33 @@ img {
   background-color: black;
 }
 
+#header-menu {
+  flex: 1 1 0;
+  display: flex;
+  justify-content: left;
+}
+
+#header-title {
+  flex: 1 1 0;
+  display: flex;
+  justify-content: center;
+}
+#header-title h1 {
+  margin: 0;
+}
+
+#header-socials {
+  flex: 1 1 0;
+  display: flex;
+  justify-content: right;
+}
+
+#subotix-header {
+  position: absolute;
+  display: inline;
+  margin: 0;
+}
+
 .dropdown-element {
   color: white;
   font-family: mono-display;
@@ -189,6 +216,7 @@ img {
 #dropdown-toggle {
   background-color: black;
   border: none;
+  margin-top: -5px;
 }
 
 .dropdown {
@@ -206,13 +234,8 @@ img {
   height: 0;
 }
 
-#subotix-header {
-  position: absolute;
-  display: inline;
-  margin: 0;
-}
-
 #footer {
+  font-family: Quicksand;
   display: flex;
   flex-direction: row;
   background-color: black;
@@ -220,18 +243,24 @@ img {
   padding: 20px;
   font-size: xx-small;
 }
+#footer p {
+  color: #777;
+  margin: 0;
+  padding: 0;
+  line-height: 1.25rem;
+}
 
 #footer-links {
-  padding-left: 40px;
+  padding-left: 30px;
   flex: 1 1 0;
 }
 
 .footer-icon {
-  width: 70px;
+  width: 40px;
 }
 
 #individual-info {
-  flex: 1 1 0;
+  flex: 2 1 0;
 }
 
 #misc-info {
@@ -239,11 +268,11 @@ img {
 }
 
 #freepik-attr {
-  color: #999;
+  color: #777;
   margin: 0;
 }
 #freepik-attr :visited {
-  color: #999;
+  color: #777;
 }
 
 .section {

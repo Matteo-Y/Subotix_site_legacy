@@ -1,23 +1,31 @@
 #footer {
+    font-family: Quicksand;
     display: flex;
     flex-direction: row;
     background-color: black;
     margin: 0;
     padding: 20px;
     font-size: xx-small;
+    p {
+        color: $pallette-2;
+        margin: 0;
+        padding: 0;
+        line-height: 1.25rem;
+    }
 }
 
 #footer-links {
-    padding-left: 40px;
+    padding-left: 30px;
     flex: 1 1 0;
 }
 
 .footer-icon {
-    width: 70px;
+    width: 40px;
 }
 
 #individual-info {
-    flex: 1 1 0;
+    flex: 2 1 0;
+    
 }
 
 #misc-info {
