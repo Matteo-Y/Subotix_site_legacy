@@ -1,8 +1,7 @@
 .slideshow {
     background-color: black;
-    margin: 0 auto;
+    margin: 0;
     overflow: hidden;
-    margin-bottom: 50px;
 }
 
 .slideshow-slider {
@@ -18,17 +17,21 @@
 }
 
 @media only screen and (max-width: 600px) {
+    .slideshow { height: 300px }
     .slide-image { height: 300px }
 }
 
 @media only screen and (min-width: 600px) {
+    .slideshow { height: 300px }
     .slide-image { height: 300px }
 }
 
 @media only screen and (min-width: 768px) {
+    .slideshow { height: 400px }
     .slide-image { height: 400px }
 }
 
 @media only screen and (min-width: 992px) {
+    .slideshow { height: 400 }
     .slide-image { height: 400px }
 }

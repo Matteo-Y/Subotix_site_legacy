@@ -22,7 +22,7 @@ const projectData = [
 
 export default function Sawy() {
 
-    return (<>
+    return <div style={{marginBottom:"50px"}}>
         <Slideshow delay={3000}>
             <img className="slide-image" src={require("../res/pictures/misc/printers_0.jpg")} alt="sawy banner"/>
             <img className="slide-image" src={require("../res/pictures/misc/robot_hand_0.jpg")} alt="sawy banner"/>
@@ -39,5 +39,5 @@ export default function Sawy() {
         <ProjectCard title={projectData[2].title} description={projectData[2].description}>
             <video className="project-vid" src={cubeSolver} type="video/mp4" autoPlay muted loop/>
         </ProjectCard>
-    </>);
+    </div>;
 }

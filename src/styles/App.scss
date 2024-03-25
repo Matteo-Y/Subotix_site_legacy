@@ -9,7 +9,7 @@
 }
 
 $pallette-1: #333;
-$pallette-2: #ddd;
+$pallette-2: #999;
 
 @media only screen and (max-width: 600px) {
     h1 {font-size: 35px }
@@ -42,6 +42,10 @@ body {
     margin: 0;
 }
 
+#content {
+    min-height: 100vh;
+}
+
 p {
     font-size: 0.8rem;
     font-weight: bold;
@@ -71,22 +75,10 @@ img {
     object-fit: contain;
 }
 
-#footer {
-    background-color: black;
-    margin: 0;
-    padding: 10px;
-    font-size: x-small;
-}
 
-#freepik-attr {
-    color: white;
-    margin: 0;
-    :visited {
-        color: $pallette-2;
-    }
-}
 
 @import 'Header.scss';
+@import 'Footer.scss';
 @import 'Landing.scss';
 @import 'Sawy.scss';
 @import 'Slideshow.scss';

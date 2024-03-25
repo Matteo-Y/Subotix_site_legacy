@@ -8,20 +8,23 @@ import Footer from './modules/Footer';
 
 const BASE_PATH = "/";
 const SAWY_PATH = BASE_PATH + "sawy-sawy";
+const GALLERY_PATH = BASE_PATH + "gallery";
 
-export { BASE_PATH, SAWY_PATH };
+export { BASE_PATH, SAWY_PATH, GALLERY_PATH };
 
 export default function App() {
   return (
     <div className="App">
       <Header/>
-      <HashRouter>
-        <Routes>
-          <Route path={BASE_PATH} element={<Landing/>}/>
-          <Route path={SAWY_PATH} element={<Sawy/>}/>
-          <Route path={"*"} element={<PageNotFound/>}/>
-        </Routes>
-      </HashRouter>
+      <div id="content">
+        <HashRouter>
+          <Routes>
+            <Route path={BASE_PATH} element={<Landing/>}/>
+            <Route path={SAWY_PATH} element={<Sawy/>}/>
+            <Route path={"*"} element={<PageNotFound/>}/>
+          </Routes>
+        </HashRouter>
+      </div>
       <Footer/>
     </div>
   );

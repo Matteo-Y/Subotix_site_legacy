@@ -1,0 +1,33 @@
+#footer {
+    display: flex;
+    flex-direction: row;
+    background-color: black;
+    margin: 0;
+    padding: 20px;
+    font-size: xx-small;
+}
+
+#footer-links {
+    padding-left: 40px;
+    flex: 1 1 0;
+}
+
+.footer-icon {
+    width: 70px;
+}
+
+#individual-info {
+    flex: 1 1 0;
+}
+
+#misc-info {
+    flex: 1 1 0;
+}
+
+#freepik-attr {
+    color: $pallette-2;
+    margin: 0;
+    :visited {
+        color: $pallette-2;
+    }
+}
