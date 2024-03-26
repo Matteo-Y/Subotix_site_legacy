@@ -24,10 +24,10 @@ export default function Sawy() {
 
     return <div style={{marginBottom:"50px"}}>
         <Slideshow delay={3000}>
-            <img className="slide-image" src={require("../res/pictures/misc/printers_0.jpg")} alt="sawy banner"/>
-            <img className="slide-image" src={require("../res/pictures/misc/robot_hand_0.jpg")} alt="sawy banner"/>
-            <img className="slide-image" src={require("../res/pictures/misc/controller_0.jpeg")} alt="sawy banner"/>
-            <img className="slide-image" src={require("../res/pictures/misc/cube_solver_1.jpg")} alt="sawy banner"/>
+            <img className="slide-image" src={require("../res/pictures/misc/printers_0.jpg")} alt="sawy banner"  loading="lazy"/>
+            <img className="slide-image" src={require("../res/pictures/misc/robot_hand_0.jpg")} alt="sawy banner"  loading="lazy"/>
+            <img className="slide-image" src={require("../res/pictures/misc/controller_0.jpeg")} alt="sawy banner"  loading="lazy"/>
+            <img className="slide-image" src={require("../res/pictures/misc/cube_solver_1.jpg")} alt="sawy banner"  loading="lazy"/>
         </Slideshow>
 
         <ProjectCard title={projectData[0].title} description={projectData[0].description}>

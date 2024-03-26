@@ -465,6 +465,27 @@ img {
   flex-grow: 1;
 }
 
+.collage {
+  width: 90vw;
+  display: flex;
+  flex-direction: row;
+  margin: 20px auto 40px auto;
+}
+
+.collage-collumn {
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 0;
+}
+
+.collage-image {
+  margin: 2%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 96%;
+}
+
 .slideshow {
   background-color: black;
   margin: 0;

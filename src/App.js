@@ -4,6 +4,7 @@ import Header from './modules/Header';
 import Landing from './modules/Landing';
 import PageNotFound from './modules/PageNotFound';
 import Sawy from './modules/Sawy';
+import Gallery from './modules/Gallery';
 import Footer from './modules/Footer';
 
 const BASE_PATH = "/";
@@ -21,6 +22,7 @@ export default function App() {
           <Routes>
             <Route path={BASE_PATH} element={<Landing/>}/>
             <Route path={SAWY_PATH} element={<Sawy/>}/>
+            <Route path={GALLERY_PATH} element={<Gallery/>}/>
             <Route path={"*"} element={<PageNotFound/>}/>
           </Routes>
         </HashRouter>
