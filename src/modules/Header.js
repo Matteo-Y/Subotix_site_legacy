@@ -1,6 +1,6 @@
 
 import { useState, useLayoutEffect } from 'react';
-import { BASE_PATH, SAWY_PATH } from '../App.js';
+import { BASE_PATH, SAWY_PATH, SOCIALS } from '../App.js';
 
 export default function Header() {
     const [showDropdown, setShowDropdown] = useState(false);
@@ -12,18 +12,22 @@ export default function Header() {
     return (<>
         <div className="head">
             <div id="header-menu">
-                <button id="dropdown-toggle" onClick={toggleDropdown}><img style={{width: "40px"}} src={require("../res/pictures/ui/dropdown.png")} alt="menu"/></button>
-                <a href={"#" + BASE_PATH} className="header-element">home</a>
-                <a href={"#" + SAWY_PATH} className="header-element">sawysawy</a>
+                <button className="dropdown-toggle glow-on-hover" onClick={toggleDropdown}>
+                    <div style={{ top: "5px" }} className="dropdown-toggle"></div>
+                    <div style={{ top: "10px" }} className="dropdown-toggle"></div>
+                    <div style={{ top: "15px" }} className="dropdown-toggle"></div>
+                </button>
+                <a href={"#" + BASE_PATH} className="header-element glow-on-hover">home</a>
+                <a href={"#" + SAWY_PATH} className="header-element glow-on-hover">sawysawy</a>
             </div>
             <div id="header-title">
                 <h1>SUBOTIX</h1>
             </div>
             <div id="header-socials">
-                <a style={{marginRight: "20px"}} href="https://www.facebook.com/SUBOTIX" target="_blank" rel="noreferrer noopener"><img style={{width: "40px"}} src={require("../res/pictures/ui/FB-logo.webp")} alt="facebook"/></a>
-                <a style={{marginRight: "20px"}} href="https://www.instagram.com/saudisubotix/" target="_blank" rel="noreferrer noopener"><img style={{width: "40px"}} src={require("../res/pictures/ui/INSTA-logo.webp")} alt="instagram"/></a>
-                <a style={{marginRight: "20px"}} href="https://twitter.com/MSXBocaChica" target="_blank" rel="noreferrer noopener"><img style={{width: "40px"}} src={require("../res/pictures/ui/X-logo.webp")} alt="facebook"/></a>
-                <a style={{marginRight: "20px"}} href="https://www.youtube.com/@subotix" target="_blank" rel="noreferrer noopener"><img style={{width: "40px"}} src={require("../res/pictures/ui/YT-logo.webp")} alt="instagram"/></a>
+                <a style={{marginRight: "20px"}} href={SOCIALS.facebook}  target="_blank" rel="noreferrer noopener"><img style={{width: "40px"}} src={require("../res/pictures/ui/FB-logo.webp")} alt="facebook"/></a>
+                <a style={{marginRight: "20px"}} href={SOCIALS.instagram} target="_blank" rel="noreferrer noopener"><img style={{width: "40px"}} src={require("../res/pictures/ui/INSTA-logo.webp")} alt="instagram"/></a>
+                <a style={{marginRight: "20px"}} href={SOCIALS.x}         target="_blank" rel="noreferrer noopener"><img style={{width: "40px"}} src={require("../res/pictures/ui/X-logo.webp")} alt="facebook"/></a>
+                <a style={{marginRight: "20px"}} href={SOCIALS.youtube}   target="_blank" rel="noreferrer noopener"><img style={{width: "40px"}} src={require("../res/pictures/ui/YT-logo.webp")} alt="instagram"/></a>
             </div>
         </div>
         <div className={"dropdown" + (showDropdown? "" : " collapsed")}>

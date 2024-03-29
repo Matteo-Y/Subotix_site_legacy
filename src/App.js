@@ -11,7 +11,14 @@ const BASE_PATH = "/";
 const SAWY_PATH = BASE_PATH + "sawy-sawy";
 const GALLERY_PATH = BASE_PATH + "gallery";
 
-export { BASE_PATH, SAWY_PATH, GALLERY_PATH };
+const SOCIALS = {
+  facebook: "https://www.facebook.com/SUBOTIX",
+  instagram: "https://www.instagram.com/saudisubotix/",
+  x: "https://twitter.com/MSXBocaChica",
+  youtube: "https://www.youtube.com/@subotix",
+}
+
+export { BASE_PATH, SAWY_PATH, GALLERY_PATH, SOCIALS };
 
 export default function App() {
   return (

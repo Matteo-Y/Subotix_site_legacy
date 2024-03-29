@@ -115,6 +115,10 @@ const images = [
         bucket: 3,
         image: require("../res/pictures/gallery/32.jpg")
     },
+    {
+        bucket: 1,
+        image: require("../res/pictures/gallery/33.jpg")
+    },
 ]
 
 
