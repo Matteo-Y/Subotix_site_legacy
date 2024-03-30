@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.39d1df44.css",
-    "main.js": "/static/js/main.ebc9d293.js",
+    "main.css": "/static/css/main.c5cef622.css",
+    "main.js": "/static/js/main.00990f74.js",
     "static/media/sawy-sawy_commercial.mp4": "/static/media/sawy-sawy_commercial.03bc436ca826fe1bf1ee.mp4",
     "static/media/solver_video_0.mp4": "/static/media/solver_video_0.678f427ba1cf89b7b322.mp4",
     "static/media/robot_hand_0.jpg": "/static/media/robot_hand_0.9859ad8779c005b5108e.jpg",
@@ -30,6 +30,7 @@
     "static/media/49.jpg": "/static/media/49.185732aacfd975cbe7fb.jpg",
     "static/media/bg.png": "/static/media/bg.908a0a50bc58401e6f24.png",
     "static/media/52.png": "/static/media/52.b6cf83f30ed87a1948d5.png",
+    "static/media/33.jpg": "/static/media/33.91bf163c549d387b441b.jpg",
     "static/media/57.jpg": "/static/media/57.4fcb6b763a5829855c4e.jpg",
     "static/media/2.jpg": "/static/media/2.c3474498a416a817331f.jpg",
     "static/media/44.jpg": "/static/media/44.089eee6550fc3cd0e70e.jpg",
@@ -47,11 +48,11 @@
     "static/media/YT-logo.webp": "/static/media/YT-logo.0db8c8a07c9d63d01e4f.webp",
     "static/media/FB-logo.webp": "/static/media/FB-logo.ee7793fa5997b12f0afb.webp",
     "index.html": "/index.html",
-    "main.39d1df44.css.map": "/static/css/main.39d1df44.css.map",
-    "main.ebc9d293.js.map": "/static/js/main.ebc9d293.js.map"
+    "main.c5cef622.css.map": "/static/css/main.c5cef622.css.map",
+    "main.00990f74.js.map": "/static/js/main.00990f74.js.map"
   },
   "entrypoints": [
-    "static/css/main.39d1df44.css",
-    "static/js/main.ebc9d293.js"
+    "static/css/main.c5cef622.css",
+    "static/js/main.00990f74.js"
   ]
 }
