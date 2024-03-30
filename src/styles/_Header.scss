@@ -23,7 +23,7 @@
     .head { height: 50px; padding: 10px 0 0 20px; }
     #subotix-header { position: absolute; display: inline; right: calc(50% - 130px); margin: 0 }
     .dropdown { width: 30% }
-    .header-element { visibility: visible;  color: white; font-family: mono-display; font-size: 30px; margin: 0 10px 15px 10px; text-decoration: none }
+    .header-element { visibility: visible; font-family: mono-display; font-size: 30px; margin: 0 10px 15px 10px }
 }
 
 .head {
@@ -32,6 +32,7 @@
     justify-content: left;
     flex-direction: row;
     background-color: black;
+    overflow: hidden;
 }
 
 #header-menu {
@@ -111,7 +112,9 @@ button.dropdown-toggle:hover {
     height: 0;
 }
 .header-element {
-    transition: all 0.3s;
+    color: white;
+    text-decoration: none;
+    transition: all 0.3s ease-in-out;
 }
 
 .glow-on-hover {

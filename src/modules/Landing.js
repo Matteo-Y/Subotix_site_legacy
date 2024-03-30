@@ -6,7 +6,7 @@ export default function Landing() {
         <div className="landing-page">
             <div className="hero section">
                 <img style={{marginRight: "5%"}} className="banner" src={require("../res/pictures/misc/Banner_0.jpg")} alt="home banner"  loading="lazy"/>
-                <div id="about-us-textbox">
+                <div className="landing-textbox">
                     <h2>about us</h2>
                     <p>
                        we create and manufacture innovative stem<br/>
@@ -15,7 +15,7 @@ export default function Landing() {
                 </div>
             </div>
             <a className="redirect-section reverse section" href={"#" + GALLERY_PATH}>
-                <div id="gallery-textbox">
+                <div className="landing-textbox">
                     <h2>gallery</h2>
                     <p>
                         a collection of projects<br/>
@@ -32,7 +32,7 @@ export default function Landing() {
                 </div>
             </a>
             <a className="redirect-section section" href={"#" + SAWY_PATH}>
-                <div id="sawy-textbox">
+                <div className="landing-textbox">
                     <h2>sawy sawy</h2>
                     <p>
                         the perfect tool for beginners.<br/>

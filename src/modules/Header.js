@@ -23,7 +23,7 @@ export default function Header() {
             <div id="header-title">
                 <h1>SUBOTIX</h1>
             </div>
-            <div id="header-socials">
+            <div id="header-socials" className="header-element">
                 <a style={{marginRight: "20px"}} href={SOCIALS.facebook}  target="_blank" rel="noreferrer noopener"><img style={{width: "40px"}} src={require("../res/pictures/ui/FB-logo.webp")} alt="facebook"/></a>
                 <a style={{marginRight: "20px"}} href={SOCIALS.instagram} target="_blank" rel="noreferrer noopener"><img style={{width: "40px"}} src={require("../res/pictures/ui/INSTA-logo.webp")} alt="instagram"/></a>
                 <a style={{marginRight: "20px"}} href={SOCIALS.x}         target="_blank" rel="noreferrer noopener"><img style={{width: "40px"}} src={require("../res/pictures/ui/X-logo.webp")} alt="facebook"/></a>

@@ -8,13 +8,16 @@
     background-color: black;
 }
 
+.landing-textbox { 
+    padding: 0 20px 0 20px;
+}
+
 @media only screen and (max-width: 600px) {
     .hero { flex-direction: column; margin-top: 30px }
     .redirect-section { flex-direction: column-reverse }
     .contacts { height: 10rem }
     .banner {width: 100% }
-    #about-us-textbox { padding: 0 2em 0 2em; width: 100% }
-    #sawy-textbox { padding: 0 2em 0 2em; width: 100% }
+    .landing-textbox { text-align: center }
     #gallery-slideshow { width: 100% }
 }
 
@@ -23,8 +26,7 @@
     .redirect-section { flex-direction: column-reverse }
     .contacts { height: 10rem }
     .banner {width: 100% }
-    #about-us-textbox { padding: 0 2em 0 2em; width: 100% }
-    #sawy-textbox { padding: 0 2em 0 2em; width: 100% }
+    .landing-textbox { text-align: center }
     #gallery-slideshow { width: 100% }
 }
 
@@ -34,8 +36,7 @@
     .reverse { flex-direction: row-reverse }
     .contacts { height: 100px }
     .banner { width: fit-content; height: 300px }
-    #about-us-textbox { padding: 0 0 0 0; width: 30% }
-    #sawy-textbox { padding: 0 0 0 0; width: 30% }
+    .landing-textbox { text-align: left }
     #gallery-slideshow { width: 50%; margin-right: 20px }
 }
 
@@ -45,8 +46,7 @@
     .reverse { flex-direction: row-reverse }
     .contacts { height: 100px }
     .banner { height: 400px }
-    #about-us-textbox { padding: 4em 0 4em 0; width: 30% }
-    #sawy-textbox { padding: 2em 2em 2em 2em; width: 20% }
+    .landing-textbox { text-align: left }
     #gallery-slideshow { width: 50%; margin-right: 20px }
 }
 
