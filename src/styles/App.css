@@ -53,8 +53,7 @@
   }
 }
 body {
-  background-color: #333;
-  background-image: url(../res/pictures/bg.png);
+  background-color: #444;
   font-family: mono-display;
   margin: 0;
   min-width: 500px;
@@ -316,6 +315,7 @@ button.dropdown-toggle:hover .dropdown-toggle {
   flex-direction: row;
   justify-content: center;
   position: relative;
+  width: 100%;
   margin-bottom: 100px;
   background-color: black;
 }
@@ -327,7 +327,6 @@ button.dropdown-toggle:hover .dropdown-toggle {
 @media only screen and (max-width: 600px) {
   .hero {
     flex-direction: column;
-    margin-top: 30px;
   }
   .redirect-section {
     flex-direction: column-reverse;
@@ -335,7 +334,7 @@ button.dropdown-toggle:hover .dropdown-toggle {
   .contacts {
     height: 10rem;
   }
-  .banner {
+  .side-banner {
     width: 100%;
   }
   .landing-textbox {
@@ -348,7 +347,6 @@ button.dropdown-toggle:hover .dropdown-toggle {
 @media only screen and (min-width: 600px) {
   .hero {
     flex-direction: column;
-    margin-top: 30px;
   }
   .redirect-section {
     flex-direction: column-reverse;
@@ -356,7 +354,7 @@ button.dropdown-toggle:hover .dropdown-toggle {
   .contacts {
     height: 10rem;
   }
-  .banner {
+  .side-banner {
     width: 100%;
   }
   .landing-textbox {
@@ -368,9 +366,8 @@ button.dropdown-toggle:hover .dropdown-toggle {
 }
 @media only screen and (min-width: 768px) {
   .hero {
-    height: 300px;
+    height: 100vh;
     flex-direction: row;
-    margin-top: 60px;
   }
   .redirect-section {
     flex-direction: row;
@@ -381,7 +378,7 @@ button.dropdown-toggle:hover .dropdown-toggle {
   .contacts {
     height: 100px;
   }
-  .banner {
+  .side-banner {
     width: -moz-fit-content;
     width: fit-content;
     height: 300px;
@@ -396,9 +393,8 @@ button.dropdown-toggle:hover .dropdown-toggle {
 }
 @media only screen and (min-width: 992px) {
   .hero {
-    height: 400px;
+    height: 100vh;
     flex-direction: row;
-    margin-top: 60px;
   }
   .redirect-section {
     flex-direction: row;
@@ -409,7 +405,7 @@ button.dropdown-toggle:hover .dropdown-toggle {
   .contacts {
     height: 100px;
   }
-  .banner {
+  .side-banner {
     height: 400px;
   }
   .landing-textbox {
@@ -420,7 +416,14 @@ button.dropdown-toggle:hover .dropdown-toggle {
     margin-right: 20px;
   }
 }
+.side-banner {
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
 .banner {
+  height: auto;
+  width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
 }

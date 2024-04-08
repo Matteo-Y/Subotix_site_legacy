@@ -4,6 +4,7 @@
     flex-direction: row;
     justify-content: center;
     position: relative;
+    width: 100%;
     margin-bottom: 100px;
     background-color: black;
 }
@@ -13,49 +14,54 @@
 }
 
 @media only screen and (max-width: 600px) {
-    .hero { flex-direction: column; margin-top: 30px }
+    .hero {  flex-direction: column }
     .redirect-section { flex-direction: column-reverse }
     .contacts { height: 10rem }
-    .banner {width: 100% }
+    .side-banner {width: 100% }
     .landing-textbox { text-align: center }
     #gallery-slideshow { width: 100% }
 }
 
 @media only screen and (min-width: 600px) {
-    .hero { flex-direction: column; margin-top: 30px }
+    .hero { flex-direction: column }
     .redirect-section { flex-direction: column-reverse }
     .contacts { height: 10rem }
-    .banner {width: 100% }
+    .side-banner {width: 100% }
     .landing-textbox { text-align: center }
     #gallery-slideshow { width: 100% }
 }
 
 @media only screen and (min-width: 768px) {
-    .hero { height: 300px; flex-direction: row; margin-top: 60px }
+    .hero { height: 100vh; flex-direction: row }
     .redirect-section { flex-direction: row }
     .reverse { flex-direction: row-reverse }
     .contacts { height: 100px }
-    .banner { width: fit-content; height: 300px }
+    .side-banner { width: fit-content; height: 300px }
     .landing-textbox { text-align: left }
     #gallery-slideshow { width: 50%; margin-right: 20px }
 }
 
 @media only screen and (min-width: 992px) {
-    .hero { height: 400px; flex-direction: row; margin-top: 60px }
+    .hero { height: 100vh; flex-direction: row }
     .redirect-section { flex-direction: row }
     .reverse { flex-direction: row-reverse }
     .contacts { height: 100px }
-    .banner { height: 400px }
+    .side-banner { height: 400px }
     .landing-textbox { text-align: left }
     #gallery-slideshow { width: 50%; margin-right: 20px }
 }
 
-.banner {
+.side-banner {
     object-fit: cover;
 }
 
-.hero {
-    
+.banner {
+    height: auto;
+    width: 100%;
+    object-fit: cover;
+}
+
+.hero { 
     text-align: left;
 }
 

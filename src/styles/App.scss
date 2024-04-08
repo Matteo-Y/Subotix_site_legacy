@@ -8,7 +8,7 @@
     src: url(./../res/fonts/MajorMonoDisplay-Regular.ttf);
 }
 
-$pallette-1: #333;
+$pallette-1: #444;
 $pallette-2: #777;
 
 @media only screen and (max-width: 600px) {
@@ -37,7 +37,6 @@ $pallette-2: #777;
 
 body {
     background-color: $pallette-1;
-    background-image: url(../res/pictures/bg.png);
     font-family: mono-display;
     margin: 0;
     min-width: 500px;
