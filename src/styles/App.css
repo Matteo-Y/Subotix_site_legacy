@@ -8,7 +8,7 @@
 }
 @media only screen and (max-width: 600px) {
   h1 {
-    font-size: 35px;
+    font-size: 50px;
   }
   p {
     line-height: 1rem;
@@ -20,7 +20,7 @@
 }
 @media only screen and (min-width: 600px) {
   h1 {
-    font-size: 35px;
+    font-size: 50px;
   }
   p {
     line-height: 1rem;
@@ -53,10 +53,12 @@
   }
 }
 body {
-  background-color: #444;
+  background-color: black;
   font-family: mono-display;
   margin: 0;
   min-width: 500px;
+  transition: all 0.2s;
+  overflow-x: hidden;
 }
 
 #content {
@@ -109,6 +111,7 @@ img {
   }
   .header-element {
     visibility: hidden;
+    width: 0;
   }
 }
 @media only screen and (min-width: 600px) {
@@ -127,6 +130,7 @@ img {
   }
   .header-element {
     visibility: hidden;
+    width: 0;
   }
 }
 @media only screen and (min-width: 768px) {
@@ -145,6 +149,8 @@ img {
   }
   .header-element {
     visibility: hidden;
+    width: auto;
+    opacity: 0;
   }
 }
 @media only screen and (min-width: 992px) {
@@ -163,11 +169,17 @@ img {
   }
   .header-element {
     visibility: visible;
+    width: auto;
     font-family: mono-display;
-    font-size: 30px;
     margin: 0 10px 15px 10px;
+    opacity: 1;
   }
 }
+.header-element {
+  font-size: 30px;
+  transition: all 0s !important;
+}
+
 .head {
   position: relative;
   display: flex;
@@ -257,11 +269,11 @@ button.dropdown-toggle:hover .dropdown-toggle {
 .header-element {
   color: white;
   text-decoration: none;
-  transition: all 0.3s ease-in-out;
 }
 
 .glow-on-hover {
   border-radius: 2px;
+  transition: all 0.5s !important;
 }
 
 .glow-on-hover:hover {
@@ -312,132 +324,102 @@ button.dropdown-toggle:hover .dropdown-toggle {
 
 .section {
   display: flex;
-  flex-direction: row;
-  justify-content: center;
   position: relative;
   width: 100%;
-  margin-bottom: 100px;
-  background-color: black;
-}
-
-.landing-textbox {
-  padding: 0 20px 0 20px;
-}
-
-@media only screen and (max-width: 600px) {
-  .hero {
-    flex-direction: column;
-  }
-  .redirect-section {
-    flex-direction: column-reverse;
-  }
-  .contacts {
-    height: 10rem;
-  }
-  .side-banner {
-    width: 100%;
-  }
-  .landing-textbox {
-    text-align: center;
-  }
-  #gallery-slideshow {
-    width: 100%;
-  }
-}
-@media only screen and (min-width: 600px) {
-  .hero {
-    flex-direction: column;
-  }
-  .redirect-section {
-    flex-direction: column-reverse;
-  }
-  .contacts {
-    height: 10rem;
-  }
-  .side-banner {
-    width: 100%;
-  }
-  .landing-textbox {
-    text-align: center;
-  }
-  #gallery-slideshow {
-    width: 100%;
-  }
-}
-@media only screen and (min-width: 768px) {
-  .hero {
-    height: 100vh;
-    flex-direction: row;
-  }
-  .redirect-section {
-    flex-direction: row;
-  }
-  .reverse {
-    flex-direction: row-reverse;
-  }
-  .contacts {
-    height: 100px;
-  }
-  .side-banner {
-    width: -moz-fit-content;
-    width: fit-content;
-    height: 300px;
-  }
-  .landing-textbox {
-    text-align: left;
-  }
-  #gallery-slideshow {
-    width: 50%;
-    margin-right: 20px;
-  }
-}
-@media only screen and (min-width: 992px) {
-  .hero {
-    height: 100vh;
-    flex-direction: row;
-  }
-  .redirect-section {
-    flex-direction: row;
-  }
-  .reverse {
-    flex-direction: row-reverse;
-  }
-  .contacts {
-    height: 100px;
-  }
-  .side-banner {
-    height: 400px;
-  }
-  .landing-textbox {
-    text-align: left;
-  }
-  #gallery-slideshow {
-    width: 50%;
-    margin-right: 20px;
-  }
-}
-.side-banner {
-  -o-object-fit: cover;
-     object-fit: cover;
+  overflow: hidden;
+  background-color: white;
+  color: black;
 }
 
 .banner {
-  height: auto;
-  width: 100%;
+  position: absolute;
+  min-height: 100%;
+  min-width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
 }
 
-.hero {
-  text-align: left;
+.section-title {
+  font-size: 50px;
 }
 
-.redirect-section {
+.product-card {
+  position: relative;
+  background-color: #444;
+  height: 450px;
+  width: 300px;
+  margin: 0 20px 20px 0;
+  transition: all 0.2s;
+  overflow: hidden;
+}
+
+.product-card:hover {
+  transform: scale(1.05);
+}
+
+#hero-infobar {
+  position: absolute;
+  bottom: -20vh;
+  height: 40vh;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 0 0 0 20%;
+  color: white;
+  z-index: 1;
+  transition: 0.3s;
+}
+
+#hero-infobar:hover {
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.9);
+}
+
+#product-section {
+  background-color: black;
+  flex-direction: column;
+}
+
+#product-card-display {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
   justify-content: center;
-  text-align: left;
-  text-decoration: none;
+  margin-top: 20px;
+  padding: 20px 0 0 0;
 }
 
+#sawy-section {
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 20px;
+  padding: 20vh 0 20vh 0;
+}
+
+@media only screen and (max-width: 600px) {
+  #hero-section {
+    height: 70vh;
+    flex-direction: column;
+  }
+}
+@media only screen and (min-width: 600px) {
+  #hero-section {
+    height: 70vh;
+    flex-direction: column;
+  }
+}
+@media only screen and (min-width: 768px) {
+  #hero-section {
+    height: 100vh;
+    flex-direction: row;
+  }
+}
+@media only screen and (min-width: 992px) {
+  #hero-section {
+    height: 100vh;
+    flex-direction: row;
+  }
+}
 @media only screen and (max-width: 600px) {
   .project-card {
     flex-direction: column-reverse;

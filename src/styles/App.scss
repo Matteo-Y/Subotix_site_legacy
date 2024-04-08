@@ -12,13 +12,13 @@ $pallette-1: #444;
 $pallette-2: #777;
 
 @media only screen and (max-width: 600px) {
-    h1 {font-size: 35px }
+    h1 {font-size: 50px }
     p { line-height: 1rem; padding-bottom: 30px }
     h2 { margin-bottom: 2rem }
 }
 
 @media only screen and (min-width: 600px) {
-    h1 {font-size: 35px }
+    h1 {font-size: 50px }
     p { line-height: 1rem; padding-bottom: 30px }
     h2 { margin-bottom: 2rem }
 }
@@ -36,10 +36,12 @@ $pallette-2: #777;
 }
 
 body {
-    background-color: $pallette-1;
+    background-color: black;
     font-family: mono-display;
     margin: 0;
     min-width: 500px;
+    transition: all 0.2s;
+    overflow-x: hidden;
 }
 
 #content {

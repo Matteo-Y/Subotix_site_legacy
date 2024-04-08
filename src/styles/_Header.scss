@@ -2,28 +2,33 @@
     .head { height: 50px; padding: 10px 0 0 20px; }
     #subotix-header { position: absolute; display: inline; right: calc(50% - 100px); margin: 0 }
     .dropdown { width: 100% }
-    .header-element { visibility: hidden }
+    .header-element { visibility: hidden; width: 0 }
 }
 
 @media only screen and (min-width: 600px) {
     .head { height: 50px; padding: 10px 0 0 20px; }
     #subotix-header { position: absolute; display: inline; right: calc(50% - 100px); margin: 0 }
     .dropdown { width: 100% }
-    .header-element { visibility: hidden }
+    .header-element { visibility: hidden; width: 0 }
 }
 
 @media only screen and (min-width: 768px) {
     .head { height: 50px; padding: 10px 0 0 20px; }
     #subotix-header { position: absolute; display: inline; right: calc(50% - 100px); margin: 0 }
     .dropdown { width: 30% }
-    .header-element { visibility: hidden }
+    .header-element { visibility: hidden; width: auto; opacity: 0 }
 }
 
 @media only screen and (min-width: 992px) {
     .head { height: 50px; padding: 10px 0 0 20px; }
     #subotix-header { position: absolute; display: inline; right: calc(50% - 130px); margin: 0 }
     .dropdown { width: 30% }
-    .header-element { visibility: visible; font-family: mono-display; font-size: 30px; margin: 0 10px 15px 10px }
+    .header-element { visibility: visible; width: auto; font-family: mono-display; margin: 0 10px 15px 10px; opacity: 1 }
+}
+
+.header-element {
+    font-size: 30px;
+    transition: all 0s !important;
 }
 
 .head {
@@ -114,11 +119,11 @@ button.dropdown-toggle:hover {
 .header-element {
     color: white;
     text-decoration: none;
-    transition: all 0.3s ease-in-out;
 }
 
 .glow-on-hover {
     border-radius: 2px;
+    transition: all 0.5s !important;
 }
 
 .glow-on-hover:hover {

@@ -16,7 +16,7 @@ export default function Footer() {
             </p>
         </div>
         <div id="misc-info">
-            <p id="freepik-attr">Assets: ibrandify <a href="https://www.freepik.com/free-vector/mechanical-tools-icons-collection_964718.htm#query=wrench%20svg&position=28&from_view=keyword&track=ais&uuid=ad29bfcb-470d-4891-95fa-9c12fbfc4e7a">on Freepik</a></p>
+        
         </div>
     </div>)
 }
