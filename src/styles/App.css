@@ -468,7 +468,7 @@ button.dropdown-toggle:hover .dropdown-toggle {
 }
 @media only screen and (min-width: 768px) {
   #hero-section {
-    height: 100vh;
+    height: 80vh;
     flex-direction: row;
   }
   #hero-infobar {
@@ -486,7 +486,7 @@ button.dropdown-toggle:hover .dropdown-toggle {
 }
 @media only screen and (min-width: 992px) {
   #hero-section {
-    height: 100vh;
+    height: 80vh;
     flex-direction: row;
   }
   #hero-infobar {
