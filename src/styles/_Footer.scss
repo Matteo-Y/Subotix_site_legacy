@@ -11,6 +11,7 @@
         margin: 0;
         padding: 0;
         line-height: 1.25rem;
+        font-size: 1.7em;
     }
 }
 
@@ -30,12 +31,4 @@
 
 #misc-info {
     flex: 1 1 0;
-}
-
-#freepik-attr {
-    color: $pallette-2;
-    margin: 0;
-    :visited {
-        color: $pallette-2;
-    }
 }

@@ -25,14 +25,14 @@ export default function Landing() {
             </div>
             <a id="sawy-section" className="section" href={"#" + SAWY_PATH}>
                 <div style={{display: "flex", flexDirection: "row", width: "100%"}}>
-                    <div style={{display: "flex", flexDirection: "collumn", width: "33%"}}>
+                    <div style={{display: "flex", flexDirection: "collumn", flex: "1 1 0"}}>
                         <img className="sawy-image" src={require("../res/pictures/gallery/3.jpg")} alt=""/>
                     </div>
-                    <div style={{display: "flex", flexDirection: "collumn", width: "33%"}}>
+                    <div style={{display: "flex", flexDirection: "collumn", flex: "1 1 0"}}>
                         <img className="sawy-image" src={require("../res/pictures/gallery/40.jpg")} alt=""/>
                     </div>
-                    <div style={{display: "flex", flexDirection: "collumn", width: "33%"}}>
-                        <img className="sawy-image" src={require("../res/pictures/gallery/5.jpg")} alt=""/>
+                    <div style={{display: "flex", flexDirection: "collumn", flex: "1 1 0"}}>
+                        <img className="sawy-image" src={require("../res/pictures/gallery/61.jpg")} alt=""/>
                     </div>
                 </div>
                 <div id="sawy-infobar">

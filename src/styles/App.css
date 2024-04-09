@@ -295,6 +295,7 @@ button.dropdown-toggle:hover .dropdown-toggle {
   margin: 0;
   padding: 0;
   line-height: 1.25rem;
+  font-size: 1.7em;
 }
 
 #footer-links {
@@ -312,14 +313,6 @@ button.dropdown-toggle:hover .dropdown-toggle {
 
 #misc-info {
   flex: 1 1 0;
-}
-
-#freepik-attr {
-  color: #777;
-  margin: 0;
-}
-#freepik-attr :visited {
-  color: #777;
 }
 
 .section {
@@ -365,9 +358,9 @@ button.dropdown-toggle:hover .dropdown-toggle {
 .sawy-image {
   -o-object-fit: cover;
      object-fit: cover;
-  width: 100%;
+  width: 96%;
   height: auto;
-  margin: 10px;
+  margin: 2%;
 }
 
 #hero-infobar {
@@ -411,6 +404,7 @@ button.dropdown-toggle:hover .dropdown-toggle {
   flex-direction: row;
   justify-content: center;
   margin-top: 1px;
+  padding-top: 50px;
   height: 500px;
 }
 

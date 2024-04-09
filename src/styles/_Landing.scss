@@ -39,9 +39,9 @@
 
 .sawy-image {
     object-fit: cover;
-    width: 100%;
+    width: 96%;
     height: auto;
-    margin: 10px;
+    margin: 2%;
 }
 
 #hero-infobar {
@@ -85,6 +85,7 @@
     flex-direction: row;
     justify-content: center;
     margin-top: 1px;
+    padding-top: 50px;
     height: 500px
 }
 
