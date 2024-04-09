@@ -53,7 +53,7 @@
   }
 }
 body {
-  background-color: black;
+  background-color: white;
   font-family: mono-display;
   margin: 0;
   min-width: 500px;
@@ -329,6 +329,11 @@ button.dropdown-toggle:hover .dropdown-toggle {
   overflow: hidden;
   background-color: white;
   color: black;
+  transition: transform 0.3s;
+}
+
+.section:hover {
+  transform: scale(1.01);
 }
 
 .banner {
@@ -357,16 +362,26 @@ button.dropdown-toggle:hover .dropdown-toggle {
   transform: scale(1.05);
 }
 
+.sawy-image {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  height: auto;
+  margin: 10px;
+}
+
 #hero-infobar {
   position: absolute;
   bottom: -20vh;
   height: 40vh;
   width: 100%;
   background-color: rgba(0, 0, 0, 0.7);
-  padding: 0 0 0 20%;
   color: white;
   z-index: 1;
   transition: 0.3s;
+}
+#hero-infobar h3 {
+  margin-bottom: 50px;
 }
 
 #hero-infobar:hover {
@@ -377,6 +392,8 @@ button.dropdown-toggle:hover .dropdown-toggle {
 #product-section {
   background-color: black;
   flex-direction: column;
+  padding-bottom: 50px;
+  margin-top: 1px;
 }
 
 #product-card-display {
@@ -390,10 +407,33 @@ button.dropdown-toggle:hover .dropdown-toggle {
 }
 
 #sawy-section {
+  background-color: black;
   flex-direction: row;
   justify-content: center;
-  margin-top: 20px;
-  padding: 20vh 0 20vh 0;
+  margin-top: 1px;
+  height: 500px;
+}
+
+#sawy-infobar {
+  position: absolute;
+  bottom: -20vh;
+  height: 40vh;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: white;
+  z-index: 1;
+  transition: 0.3s;
+}
+#sawy-infobar h2 {
+  margin-bottom: 30px;
+}
+#sawy-infobar h3 {
+  margin-bottom: 50px;
+}
+
+#sawy-infobar:hover {
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.9);
 }
 
 @media only screen and (max-width: 600px) {
@@ -401,11 +441,35 @@ button.dropdown-toggle:hover .dropdown-toggle {
     height: 70vh;
     flex-direction: column;
   }
+  #hero-infobar {
+    padding-left: 5%;
+  }
+  #hero-infobar h3 {
+    font-size: 1rem;
+  }
+  #sawy-infobar {
+    padding-left: 5%;
+  }
+  #sawy-infobar h3 {
+    font-size: 1.2rem;
+  }
 }
 @media only screen and (min-width: 600px) {
   #hero-section {
     height: 70vh;
     flex-direction: column;
+  }
+  #hero-infobar {
+    padding-left: 5%;
+  }
+  #hero-infobar h3 {
+    font-size: 1.3rem;
+  }
+  #sawy-infobar {
+    padding-left: 5%;
+  }
+  #sawy-infobar h3 {
+    font-size: 1.3rem;
   }
 }
 @media only screen and (min-width: 768px) {
@@ -413,11 +477,35 @@ button.dropdown-toggle:hover .dropdown-toggle {
     height: 100vh;
     flex-direction: row;
   }
+  #hero-infobar {
+    padding-left: 5%;
+  }
+  #hero-infobar h3 {
+    font-size: 1.5rem;
+  }
+  #sawy-infobar {
+    padding-left: 5%;
+  }
+  #sawy-infobar h3 {
+    font-size: 1.5rem;
+  }
 }
 @media only screen and (min-width: 992px) {
   #hero-section {
     height: 100vh;
     flex-direction: row;
+  }
+  #hero-infobar {
+    padding-left: 10%;
+  }
+  #hero-infobar h3 {
+    font-size: 2rem;
+  }
+  #sawy-infobar {
+    padding-left: 5%;
+  }
+  #sawy-infobar h3 {
+    font-size: 2rem;
   }
 }
 @media only screen and (max-width: 600px) {
