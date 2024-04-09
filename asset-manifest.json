@@ -1,17 +1,11 @@
 {
   "files": {
-    "main.css": "/static/css/main.c5cef622.css",
-    "main.js": "/static/js/main.00990f74.js",
-    "static/media/sawy-sawy_commercial.mp4": "/static/media/sawy-sawy_commercial.03bc436ca826fe1bf1ee.mp4",
-    "static/media/solver_video_0.mp4": "/static/media/solver_video_0.678f427ba1cf89b7b322.mp4",
-    "static/media/robot_hand_0.jpg": "/static/media/robot_hand_0.9859ad8779c005b5108e.jpg",
-    "static/media/printers_0.jpg": "/static/media/printers_0.b510460db08148a55756.jpg",
-    "static/media/piano_video_0.mp4": "/static/media/piano_video_0.177237dc771dbf360800.mp4",
-    "static/media/robot_hand_1.mp4": "/static/media/robot_hand_1.a4f0228783ca7de0b011.mp4",
-    "static/media/controller_0.jpeg": "/static/media/controller_0.3fc4d2d3bb89b9aea7d5.jpeg",
+    "main.css": "/static/css/main.a0626142.css",
+    "main.js": "/static/js/main.28450073.js",
+    "static/media/65.jpg": "/static/media/65.457f46a5bd52c6e1b5ee.jpg",
     "static/media/26.jpg": "/static/media/26.edb091428658198f3255.jpg",
-    "static/media/Banner_0.jpg": "/static/media/Banner_0.545520f8299beabeb6e9.jpg",
     "static/media/17.jpg": "/static/media/17.bcc75b175490bdfcd84a.jpg",
+    "static/media/61.jpg": "/static/media/61.f30783c4e6db7f9369b7.jpg",
     "static/media/31.jpg": "/static/media/31.c0c6f32a9a494b41cc71.jpg",
     "static/media/20.jpg": "/static/media/20.a001f19662e3c98d65c2.jpg",
     "static/media/58.jpg": "/static/media/58.a23760288c4860e6b06c.jpg",
@@ -23,12 +17,10 @@
     "static/media/15.jpg": "/static/media/15.205e7dbe8a3e44d9849c.jpg",
     "static/media/32.jpg": "/static/media/32.c51ba1e155de49adf8c9.jpg",
     "static/media/14.jpg": "/static/media/14.64109305828e7d066f8b.jpg",
-    "static/media/cube_solver_1.jpg": "/static/media/cube_solver_1.4881b7619b2331745e76.jpg",
     "static/media/56.jpg": "/static/media/56.22efa0e26bdaa7358bb1.jpg",
     "static/media/60.jpg": "/static/media/60.c7606f05dc9aa4f3b6be.jpg",
     "static/media/59.jpg": "/static/media/59.e0e0e22aa0562de91851.jpg",
     "static/media/49.jpg": "/static/media/49.185732aacfd975cbe7fb.jpg",
-    "static/media/bg.png": "/static/media/bg.908a0a50bc58401e6f24.png",
     "static/media/52.png": "/static/media/52.b6cf83f30ed87a1948d5.png",
     "static/media/33.jpg": "/static/media/33.91bf163c549d387b441b.jpg",
     "static/media/57.jpg": "/static/media/57.4fcb6b763a5829855c4e.jpg",
@@ -36,11 +28,14 @@
     "static/media/44.jpg": "/static/media/44.089eee6550fc3cd0e70e.jpg",
     "static/media/40.jpg": "/static/media/40.b858442e3c6a9cbde25c.jpg",
     "static/media/MajorMonoDisplay-Regular.ttf": "/static/media/MajorMonoDisplay-Regular.3383070b9a8c70af4a86.ttf",
+    "static/media/3.jpg": "/static/media/3.0d1326741fe36d345248.jpg",
+    "static/media/64.jpg": "/static/media/64.6a926c597df724431b8d.jpg",
     "static/media/38.jpg": "/static/media/38.5d6cc89eab63fbcaa698.jpg",
     "static/media/47.jpg": "/static/media/47.fbaa0750d684da99d220.jpg",
     "static/media/46.jpg": "/static/media/46.a9043c153c6c269ff597.jpg",
     "static/media/48.jpg": "/static/media/48.d7960fd7e89b64ae41c4.jpg",
     "static/media/12.jpg": "/static/media/12.d5fd9ab51e21cfc91619.jpg",
+    "static/media/63.jpg": "/static/media/63.f4bab364d9586edbb8f9.jpg",
     "static/media/5.jpg": "/static/media/5.70ee436337dd912eca3d.jpg",
     "static/media/Aerospace.ttf": "/static/media/Aerospace.0342d6f9ff59f84eda4b.ttf",
     "static/media/X-logo.webp": "/static/media/X-logo.4c8a3b47c6f341cc768e.webp",
@@ -48,11 +43,11 @@
     "static/media/YT-logo.webp": "/static/media/YT-logo.0db8c8a07c9d63d01e4f.webp",
     "static/media/FB-logo.webp": "/static/media/FB-logo.ee7793fa5997b12f0afb.webp",
     "index.html": "/index.html",
-    "main.c5cef622.css.map": "/static/css/main.c5cef622.css.map",
-    "main.00990f74.js.map": "/static/js/main.00990f74.js.map"
+    "main.a0626142.css.map": "/static/css/main.a0626142.css.map",
+    "main.28450073.js.map": "/static/js/main.28450073.js.map"
   },
   "entrypoints": [
-    "static/css/main.c5cef622.css",
-    "static/js/main.00990f74.js"
+    "static/css/main.a0626142.css",
+    "static/js/main.28450073.js"
   ]
 }
