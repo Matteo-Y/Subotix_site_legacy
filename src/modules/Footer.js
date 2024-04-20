@@ -3,7 +3,7 @@ import { SOCIALS } from "../App"
 export default function Footer() {
     return (<div id="footer">
         <div id="footer-links">
-            <p style={{paddingLeft: "10px", marginBottom: "10px"}}>Follow us on: <br/></p>
+            <p style={{paddingLeft: "10px", marginBottom: "10px"}}>follow us on: <br/></p>
             <a style={{marginRight: "10px"}} href={SOCIALS.facebook}  target="_blank" rel="noreferrer noopener"><img className="footer-icon" src={require("../res/pictures/ui/FB-logo.webp")} alt="facebook"/></a>
             <a style={{marginRight: "10px"}} href={SOCIALS.instagram} target="_blank" rel="noreferrer noopener"><img className="footer-icon" src={require("../res/pictures/ui/INSTA-logo.webp")} alt="instagram"/></a>
             <a style={{marginRight: "10px"}} href={SOCIALS.x}         target="_blank" rel="noreferrer noopener"><img className="footer-icon" src={require("../res/pictures/ui/X-logo.webp")} alt="instagram"/></a>
@@ -11,15 +11,15 @@ export default function Footer() {
         </div>
         <div id="individual-info">
             <p>
-                E-mail: subotix.llc@gmail.com
+                e-mail: subotix.llc@gmail.com
             </p>
             <br/>
             <p>
-                Phone: 832-273-5548
+                phone: 832-273-5548
             </p>
         </div>
         <div id="misc-info">
-            <p>© Subotix LLC</p>
+            <p>©subotix llc</p>
         </div>
     </div>)
 }
