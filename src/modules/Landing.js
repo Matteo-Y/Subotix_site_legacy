@@ -1,5 +1,4 @@
 import { SAWY_PATH, GALLERY_PATH } from "../App";
-import Collage from "./Collage";
 import ProductCard from "./ProductCard";
 
 export default function Landing() {
@@ -38,6 +37,13 @@ export default function Landing() {
                     <h2>sawy-sawy</h2>
                     <h3>out of the box ready microcontroller</h3>
                     <p>The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.</p>
+                </div>
+            </a>
+            <a id="locations-section" className="section" href={"#" + SAWY_PATH}>
+                <img className="banner" src={require("../res/pictures/gallery/68.jpg")} alt=""/>
+                <div id="locations-infobar">
+                    <h2>locations</h2>
+                    <h3>find us</h3>
                 </div>
             </a>
         </div>
