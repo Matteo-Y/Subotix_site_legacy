@@ -1,4 +1,4 @@
-import { SAWY_PATH, GALLERY_PATH, BASE_PATH } from "../App";
+import { BASE_PATH, SAWY_PATH } from "../App";
 import ProductCard from "./ProductCard";
 
 export default function Landing() {
@@ -10,7 +10,7 @@ export default function Landing() {
             <div id="hero-section" className="section">
                 <img className="banner" src={require("../res/pictures/gallery/48.jpg")} alt="home banner"  loading="lazy"/>
                 <div id="hero-infobar" className="infobar">
-                    <div>
+                    <div style={{ height: "170px" }}>
                         <h2>subotix</h2>
                         <h3 style={{ width: "80%" }}>providing a next-gen education</h3>
                     </div>
@@ -39,7 +39,7 @@ export default function Landing() {
                     </div>
                 </div>
                 <div id="sawy-infobar" className="infobar">
-                    <div>
+                    <div style={{ height: "170px" }}>
                         <h2>sawy-sawy</h2>
                         <h3>out of the box ready microcontroller</h3>
                     </div>
@@ -49,7 +49,7 @@ export default function Landing() {
             <a id="locations-section" className="section" href={"#" + BASE_PATH}>
                 <img className="banner" src={require("../res/pictures/gallery/68.jpg")} alt=""/>
                 <div id="locations-infobar" className="infobar">
-                    <div>
+                    <div style={{ height: "170px" }}>
                         <h2>locations</h2>
                         <h3>find us</h3>
                     </div>

@@ -9,6 +9,7 @@ import ScrollToTop from './modules/ScrollToTop';
 
 const BASE_PATH = "/";
 const SAWY_PATH = BASE_PATH + "sawy-sawy";
+const SAWY_APPS_PATH = SAWY_PATH + "apps";
 
 const SOCIALS = {
   facebook: "https://www.facebook.com/SUBOTIX",
@@ -29,6 +30,7 @@ export default function App() {
           <Routes>
             <Route path={BASE_PATH} element={<Landing/>}/>
             <Route path={SAWY_PATH} element={<Sawy/>}/>
+            <Route path={SAWY_APPS_PATH} element={<Sawy/>}/>
             <Route path={"*"} element={<PageNotFound/>}/>
           </Routes>
         </HashRouter>

@@ -10,6 +10,7 @@
 
 $pallette-1: #444;
 $pallette-2: #777;
+$pallette-3: #f9f9f9;
 
 @media only screen and (max-width: 600px) {
     h1 {font-size: 50px }
@@ -36,7 +37,7 @@ $pallette-2: #777;
 }
 
 body {
-    background-color: white;
+    background-color: $pallette-3;
     font-family: mono-display;
     margin: 0;
     min-width: 500px;

@@ -53,7 +53,7 @@
   }
 }
 body {
-  background-color: white;
+  background-color: #f9f9f9;
   font-family: mono-display;
   margin: 0;
   min-width: 500px;
@@ -325,7 +325,7 @@ button.dropdown-toggle:hover .dropdown-toggle {
   position: relative;
   width: 100%;
   overflow: hidden;
-  background-color: white;
+  background-color: #f9f9f9;
   color: black;
   transition: transform 0.3s;
 }
@@ -500,10 +500,64 @@ button.dropdown-toggle:hover .dropdown-toggle {
   max-height: 70vh;
 }
 
-#projects {
+#showcase {
+  flex-direction: row;
   height: 500px;
+  padding: 50px;
+}
+#showcase h2 {
+  color: black;
 }
 
+#content-section {
+  flex-direction: row;
+  justify-content: center;
+  padding-bottom: 70px;
+}
+
+.sawy-sub-section {
+  position: relative;
+  display: flex;
+  background-color: black;
+  width: 25%;
+  height: 400px;
+  margin: 70px auto 0 auto;
+  border-radius: 5px;
+  transition: all 0.25s;
+  overflow: hidden;
+}
+
+.sawy-sub-section:hover {
+  transform: scale(1.25);
+}
+
+@media only screen and (max-width: 600px) {
+  #content-section {
+    flex-direction: column;
+  }
+  .sawy-sub-section {
+    width: 75%;
+    height: 400px;
+  }
+}
+@media only screen and (min-width: 600px) {
+  #content-section {
+    flex-direction: column;
+  }
+  .sawy-sub-section {
+    width: 75%;
+    height: 400px;
+  }
+}
+@media only screen and (min-width: 1000px) {
+  #content-section {
+    flex-direction: row;
+  }
+  .sawy-sub-section {
+    width: 25%;
+    height: 400px;
+  }
+}
 .collage {
   width: 90vw;
   display: flex;
