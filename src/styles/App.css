@@ -373,6 +373,7 @@ button.dropdown-toggle:hover .dropdown-toggle {
   transition: 0.3s;
 }
 .infobar h2 {
+  margin-top: 20px;
   margin-bottom: 30px;
 }
 .infobar h3 {
@@ -436,23 +437,14 @@ button.dropdown-toggle:hover .dropdown-toggle {
     height: 70vh;
     flex-direction: column;
   }
-  #hero-infobar {
+  .infobar {
     padding-left: 5%;
   }
-  #hero-infobar h3 {
-    font-size: 1rem;
-  }
-  #sawy-infobar {
-    padding-left: 5%;
-  }
-  #sawy-infobar h3 {
+  .infobar h3 {
     font-size: 1.2rem;
   }
-  #locations-infobar {
-    padding-left: 5%;
-  }
-  #locations-infobar h3 {
-    font-size: 1.2rem;
+  .infobar p {
+    width: 90%;
   }
 }
 @media only screen and (min-width: 600px) {
@@ -460,23 +452,14 @@ button.dropdown-toggle:hover .dropdown-toggle {
     height: 70vh;
     flex-direction: column;
   }
-  #hero-infobar {
+  .infobar {
     padding-left: 5%;
   }
-  #hero-infobar h3 {
-    font-size: 1.3rem;
-  }
-  #sawy-infobar {
-    padding-left: 5%;
-  }
-  #sawy-infobar h3 {
-    font-size: 1.3rem;
-  }
-  #locations-infobar {
-    padding-left: 5%;
-  }
-  #locations-infobar h3 {
+  .infobar h3 {
     font-size: 1.2rem;
+  }
+  .infobar p {
+    width: 90%;
   }
 }
 @media only screen and (min-width: 768px) {
@@ -484,23 +467,14 @@ button.dropdown-toggle:hover .dropdown-toggle {
     height: 80vh;
     flex-direction: row;
   }
-  #hero-infobar {
+  .infobar {
     padding-left: 5%;
   }
-  #hero-infobar h3 {
+  .infobar h3 {
     font-size: 1.2rem;
   }
-  #sawy-infobar {
-    padding-left: 5%;
-  }
-  #sawy-infobar h3 {
-    font-size: 1.2rem;
-  }
-  #locations-infobar {
-    padding-left: 5%;
-  }
-  #locations-infobar h3 {
-    font-size: 1.2rem;
+  .infobar p {
+    width: 60%;
   }
 }
 @media only screen and (min-width: 992px) {
@@ -508,23 +482,14 @@ button.dropdown-toggle:hover .dropdown-toggle {
     height: 80vh;
     flex-direction: row;
   }
-  #hero-infobar {
-    padding-left: 10%;
-  }
-  #hero-infobar h3 {
-    font-size: 1.5rem;
-  }
-  #sawy-infobar {
+  .infobar {
     padding-left: 5%;
   }
-  #sawy-infobar h3 {
-    font-size: 1.5rem;
+  .infobar h3 {
+    font-size: 1.2rem;
   }
-  #locations-infobar {
-    padding-left: 5%;
-  }
-  #locations-infobar h3 {
-    font-size: 1.5rem;
+  .infobar p {
+    width: 60%;
   }
 }
 @media only screen and (max-width: 600px) {
