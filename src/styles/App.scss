@@ -44,10 +44,6 @@ body {
     overflow-x: hidden;
 }
 
-#content {
-    min-height: 100vh;
-}
-
 p {
     font-size: 0.8rem;
     font-weight: bold;
@@ -80,6 +76,10 @@ h3 {
 
 img {
     object-fit: contain;
+}
+
+#content {
+    min-height: 100vh;
 }
 
 

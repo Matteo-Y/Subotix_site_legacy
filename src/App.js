@@ -5,6 +5,7 @@ import Landing from './modules/Landing';
 import PageNotFound from './modules/PageNotFound';
 import Sawy from './modules/Sawy';
 import Footer from './modules/Footer';
+import ScrollToTop from './modules/ScrollToTop';
 
 const BASE_PATH = "/";
 const SAWY_PATH = BASE_PATH + "sawy-sawy";
@@ -24,6 +25,7 @@ export default function App() {
       <Header/>
       <div id="content">
         <HashRouter>
+          <ScrollToTop/>
           <Routes>
             <Route path={BASE_PATH} element={<Landing/>}/>
             <Route path={SAWY_PATH} element={<Sawy/>}/>
