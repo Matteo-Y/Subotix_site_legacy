@@ -6,7 +6,7 @@ export default function Sawy() {
             <video style={{maxWidth: "100%"}} src={require("../res/videos/sawy-sawy_commercial.mp4")} type="video/mp4" autoPlay muted loop/>
         </div>
         <div id="showcase" className="section">
-            <div style={{width: "30%", marginLeft: "20%", padding: "70px 0 0 70px"}}>
+            <div id="showcase-textbox">
                 <h2>the sawy-sawy</h2>
                 <ul>
                     <li>accessible learning for all ages</li><br/>
@@ -18,7 +18,7 @@ export default function Sawy() {
         </div>
         <div id="content-section" className="section">
             <div id="webapp-redirect" className="sawy-sub-section">
-                <img style={{width: "100%", objectFit: "cover"}} src={require("../res/pictures/misc/Screenshot (2).png")} alt=""/>
+                <img style={{width: "100%", objectFit: "cover"}} src={require("../res/pictures/gallery/62.jpg")} alt=""/>
                 <div style={{position: "absolute", bottom: "0", backgroundColor: "black", width: "100%", textAlign: "center"}}>
                     <h2>webapps</h2>
                 </div>

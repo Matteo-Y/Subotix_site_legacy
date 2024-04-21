@@ -583,9 +583,36 @@ button.dropdown-toggle:hover .dropdown-toggle {
   flex-direction: row;
   height: 500px;
   padding: 50px;
+  transition: all 0.3s;
 }
 #showcase h2 {
   color: black;
+}
+#showcase img {
+  transition: all 0.3s;
+}
+
+#showcase:hover {
+  transform: scale(1.05);
+}
+#showcase:hover img {
+  transform: scale(1.1) translateX(20px);
+}
+#showcase:hover #showcase-textbox {
+  color: white;
+  background-color: black;
+}
+#showcase:hover #showcase-textbox h2 {
+  color: white;
+}
+
+#showcase-textbox {
+  width: 30%;
+  margin-left: 10%;
+  margin-right: 20px;
+  padding: 70px 0 0 70px;
+  border-radius: 50px;
+  transition: all 0.3s;
 }
 
 #content-section {
@@ -601,13 +628,13 @@ button.dropdown-toggle:hover .dropdown-toggle {
   width: 25%;
   height: 400px;
   margin: 70px auto 0 auto;
-  border-radius: 5px;
+  border-radius: 20px;
   transition: all 0.25s;
   overflow: hidden;
 }
 
 .sawy-sub-section:hover {
-  transform: scale(1.25);
+  transform: scale(1.2);
 }
 
 @media only screen and (max-width: 600px) {

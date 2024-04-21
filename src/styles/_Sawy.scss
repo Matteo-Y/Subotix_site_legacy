@@ -10,10 +10,38 @@
     flex-direction: row;
     height: 500px;
     padding: 50px;
+    transition: all 0.3s;
     h2 {
         color: black;
     }
+    img {
+        transition: all 0.3s;
+    }
 }
+
+#showcase:hover {
+    transform: scale(1.05);
+    img {
+        transform: scale(1.1) translateX(20px);
+    }
+    #showcase-textbox {
+        color: white;
+        background-color: black;
+        h2 {
+            color: white;
+        }
+    }
+}
+
+#showcase-textbox {
+    width: 30%;
+    margin-left: 10%;
+    margin-right: 20px;
+    padding: 70px 0 0 70px;
+    border-radius: 50px;
+    transition: all 0.3s;
+}
+
 
 #content-section {
     flex-direction: row;
@@ -29,13 +57,13 @@
     width: 25%;
     height: 400px;
     margin: 70px auto 0 auto;
-    border-radius: 5px;
+    border-radius: 20px;
     transition: all 0.25s;
     overflow: hidden;
 }
 
 .sawy-sub-section:hover {
-    transform: scale(1.25);
+    transform: scale(1.20);
 }
 
 @media only screen and (max-width: 600px) {
