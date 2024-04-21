@@ -199,12 +199,14 @@ img {
 }
 
 #header-menu {
+  overflow: visible;
   flex: 1 1 0;
   display: flex;
   justify-content: left;
 }
 
 #header-title {
+  overflow: visible;
   flex: 1 1 0;
   display: flex;
   justify-content: center;
@@ -349,7 +351,6 @@ button.dropdown-toggle:hover .dropdown-toggle {
 
 .product-card {
   position: relative;
-  background-color: #444;
   height: 450px;
   width: 300px;
   margin: 0 20px 20px 0;
@@ -392,7 +393,9 @@ button.dropdown-toggle:hover .dropdown-toggle {
 }
 
 .hero-link {
-  color: #555;
+  color: #999;
+  width: 25%;
+  text-align: center;
   margin: auto;
   border-radius: 1em;
   padding: 1em;
@@ -402,12 +405,25 @@ button.dropdown-toggle:hover .dropdown-toggle {
 .hero-link:hover {
   color: black;
   background-color: #f9f9f9;
-  transform: translateY(-2px) scale(1.05);
+  transform: translateY(-4px) scale(1.05);
 }
 
 #hero-section {
   margin-top: 2px;
   margin-bottom: 3px;
+}
+
+#hero-section:hover #hero-blank {
+  transform: scale(1.05);
+}
+#hero-section:hover #hero-paragraph-div {
+  background-color: #f9f9f9;
+}
+#hero-section:hover #hero-paragraph-div p {
+  color: black;
+}
+#hero-section:hover #hero-links-div {
+  height: 230px;
 }
 
 #hero-blank {
@@ -416,9 +432,10 @@ button.dropdown-toggle:hover .dropdown-toggle {
   flex-direction: column;
   overflow: visible;
   z-index: 1;
-  box-shadow: 0 0 300px 250px black;
+  box-shadow: 0 0 300px 300px black;
   background-color: black;
   height: 100%;
+  transition: all 0.3s;
 }
 
 #hero-title-div {
@@ -431,30 +448,30 @@ button.dropdown-toggle:hover .dropdown-toggle {
 }
 
 #hero-paragraph-div {
-  background-color: #f9f9f9;
+  background-color: #222;
   height: 100px;
   width: 320px;
   border-radius: 1em;
   padding: 0 20px 20px 20px;
+  transition: all 0.3s;
 }
 #hero-paragraph-div p {
-  color: black;
+  color: #999;
   font-size: small;
-  line-height: 1.4;
-  font-weight: light;
+  line-height: 1.5;
 }
 
 #hero-links-div {
   display: flex;
   flex-direction: row;
   position: absolute;
-  bottom: 4em;
-  background-color: #111;
-  width: 380px;
-  height: 2.5em;
+  bottom: 130px;
+  background-color: #222;
+  height: 40px;
   border-radius: 1em;
   padding: 0.5em 1em 1em 1em;
   font-weight: bold;
+  transition: all 0.3s;
 }
 
 #product-section {
@@ -501,11 +518,14 @@ button.dropdown-toggle:hover .dropdown-toggle {
 
 @media only screen and (max-width: 600px) {
   #hero-section {
-    height: 70vh;
+    height: 730px;
   }
   #hero-blank {
-    width: 10%;
-    padding: 50px 0 0 10%;
+    width: 30%;
+    padding: 90px 0 0 10%;
+  }
+  #hero-links-div {
+    width: 380px;
   }
   .infobar {
     padding-left: 5%;
@@ -519,11 +539,14 @@ button.dropdown-toggle:hover .dropdown-toggle {
 }
 @media only screen and (min-width: 600px) {
   #hero-section {
-    height: 70vh;
+    height: 730px;
   }
   #hero-blank {
-    width: 20%;
-    padding: 50px 0 0 11%;
+    width: 30%;
+    padding: 90px 0 0 11%;
+  }
+  #hero-links-div {
+    width: 420px;
   }
   .infobar {
     padding-left: 5%;
@@ -537,11 +560,14 @@ button.dropdown-toggle:hover .dropdown-toggle {
 }
 @media only screen and (min-width: 768px) {
   #hero-section {
-    height: 80vh;
+    height: 730px;
   }
   #hero-blank {
     width: 30%;
-    padding: 50px 0 0 13%;
+    padding: 90px 0 0 13%;
+  }
+  #hero-links-div {
+    width: 500px;
   }
   .infobar {
     padding-left: 5%;
@@ -555,11 +581,14 @@ button.dropdown-toggle:hover .dropdown-toggle {
 }
 @media only screen and (min-width: 992px) {
   #hero-section {
-    height: 80vh;
+    height: 730px;
   }
   #hero-blank {
     width: 40%;
-    padding: 50px 0 0 15%;
+    padding: 90px 0 0 15%;
+  }
+  #hero-links-div {
+    width: 600px;
   }
   .infobar {
     padding-left: 5%;
@@ -581,7 +610,6 @@ button.dropdown-toggle:hover .dropdown-toggle {
 
 #showcase {
   flex-direction: row;
-  height: 500px;
   padding: 50px;
   transition: all 0.3s;
 }
@@ -607,10 +635,9 @@ button.dropdown-toggle:hover .dropdown-toggle {
 }
 
 #showcase-textbox {
-  width: 30%;
+  background-color: #f0f0f0;
   margin-left: 10%;
   margin-right: 20px;
-  padding: 70px 0 0 70px;
   border-radius: 50px;
   transition: all 0.3s;
 }
@@ -619,6 +646,10 @@ button.dropdown-toggle:hover .dropdown-toggle {
   flex-direction: row;
   justify-content: center;
   padding-bottom: 70px;
+}
+
+#workshops {
+  margin-bottom: 30px;
 }
 
 .sawy-sub-section {
@@ -638,6 +669,17 @@ button.dropdown-toggle:hover .dropdown-toggle {
 }
 
 @media only screen and (max-width: 600px) {
+  #showcase {
+    display: block;
+  }
+  #showcase-textbox {
+    width: 50%;
+    padding: 0 10px 20px 30px;
+  }
+  #sawy-svg {
+    visibility: hidden;
+    height: 0;
+  }
   #content-section {
     flex-direction: column;
   }
@@ -647,6 +689,20 @@ button.dropdown-toggle:hover .dropdown-toggle {
   }
 }
 @media only screen and (min-width: 600px) {
+  #showcase {
+    display: block;
+  }
+  #showcase-textbox {
+    width: 60%;
+    padding: 0 60px 30px 60px;
+  }
+  #showcase-textbox h2 {
+    padding-left: 30px;
+  }
+  #sawy-svg {
+    visibility: hidden;
+    height: 0;
+  }
   #content-section {
     flex-direction: column;
   }
@@ -655,7 +711,18 @@ button.dropdown-toggle:hover .dropdown-toggle {
     height: 400px;
   }
 }
-@media only screen and (min-width: 1000px) {
+@media only screen and (min-width: 1060px) {
+  #showcase {
+    display: flex;
+  }
+  #showcase-textbox {
+    width: 30%;
+    padding: 10px 30px 0 30px;
+  }
+  #sawy-svg {
+    visibility: visible;
+    height: auto;
+  }
   #content-section {
     flex-direction: row;
   }
@@ -664,27 +731,6 @@ button.dropdown-toggle:hover .dropdown-toggle {
     height: 400px;
   }
 }
-.collage {
-  width: 90vw;
-  display: flex;
-  flex-direction: row;
-  margin: 20px auto 40px auto;
-}
-
-.collage-collumn {
-  background-color: black;
-  display: flex;
-  flex-direction: column;
-  flex: 1 1 0;
-}
-
-.collage-image {
-  margin: 2%;
-  -o-object-fit: cover;
-     object-fit: cover;
-  width: 96%;
-}
-
 .slideshow {
   background-color: black;
   margin: 0;

@@ -12,7 +12,7 @@ export default function Landing() {
                         <h2>next-gen <br/>education</h2>
                     </div>
                     <div id="hero-paragraph-div">
-                        <p>The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested.</p>
+                        <p>the standard chunk of lorem ipsum used since the 1500s is reproduced below for those interested.</p>
                     </div>
                     <div id="hero-links-div">
                         <HashLink className="hero-link" smooth to="#product-section">store</HashLink>
@@ -48,7 +48,7 @@ export default function Landing() {
                         <h2>sawy-sawy</h2>
                         <h3>out of the box ready microcontroller</h3>
                     </div>
-                    <p>The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.</p>
+                    <p>the standard chunk of lorem ipsum used since the 1500s is reproduced below for those interested. sections 1.10.32 and 1.10.33 from "de finibus bonorum et malorum" by cicero are also reproduced in their exact original form, accompanied by english versions from the 1914 translation by h. rackham.</p>
                 </div>
             </a>
             <a id="locations-section" className="section hover-section" href={"#" + BASE_PATH}>
@@ -58,7 +58,7 @@ export default function Landing() {
                         <h2>locations</h2>
                         <h3>visit us</h3>
                     </div>
-                    <p>The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.</p>
+                    <p>the standard chunk of lorem ipsum used since the 1500s is reproduced below for those interested. sections 1.10.32 and 1.10.33 from "de finibus bonorum et malorum" by cicero are also reproduced in their exact original form, accompanied by english versions from the 1914 translation by h. rackham.</p>
                 </div>
             </a>
         </div>

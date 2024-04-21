@@ -21,7 +21,6 @@
 
 .product-card {
     position: relative;
-    background-color: $pallette-1;
     height: 450px;
     width: 300px;
     margin: 0 20px 20px 0;
@@ -63,7 +62,9 @@
 }
 
 .hero-link {
-    color: #555;
+    color: $pallette-4;
+    width: 25%;
+    text-align: center;
     margin: auto;
     border-radius: 1em;
     padding: 1em;
@@ -73,12 +74,25 @@
 .hero-link:hover {
     color: black;
     background-color: $pallette-3;
-    transform: translateY(-2px) scale(1.05);
+    transform: translateY(-4px) scale(1.05);
 }
 
 #hero-section {
     margin-top: 2px;
     margin-bottom: 3px;
+}
+
+#hero-section:hover {
+    #hero-blank {
+        transform: scale(1.05);
+    }
+    #hero-paragraph-div {
+        background-color: $pallette-3;
+        p {color: black }
+    }
+    #hero-links-div {
+        height: 230px;
+    }
 }
 
 #hero-blank {
@@ -87,9 +101,10 @@
     flex-direction: column;
     overflow: visible;
     z-index: 1;
-    box-shadow: 0 0 300px 250px black;
+    box-shadow: 0 0 300px 300px black;
     background-color: black;
     height: 100%;
+    transition: all 0.3s;
 }
 
 #hero-title-div {
@@ -102,30 +117,30 @@
 }
 
 #hero-paragraph-div {
-    background-color: $pallette-3;
+    background-color: $pallette-1;
     height: 100px;
     width: 320px;
     border-radius: 1em;
     padding: 0 20px 20px 20px;
     p {
-        color: black;
+        color: $pallette-4;
         font-size: small;
-        line-height: 1.4;
-        font-weight: light;
+        line-height: 1.5;
     }
+    transition: all 0.3s;
 }
 
 #hero-links-div {
     display: flex;
     flex-direction: row;
     position: absolute;
-    bottom: 4em;
-    background-color: #111;
-    width: 380px;
-    height: 2.5em;
+    bottom: 130px;
+    background-color: $pallette-1;
+    height: 40px;
     border-radius: 1em;
     padding: 0.5em 1em 1em 1em;
     font-weight: bold;
+    transition: all 0.3s;
 }
 
 #product-section {
@@ -175,26 +190,30 @@
 }
 
 @media only screen and (max-width: 600px) {
-    #hero-section { height: 70vh }
-    #hero-blank { width: 10%; padding: 50px 0 0 10% }
+    #hero-section { height: 730px }
+    #hero-blank { width: 30%; padding: 90px 0 0 10% }
+    #hero-links-div { width: 380px }
     .infobar { padding-left: 5%; h3 { font-size: 1.2rem}; p { width: 90% } }
 }
 
 @media only screen and (min-width: 600px) {
-    #hero-section { height: 70vh }
-    #hero-blank { width: 20%; padding: 50px 0 0 11% }
+    #hero-section { height: 730px }
+    #hero-blank { width: 30%; padding: 90px 0 0 11% }
+    #hero-links-div { width: 420px }
     .infobar { padding-left: 5%; h3 { font-size: 1.2rem}; p { width: 90% } }
 }
 
 @media only screen and (min-width: 768px) {
-    #hero-section { height: 80vh }
-    #hero-blank { width: 30%; padding: 50px 0 0 13% }
+    #hero-section { height: 730px }
+    #hero-blank { width: 30%; padding: 90px 0 0 13% }
+    #hero-links-div { width: 500px }
     .infobar { padding-left: 5%; h3 { font-size: 1.2rem}; p { width: 60% } }
 }
 
 @media only screen and (min-width: 992px) {
-    #hero-section { height: 80vh }
-    #hero-blank { width: 40%; padding: 50px 0 0 15% }
+    #hero-section { height: 730px }
+    #hero-blank { width: 40%; padding: 90px 0 0 15% }
+    #hero-links-div { width: 600px }
     .infobar { padding-left: 5%; h3 { font-size: 1.2rem}; p { width: 60% } }
 }
 

@@ -7,14 +7,14 @@ export default function Sawy() {
         </div>
         <div id="showcase" className="section">
             <div id="showcase-textbox">
-                <h2>the sawy-sawy</h2>
+                <h2>sawy-sawy</h2><br/>
                 <ul>
-                    <li>accessible learning for all ages</li><br/>
-                    <li>educator professional development</li><br/>
+                    <li>accessible learning for all ages</li><br/><br/>
+                    <li>educator professional development</li><br/><br/>
                     <li>steam integration for creativity</li>
                 </ul>
             </div>
-            <img style={{width: "30%", marginRight: "20%"}} src={require("../res/pictures/ui/sawy.png")} alt=""/>
+            <img id="sawy-svg" style={{width: "30%", marginRight: "20%"}} src={require("../res/pictures/ui/sawy.png")} alt=""/>
         </div>
         <div id="content-section" className="section">
             <div id="webapp-redirect" className="sawy-sub-section">
@@ -37,13 +37,13 @@ export default function Sawy() {
             </div>
         </div>
         <div id="workshops">
-            <a id="locations-section" className="section" href={"#" + SAWY_PATH}>
+            <a id="locations-section" className="section hover-section" href={"#" + SAWY_PATH}>
                 <img className="banner" src={require("../res/pictures/gallery/78.jpg")} alt=""/>
                 <div id="locations-infobar" className="infobar">
                     <div style={{ height: "170px" }}>
                         <h2>workshops</h2>
                     </div>
-                    <p>The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.</p>
+                    <p>the standard chunk of lorem ipsum used since the 1500s is reproduced below for those interested. sections 1.10.32 and 1.10.33 from "de finibus bonorum et malorum" by cicero are also reproduced in their exact original form, accompanied by english versions from the 1914 translation by h. rackham.</p>
                 </div>
             </a>
         </div>

@@ -8,9 +8,10 @@
     src: url(./../res/fonts/MajorMonoDisplay-Regular.ttf);
 }
 
-$pallette-1: #444;
+$pallette-1: #222;
 $pallette-2: #777;
 $pallette-3: #f9f9f9;
+$pallette-4: #999;
 
 @media only screen and (max-width: 600px) {
     h1 {font-size: 50px }
@@ -93,5 +94,4 @@ img {
 @import 'Footer.scss';
 @import 'Landing.scss';
 @import 'Sawy.scss';
-@import 'Collage.scss';
 @import 'Slideshow.scss';

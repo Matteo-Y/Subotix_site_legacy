@@ -41,12 +41,14 @@
 }
 
 #header-menu {
+    overflow: visible;
     flex: 1 1 0;
     display: flex;
     justify-content: left;
 }
 
 #header-title {
+    overflow: visible;
     flex: 1 1 0;
     display: flex;
     justify-content: center;
