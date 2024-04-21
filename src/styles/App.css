@@ -91,6 +91,10 @@ h3 {
   color: white;
 }
 
+div {
+  overflow: hidden;
+}
+
 img {
   -o-object-fit: contain;
      object-fit: contain;
@@ -210,6 +214,7 @@ img {
 }
 
 #header-socials {
+  overflow: visible;
   flex: 1 1 0;
   display: flex;
   justify-content: right;
@@ -330,7 +335,7 @@ button.dropdown-toggle:hover .dropdown-toggle {
   transition: transform 0.3s;
 }
 
-.section:hover {
+.hover-section:hover {
   transform: scale(1.01);
 }
 
@@ -350,6 +355,7 @@ button.dropdown-toggle:hover .dropdown-toggle {
   margin: 0 20px 20px 0;
   transition: all 0.2s;
   overflow: hidden;
+  border-radius: 20px;
 }
 
 .product-card:hover {
@@ -385,9 +391,70 @@ button.dropdown-toggle:hover .dropdown-toggle {
   background-color: rgba(0, 0, 0, 0.9);
 }
 
-#hero-infobar {
-  bottom: -130px;
-  height: 300px;
+.hero-link {
+  color: #555;
+  margin: auto;
+  border-radius: 1em;
+  padding: 1em;
+  transition: all 0.2s;
+}
+
+.hero-link:hover {
+  color: black;
+  background-color: #f9f9f9;
+  transform: translateY(-2px) scale(1.05);
+}
+
+#hero-section {
+  margin-top: 2px;
+  margin-bottom: 3px;
+}
+
+#hero-blank {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  overflow: visible;
+  z-index: 1;
+  box-shadow: 0 0 300px 250px black;
+  background-color: black;
+  height: 100%;
+}
+
+#hero-title-div {
+  overflow: visible;
+  margin-bottom: 1em;
+}
+#hero-title-div h2 {
+  width: 95%;
+  margin: 0;
+}
+
+#hero-paragraph-div {
+  background-color: #f9f9f9;
+  height: 100px;
+  width: 320px;
+  border-radius: 1em;
+  padding: 0 20px 20px 20px;
+}
+#hero-paragraph-div p {
+  color: black;
+  font-size: small;
+  line-height: 1.4;
+  font-weight: light;
+}
+
+#hero-links-div {
+  display: flex;
+  flex-direction: row;
+  position: absolute;
+  bottom: 4em;
+  background-color: #111;
+  width: 380px;
+  height: 2.5em;
+  border-radius: 1em;
+  padding: 0.5em 1em 1em 1em;
+  font-weight: bold;
 }
 
 #product-section {
@@ -435,7 +502,10 @@ button.dropdown-toggle:hover .dropdown-toggle {
 @media only screen and (max-width: 600px) {
   #hero-section {
     height: 70vh;
-    flex-direction: column;
+  }
+  #hero-blank {
+    width: 10%;
+    padding: 50px 0 0 10%;
   }
   .infobar {
     padding-left: 5%;
@@ -450,7 +520,10 @@ button.dropdown-toggle:hover .dropdown-toggle {
 @media only screen and (min-width: 600px) {
   #hero-section {
     height: 70vh;
-    flex-direction: column;
+  }
+  #hero-blank {
+    width: 20%;
+    padding: 50px 0 0 11%;
   }
   .infobar {
     padding-left: 5%;
@@ -465,7 +538,10 @@ button.dropdown-toggle:hover .dropdown-toggle {
 @media only screen and (min-width: 768px) {
   #hero-section {
     height: 80vh;
-    flex-direction: row;
+  }
+  #hero-blank {
+    width: 30%;
+    padding: 50px 0 0 13%;
   }
   .infobar {
     padding-left: 5%;
@@ -480,7 +556,10 @@ button.dropdown-toggle:hover .dropdown-toggle {
 @media only screen and (min-width: 992px) {
   #hero-section {
     height: 80vh;
-    flex-direction: row;
+  }
+  #hero-blank {
+    width: 40%;
+    padding: 50px 0 0 15%;
   }
   .infobar {
     padding-left: 5%;
