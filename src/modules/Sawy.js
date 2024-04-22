@@ -20,7 +20,7 @@ export default function Sawy() {
             <a id="webapp-redirect" className="sawy-sub-section" href={"#" + SAWY_PATH + "/web-apps"}>
                 <img style={{width: "100%", objectFit: "cover"}} src={require("../res/pictures/gallery/62.jpg")} alt=""/>
                 <div style={{position: "absolute", bottom: "0", backgroundColor: "black", width: "100%", textAlign: "center"}}>
-                    <h2>webapps</h2>
+                    <h2>web-apps</h2>
                 </div>
             </a>
             <a id="code-redirect" className="sawy-sub-section" href={"#" + SAWY_PATH + "/downloads"}>
