@@ -668,7 +668,27 @@ button.dropdown-toggle:hover .dropdown-toggle {
   transform: scale(1.2);
 }
 
+.back-to-sawy {
+  width: -moz-fit-content;
+  width: fit-content;
+  margin-top: 50px;
+  margin-left: 10%;
+  padding: 10px;
+  font-size: 1.5em;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.back-to-sawy:hover {
+  color: white;
+  background-color: black;
+  transform: scale(1.05) translateX(-10px);
+}
+
 #download-section {
+  display: flex;
+  flex-direction: column;
   width: 100%;
 }
 
@@ -677,7 +697,6 @@ button.dropdown-toggle:hover .dropdown-toggle {
 }
 
 .download-tab {
-  background-color: #bbb;
   padding: 5px;
   border: solid;
   border-width: 1px;
