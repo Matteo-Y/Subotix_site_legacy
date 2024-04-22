@@ -17,24 +17,24 @@ export default function Sawy() {
             <img id="sawy-svg" style={{width: "30%", marginRight: "20%"}} src={require("../res/pictures/ui/sawy.png")} alt=""/>
         </div>
         <div id="content-section" className="section">
-            <div id="webapp-redirect" className="sawy-sub-section">
+            <a id="webapp-redirect" className="sawy-sub-section" href={"#" + SAWY_PATH + "/web-apps"}>
                 <img style={{width: "100%", objectFit: "cover"}} src={require("../res/pictures/gallery/62.jpg")} alt=""/>
                 <div style={{position: "absolute", bottom: "0", backgroundColor: "black", width: "100%", textAlign: "center"}}>
                     <h2>webapps</h2>
                 </div>
-            </div>
-            <div id="code-redirect" className="sawy-sub-section">
+            </a>
+            <a id="code-redirect" className="sawy-sub-section" href={"#" + SAWY_PATH + "/downloads"}>
                 <img style={{width: "100%", objectFit: "cover"}} src={require("../res/pictures/misc/Screenshot (2).png")} alt=""/>
                 <div style={{position: "absolute", bottom: "0", backgroundColor: "black", width: "100%", textAlign: "center"}}>
                     <h2>files</h2>
                 </div>
-            </div>
-            <div id="gallery-redirect" className="sawy-sub-section">
+            </a>
+            <a id="gallery-redirect" className="sawy-sub-section" href={"#" + SAWY_PATH + "/gallery"}>
                 <img style={{width: "100%", objectFit: "cover"}} src={require("../res/pictures/gallery/67.jpg")} alt=""/>
                 <div style={{position: "absolute", bottom: "0", backgroundColor: "black", width: "100%", textAlign: "center"}}>
                     <h2>gallery</h2>
                 </div>
-            </div>
+            </a>
         </div>
         <div id="workshops">
             <a id="locations-section" className="section hover-section" href={"#" + SAWY_PATH}>

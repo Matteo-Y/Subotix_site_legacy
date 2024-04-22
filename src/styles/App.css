@@ -668,7 +668,39 @@ button.dropdown-toggle:hover .dropdown-toggle {
   transform: scale(1.2);
 }
 
+#download-section {
+  width: 100%;
+}
+
+#download-table {
+  margin: 80px auto 80px auto;
+}
+
+.download-tab {
+  background-color: #bbb;
+  padding: 5px;
+  border: solid;
+  border-width: 1px;
+}
+
+.download-link {
+  all: initial;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.download-link:link {
+  color: blue;
+}
+
+.download-link:focus {
+  color: purple;
+}
+
 @media only screen and (max-width: 600px) {
+  #download-table {
+    width: 90%;
+  }
   #showcase {
     display: block;
   }
@@ -689,6 +721,9 @@ button.dropdown-toggle:hover .dropdown-toggle {
   }
 }
 @media only screen and (min-width: 600px) {
+  #download-table {
+    width: 90%;
+  }
   #showcase {
     display: block;
   }
@@ -712,6 +747,9 @@ button.dropdown-toggle:hover .dropdown-toggle {
   }
 }
 @media only screen and (min-width: 1060px) {
+  #download-table {
+    width: 60%;
+  }
   #showcase {
     display: flex;
   }

@@ -68,7 +68,37 @@
     transform: scale(1.20);
 }
 
+#download-section {
+    width: 100%;
+}
+
+#download-table {
+    margin: 80px auto 80px auto;
+}
+
+.download-tab {
+    background-color: $pallette-5;
+    padding: 5px;
+    border: solid;
+    border-width: 1px;
+}
+
+.download-link {
+    all: initial;
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.download-link:link {
+    color: blue;
+}
+
+.download-link:focus {
+    color: purple;
+}
+
 @media only screen and (max-width: 600px) {
+    #download-table { width: 90% }
     #showcase { display: block }
     #showcase-textbox { width: 50%; padding: 0 10px 20px 30px }
     #sawy-svg { visibility: hidden; height: 0 }
@@ -77,6 +107,7 @@
 }
 
 @media only screen and (min-width: 600px) {
+    #download-table { width: 90% }
     #showcase { display: block }
     #showcase-textbox { width: 60%; padding: 0 60px 30px 60px; h2 { padding-left: 30px } }
     #sawy-svg { visibility: hidden; height: 0 }
@@ -85,6 +116,7 @@
 }
 
 @media only screen and (min-width: 1060px) {
+    #download-table { width: 60% }
     #showcase { display: flex }
     #showcase-textbox { width: 30%; padding: 10px 30px 0 30px }
     #sawy-svg { visibility: visible; height: auto }
