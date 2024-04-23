@@ -1,6 +1,5 @@
 
-import { useState } from 'react';
-import { BASE_PATH, SAWY_PATH, SOCIALS } from '../App.js';
+import { SAWY_PATH, SOCIALS } from '../App.js';
 
 export default function Header() {
     return (<>

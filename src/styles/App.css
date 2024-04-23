@@ -91,10 +91,6 @@ h3 {
   color: white;
 }
 
-div {
-  overflow: hidden;
-}
-
 img {
   -o-object-fit: contain;
      object-fit: contain;
@@ -449,8 +445,8 @@ button.dropdown-toggle:hover .dropdown-toggle {
 
 #hero-paragraph-div {
   background-color: #222;
-  height: 120px;
-  width: 320px;
+  height: 80px;
+  width: 350px;
   border-radius: 1em;
   padding: 0 20px 20px 20px;
   transition: all 0.3s;
@@ -521,7 +517,7 @@ button.dropdown-toggle:hover .dropdown-toggle {
     height: 730px;
   }
   #hero-blank {
-    width: 30%;
+    width: 20%;
     padding: 90px 0 0 10%;
   }
   #hero-links-div {
@@ -542,7 +538,7 @@ button.dropdown-toggle:hover .dropdown-toggle {
     height: 730px;
   }
   #hero-blank {
-    width: 30%;
+    width: 20%;
     padding: 90px 0 0 11%;
   }
   #hero-links-div {
@@ -563,7 +559,7 @@ button.dropdown-toggle:hover .dropdown-toggle {
     height: 730px;
   }
   #hero-blank {
-    width: 30%;
+    width: 20%;
     padding: 90px 0 0 13%;
   }
   #hero-links-div {
@@ -584,7 +580,7 @@ button.dropdown-toggle:hover .dropdown-toggle {
     height: 730px;
   }
   #hero-blank {
-    width: 40%;
+    width: 20%;
     padding: 90px 0 0 15%;
   }
   #hero-links-div {
@@ -790,52 +786,32 @@ button.dropdown-toggle:hover .dropdown-toggle {
   }
 }
 .slideshow {
+  display: flex;
   background-color: black;
   margin: 0;
   overflow: hidden;
 }
 
-.slideshow-slider {
+.slideshow-reel {
+  height: 100%;
   white-space: nowrap;
-  transition: ease 2s;
+  transition: ease 5s;
 }
 
 .slide {
+  z-index: 1;
+  background-color: white;
   display: inline-block;
-  overflow: hidden;
   text-align: center;
+  height: 100%;
   width: 100%;
 }
 
-@media only screen and (max-width: 600px) {
-  .slideshow {
-    height: 300px;
-  }
-  .slide-image {
-    height: 300px;
-  }
-}
-@media only screen and (min-width: 600px) {
-  .slideshow {
-    height: 300px;
-  }
-  .slide-image {
-    height: 300px;
-  }
-}
-@media only screen and (min-width: 768px) {
-  .slideshow {
-    height: 400px;
-  }
-  .slide-image {
-    height: 400px;
-  }
-}
-@media only screen and (min-width: 992px) {
-  .slideshow {
-    height: 400;
-  }
-  .slide-image {
-    height: 400px;
-  }
+.slide-image {
+  background-color: white;
+  visibility: visible;
+  position: relative;
+  z-index: 4;
+  -o-object-fit: cover;
+     object-fit: cover;
 }/*# sourceMappingURL=App.css.map */

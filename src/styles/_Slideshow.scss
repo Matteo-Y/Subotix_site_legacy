@@ -1,37 +1,29 @@
 .slideshow {
+    display: flex;
     background-color: black;
     margin: 0;
     overflow: hidden;
 }
 
-.slideshow-slider {
+.slideshow-reel {
+    height: 100%;
     white-space: nowrap;
-    transition: ease 2s;
+    transition: ease 5s;
 }
 
 .slide {
+    z-index: 1;
+    background-color: white;
     display: inline-block;
-    overflow: hidden;
     text-align: center;
+    height: 100%;
     width: 100%;
 }
 
-@media only screen and (max-width: 600px) {
-    .slideshow { height: 300px }
-    .slide-image { height: 300px }
-}
-
-@media only screen and (min-width: 600px) {
-    .slideshow { height: 300px }
-    .slide-image { height: 300px }
-}
-
-@media only screen and (min-width: 768px) {
-    .slideshow { height: 400px }
-    .slide-image { height: 400px }
-}
-
-@media only screen and (min-width: 992px) {
-    .slideshow { height: 400 }
-    .slide-image { height: 400px }
+.slide-image {
+    background-color: white;
+    visibility: visible;
+    position: relative;
+    z-index: 4;
+    object-fit: cover;
 }

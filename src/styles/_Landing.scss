@@ -118,8 +118,8 @@
 
 #hero-paragraph-div {
     background-color: $pallette-1;
-    height: 120px;
-    width: 320px;
+    height: 80px;
+    width: 350px;
     border-radius: 1em;
     padding: 0 20px 20px 20px;
     p {
@@ -191,28 +191,28 @@
 
 @media only screen and (max-width: 600px) {
     #hero-section { height: 730px }
-    #hero-blank { width: 30%; padding: 90px 0 0 10% }
+    #hero-blank { width: 20%; padding: 90px 0 0 10% }
     #hero-links-div { width: 360px }
     .infobar { padding-left: 5%; h3 { font-size: 1.2rem}; p { width: 90% } }
 }
 
 @media only screen and (min-width: 600px) {
     #hero-section { height: 730px }
-    #hero-blank { width: 30%; padding: 90px 0 0 11% }
+    #hero-blank { width: 20%; padding: 90px 0 0 11% }
     #hero-links-div { width: 420px }
     .infobar { padding-left: 5%; h3 { font-size: 1.2rem}; p { width: 90% } }
 }
 
 @media only screen and (min-width: 768px) {
     #hero-section { height: 730px }
-    #hero-blank { width: 30%; padding: 90px 0 0 13% }
+    #hero-blank { width: 20%; padding: 90px 0 0 13% }
     #hero-links-div { width: 500px }
     .infobar { padding-left: 5%; h3 { font-size: 1.2rem}; p { width: 60% } }
 }
 
 @media only screen and (min-width: 992px) {
     #hero-section { height: 730px }
-    #hero-blank { width: 40%; padding: 90px 0 0 15% }
+    #hero-blank { width: 20%; padding: 90px 0 0 15% }
     #hero-links-div { width: 600px }
     .infobar { padding-left: 5%; h3 { font-size: 1.2rem}; p { width: 60% } }
 }

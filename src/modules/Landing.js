@@ -1,6 +1,10 @@
 import { BASE_PATH, SAWY_PATH } from "../App";
 import ProductCard from "./ProductCard";
 import { HashLink } from "react-router-hash-link";
+import Slideshow from "./slide/Slideshow";
+
+const imageFolder = require.context("../res/pictures/gallery/slideshow_1", true);
+const imageList = imageFolder.keys().map(image => imageFolder(image));
 
 export default function Landing() {
 
@@ -13,8 +17,7 @@ export default function Landing() {
                     </div>
                     <div id="hero-paragraph-div">
                         <p>
-                            we create high-impact, and scalable steam solutions.
-                            from research to design and implementation, we empower global communities to thrive through innovative education initiatives.
+                            researching, designing, and implementing impactful and scalable steam solutions for your community
                         </p>
                     </div>
                     <div id="hero-links-div">
@@ -23,7 +26,7 @@ export default function Landing() {
                         <HashLink className="hero-link" smooth to="#contact">contact</HashLink>
                     </div>
                 </div>
-                <img className="banner" src={require("../res/pictures/gallery/48.jpg")} alt="home banner"  loading="lazy"/>
+                <Slideshow style={{height: "730px"}} imageList={imageList} delay={10000}/>
             </div>
             <a id="sawy-section" className="section hover-section" href={"#" + SAWY_PATH}>
                 <div style={{display: "flex", flexDirection: "row", width: "100%"}}>
