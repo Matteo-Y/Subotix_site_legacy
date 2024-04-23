@@ -11,7 +11,7 @@ export default function SawyDownloads() {
         </div>
         <div className="link-table">
             <div style={{backgroundColor: "#333"}} className="download-tab"><h5 style={{margin: "5px", color: "white"}}>useful links</h5></div>
-            <div style={{backgroundColor: "#bbb"}} className="download-tab"><a className="download-link" href="https://play.google.com/store/apps/details?id=name.antonsmirnov.android.arduinodroid2&hl=en_US&gl=US&pli=1" rel="noreferrer  noopener" target="none">Arduino_Droid</a></div>
+            <div style={{backgroundColor: "#bbb"}} className="download-tab"><a className="download-link" href="https://en.softonic.com/download/arduinodroid-arduinoesp8266/android/post-download" rel="noreferrer  noopener" target="none">Arduino_Droid</a></div>
         </div>
     </div>
 }
