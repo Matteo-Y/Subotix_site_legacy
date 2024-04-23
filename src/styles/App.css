@@ -392,7 +392,7 @@ button.dropdown-toggle:hover .dropdown-toggle {
   display: flex;
   flex-direction: column;
   color: #999;
-  width: 25%;
+  width: 30%;
   text-align: center;
   margin: auto;
   border-radius: 1em;
@@ -417,12 +417,6 @@ button.dropdown-toggle:hover .dropdown-toggle {
 
 #hero-section:hover #hero-blank {
   transform: scale(1.05);
-}
-#hero-section:hover #hero-paragraph-div {
-  background-color: #f9f9f9;
-}
-#hero-section:hover #hero-paragraph-div p {
-  color: black;
 }
 #hero-section:hover #hero-links-div {
   height: 230px;
@@ -454,17 +448,16 @@ button.dropdown-toggle:hover .dropdown-toggle {
 }
 
 #hero-paragraph-div {
-  background-color: #222;
   height: 80px;
   width: 350px;
-  border-radius: 1em;
-  padding: 0 20px 20px 20px;
   transition: all 0.3s;
 }
 #hero-paragraph-div p {
-  color: #999;
+  color: white;
   font-size: small;
   line-height: 1.5;
+  font-size: 1.2em;
+  font-weight: lighter;
 }
 
 #hero-links-div {
