@@ -43,7 +43,7 @@ export default function Landing() {
                         <h3>out of the box ready microcontroller</h3>
                     </div>
                     <p>
-                    sawy sawy brings interactivity to all ages, turning ordinary objects into tools for exploration and fun.
+                    the flagship subotix product. the sawy sawy brings interactivity to all ages, turning ordinary objects into tools for exploration and fun.
                     unlock limitless creativity with sawy sawy.
                     </p>
                 </div>
