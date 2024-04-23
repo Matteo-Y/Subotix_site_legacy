@@ -13,8 +13,8 @@ export default function Landing() {
                     </div>
                     <div id="hero-paragraph-div">
                         <p>
-                            we inspire innovation through stem kits and workshops.
-                            our mission is to empower learners to excel in science, technology, and engineering.
+                            we create high-impact, and scalable steam solutions.
+                            from research to design and implementation, we empower global communities to thrive through innovative education initiatives.
                         </p>
                     </div>
                     <div id="hero-links-div">
