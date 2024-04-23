@@ -1,4 +1,4 @@
-import { BASE_PATH, SAWY_PATH } from "../App";
+import { BASE_PATH, SAWY_PATH, STORE_PATH } from "../App";
 import ProductCard from "./ProductCard";
 import { HashLink } from "react-router-hash-link";
 import Slideshow from "./slide/Slideshow";
@@ -21,9 +21,18 @@ export default function Landing() {
                         </p>
                     </div>
                     <div id="hero-links-div">
-                        <HashLink className="hero-link" smooth to="#product-section">store</HashLink>
-                        <HashLink className="hero-link" smooth to="#locations-section">location</HashLink>
-                        <HashLink className="hero-link" smooth to="#contact">contact</HashLink>
+                        <a className="hero-link" href={"#" + SAWY_PATH}>
+                            <img width="110px" src={require("../res/pictures/ui/sawy_wire.png")}/>
+                            sawy-sawy
+                        </a>
+                        <a className="hero-link" href={"#" + SAWY_PATH + "/downloads"}>
+                            <img width="50px" src={require("../res/pictures/ui/file_wire.png")}/>
+                            resources
+                        </a>
+                        <a className="hero-link" href={"#" + STORE_PATH}>
+                            <img width="50px" src={require("../res/pictures/ui/bag_wire.png")}/>
+                            store
+                        </a>
                     </div>
                 </div>
                 <Slideshow style={{height: "730px"}} imageList={imageList} delay={10000}/>

@@ -11,6 +11,7 @@ import SawyDownloads from './modules/SawyDownloads';
 
 const BASE_PATH = "/";
 const SAWY_PATH = BASE_PATH + "sawy-sawy";
+const STORE_PATH = BASE_PATH + "store";
 
 const SOCIALS = {
   facebook: "https://www.facebook.com/SUBOTIX",
@@ -19,7 +20,7 @@ const SOCIALS = {
   youtube: "https://www.youtube.com/@subotix",
 }
 
-export { BASE_PATH, SAWY_PATH, SOCIALS };
+export { BASE_PATH, SAWY_PATH, STORE_PATH, SOCIALS };
 
 export default function App() {
   return (
@@ -34,6 +35,7 @@ export default function App() {
             <Route path={SAWY_PATH + "/web-apps"} element={<InDevelopment/>}/>
             <Route path={SAWY_PATH + "/downloads"} element={<SawyDownloads/>}/>
             <Route path={SAWY_PATH + "/gallery"} element={<InDevelopment/>}/>
+            <Route path={STORE_PATH} element={<InDevelopment/>}/>
             <Route path={"*"} element={<PageNotFound/>}/>
           </Routes>
         </HashRouter>

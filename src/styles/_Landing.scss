@@ -62,13 +62,19 @@
 }
 
 .hero-link {
+    display: flex;
+    flex-direction: column;
     color: $pallette-4;
     width: 25%;
     text-align: center;
     margin: auto;
     border-radius: 1em;
-    padding: 1em;
+    padding: 1em 0 1em 0;
     transition: all 0.2s;
+    img {
+        height: 0;
+        transition: all 0.5s;
+    }
 }
 
 .hero-link:hover {
@@ -92,6 +98,10 @@
     }
     #hero-links-div {
         height: 230px;
+        img {
+            height: auto;
+            margin: 0 auto 30px auto;
+        }
     }
 }
 

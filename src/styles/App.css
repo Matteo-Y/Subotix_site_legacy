@@ -389,13 +389,19 @@ button.dropdown-toggle:hover .dropdown-toggle {
 }
 
 .hero-link {
+  display: flex;
+  flex-direction: column;
   color: #999;
   width: 25%;
   text-align: center;
   margin: auto;
   border-radius: 1em;
-  padding: 1em;
+  padding: 1em 0 1em 0;
   transition: all 0.2s;
+}
+.hero-link img {
+  height: 0;
+  transition: all 0.5s;
 }
 
 .hero-link:hover {
@@ -420,6 +426,10 @@ button.dropdown-toggle:hover .dropdown-toggle {
 }
 #hero-section:hover #hero-links-div {
   height: 230px;
+}
+#hero-section:hover #hero-links-div img {
+  height: auto;
+  margin: 0 auto 30px auto;
 }
 
 #hero-blank {
