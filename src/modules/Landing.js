@@ -23,15 +23,15 @@ export default function Landing() {
                     <div id="hero-links-div">
                         <a className="hero-link" href={"#" + SAWY_PATH}>
                             <img width="90%" src={require("../res/pictures/ui/sawy_wire.png")}/>
-                            sawy-sawy
+                            <p>sawy-sawy</p>
                         </a>
                         <a className="hero-link" href={"#" + SAWY_PATH + "/downloads"}>
                             <img width="40%" src={require("../res/pictures/ui/file_wire.png")}/>
-                            resources
+                            <p>resources</p>
                         </a>
                         <a className="hero-link" href={"#" + STORE_PATH}>
                             <img width="40%" src={require("../res/pictures/ui/bag_wire.png")}/>
-                            store
+                            <p>store</p>
                         </a>
                     </div>
                 </div>

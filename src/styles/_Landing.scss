@@ -62,15 +62,23 @@
 }
 
 .hero-link {
+    position: relative;
     display: flex;
     flex-direction: column;
-    color: $pallette-4;
     width: 30%;
-    text-align: center;
-    margin: auto;
+    height: 50%;
+    margin:  0 auto 0 auto;
     border-radius: 1em;
-    padding: 1em 0 1em 0;
+    padding: 1em 0 2em 0;
     transition: all 0.2s;
+    p {
+        position: absolute;
+        bottom: 1em;
+        color: $pallette-4;
+        text-align: center;
+        width: 100%;
+        padding: 0;
+    }
     img {
         height: 0;
         transition: all 0.5s;
@@ -78,7 +86,7 @@
 }
 
 .hero-link:hover {
-    color: black;
+    p { color: black }
     background-color: $pallette-3;
     transform: translateY(-4px) scale(1.05);
 }
@@ -98,6 +106,10 @@
             height: auto;
             margin: 0 auto 30px auto;
         }
+    }
+    .hero-link {
+        margin-top: 5%;
+        padding-bottom: 3em;
     }
 }
 

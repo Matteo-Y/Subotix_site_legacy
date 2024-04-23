@@ -389,15 +389,23 @@ button.dropdown-toggle:hover .dropdown-toggle {
 }
 
 .hero-link {
+  position: relative;
   display: flex;
   flex-direction: column;
-  color: #999;
   width: 30%;
-  text-align: center;
-  margin: auto;
+  height: 50%;
+  margin: 0 auto 0 auto;
   border-radius: 1em;
-  padding: 1em 0 1em 0;
+  padding: 1em 0 2em 0;
   transition: all 0.2s;
+}
+.hero-link p {
+  position: absolute;
+  bottom: 1em;
+  color: #999;
+  text-align: center;
+  width: 100%;
+  padding: 0;
 }
 .hero-link img {
   height: 0;
@@ -405,9 +413,11 @@ button.dropdown-toggle:hover .dropdown-toggle {
 }
 
 .hero-link:hover {
-  color: black;
   background-color: #f9f9f9;
   transform: translateY(-4px) scale(1.05);
+}
+.hero-link:hover p {
+  color: black;
 }
 
 #hero-section {
@@ -424,6 +434,10 @@ button.dropdown-toggle:hover .dropdown-toggle {
 #hero-section:hover #hero-links-div img {
   height: auto;
   margin: 0 auto 30px auto;
+}
+#hero-section:hover .hero-link {
+  margin-top: 5%;
+  padding-bottom: 3em;
 }
 
 #hero-blank {
