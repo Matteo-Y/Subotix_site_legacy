@@ -525,7 +525,7 @@ button.dropdown-toggle:hover .dropdown-toggle {
     padding: 90px 0 0 10%;
   }
   #hero-links-div {
-    width: 380px;
+    width: 360px;
   }
   .infobar {
     padding-left: 5%;
@@ -692,7 +692,7 @@ button.dropdown-toggle:hover .dropdown-toggle {
   width: 100%;
 }
 
-#download-table {
+.link-table {
   margin: 80px auto 80px auto;
 }
 
@@ -706,9 +706,6 @@ button.dropdown-toggle:hover .dropdown-toggle {
   all: initial;
   cursor: pointer;
   text-decoration: underline;
-}
-
-.download-link:link {
   color: blue;
 }
 
@@ -716,8 +713,12 @@ button.dropdown-toggle:hover .dropdown-toggle {
   color: purple;
 }
 
+.download-link:visited {
+  color: purple;
+}
+
 @media only screen and (max-width: 600px) {
-  #download-table {
+  .link-table {
     width: 90%;
   }
   #showcase {
@@ -740,7 +741,7 @@ button.dropdown-toggle:hover .dropdown-toggle {
   }
 }
 @media only screen and (min-width: 600px) {
-  #download-table {
+  .link-table {
     width: 90%;
   }
   #showcase {
@@ -766,7 +767,7 @@ button.dropdown-toggle:hover .dropdown-toggle {
   }
 }
 @media only screen and (min-width: 1060px) {
-  #download-table {
+  .link-table {
     width: 60%;
   }
   #showcase {

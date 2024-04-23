@@ -12,7 +12,10 @@ export default function Landing() {
                         <h2>next-gen <br/>education</h2>
                     </div>
                     <div id="hero-paragraph-div">
-                        <p>the standard chunk of lorem ipsum used since the 1500s is reproduced below for those interested.</p>
+                        <p>
+                            we inspire innovation through stem kits and workshops.
+                            our mission is to empower learners to excel in science, technology, and engineering.
+                        </p>
                     </div>
                     <div id="hero-links-div">
                         <HashLink className="hero-link" smooth to="#product-section">store</HashLink>
@@ -21,15 +24,6 @@ export default function Landing() {
                     </div>
                 </div>
                 <img className="banner" src={require("../res/pictures/gallery/48.jpg")} alt="home banner"  loading="lazy"/>
-            </div>
-            <div id="product-section" className="section">
-                <h2 style={{marginLeft: "10%"}} className="section-title">products</h2>
-                <div id="product-card-display">
-                    <ProductCard productName="sawysawy"        img={require("../res/pictures/gallery/63.jpg")}/>
-                    <ProductCard productName="subysaurus"      img={require("../res/pictures/gallery/5.jpg")}/>
-                    <ProductCard productName="robot hand kit"  img={require("../res/pictures/gallery/64.jpg")}/>
-                    <ProductCard productName="starship models" img={require("../res/pictures/gallery/65.jpg")}/>
-                </div>
             </div>
             <a id="sawy-section" className="section hover-section" href={"#" + SAWY_PATH}>
                 <div style={{display: "flex", flexDirection: "row", width: "100%"}}>
@@ -48,9 +42,21 @@ export default function Landing() {
                         <h2>sawy-sawy</h2>
                         <h3>out of the box ready microcontroller</h3>
                     </div>
-                    <p>the standard chunk of lorem ipsum used since the 1500s is reproduced below for those interested. sections 1.10.32 and 1.10.33 from "de finibus bonorum et malorum" by cicero are also reproduced in their exact original form, accompanied by english versions from the 1914 translation by h. rackham.</p>
+                    <p>
+                    sawy sawy brings interactivity to all ages, turning ordinary objects into tools for exploration and fun.
+                    unlock limitless creativity with sawy sawy.
+                    </p>
                 </div>
             </a>
+            <div id="product-section" className="section">
+                <h2 style={{marginLeft: "10%"}} className="section-title">products</h2>
+                <div id="product-card-display">
+                    <ProductCard productName="sawysawy"        img={require("../res/pictures/gallery/63.jpg")}/>
+                    <ProductCard productName="subysaurus"      img={require("../res/pictures/gallery/5.jpg")}/>
+                    <ProductCard productName="robot hand kit"  img={require("../res/pictures/gallery/64.jpg")}/>
+                    <ProductCard productName="starship models" img={require("../res/pictures/gallery/65.jpg")}/>
+                </div>
+            </div>
             <a id="locations-section" className="section hover-section" href={"#" + BASE_PATH}>
                 <img className="banner" src={require("../res/pictures/gallery/68.jpg")} alt=""/>
                 <div id="locations-infobar" className="infobar">
@@ -58,7 +64,7 @@ export default function Landing() {
                         <h2>locations</h2>
                         <h3>visit us</h3>
                     </div>
-                    <p>the standard chunk of lorem ipsum used since the 1500s is reproduced below for those interested. sections 1.10.32 and 1.10.33 from "de finibus bonorum et malorum" by cicero are also reproduced in their exact original form, accompanied by english versions from the 1914 translation by h. rackham.</p>
+                    
                 </div>
             </a>
         </div>
