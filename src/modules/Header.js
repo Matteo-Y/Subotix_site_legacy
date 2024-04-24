@@ -1,11 +1,13 @@
 
-import { SAWY_PATH, SOCIALS } from '../App.js';
+import { SAWY_PATH, SOCIALS, STORE_PATH } from '../App.js';
 
 export default function Header() {
     return (<>
         <div className="head">
             <div id="header-menu">
                 <a href={"#" + SAWY_PATH} className="header-element glow-on-hover">sawysawy</a>
+                <a href={"#" + STORE_PATH} className="header-element glow-on-hover">store</a>
+                <a href={""} className="header-element glow-on-hover">contact</a>
             </div>
             <div id="header-title">
                 <a href="#/"><h1>SUBOTIX</h1></a>

@@ -462,17 +462,17 @@ button.dropdown-toggle:hover .dropdown-toggle {
   margin: 0;
 }
 
-#hero-paragraph-div {
+.blank-paragraph-div {
   height: 80px;
-  width: 350px;
   transition: all 0.3s;
 }
-#hero-paragraph-div p {
+.blank-paragraph-div p {
   color: white;
   font-size: small;
   line-height: 1.5;
   font-size: 1.2em;
   font-weight: lighter;
+  width: 350px;
 }
 
 #hero-links-div {
@@ -504,17 +504,44 @@ button.dropdown-toggle:hover .dropdown-toggle {
   padding: 20px 0 0 0;
 }
 
-#sawy-section {
+#sawy-blank {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  overflow: visible;
+  z-index: 1;
+  box-shadow: 0 0 500px 400px black;
   background-color: black;
+  height: 100%;
+  text-align: right;
+  transition: all 0.3s;
+}
+#sawy-blank img {
+  transition: all ease-in 0.2s;
+}
+
+#sawy-title-div {
+  direction: rtl;
+  overflow: visible;
+  margin-bottom: 1em;
+}
+#sawy-title-div h2 {
+  width: 95%;
+  margin: 0;
+}
+
+#sawy-section {
+  background-color: white;
   flex-direction: row;
-  justify-content: center;
-  padding-top: 50px;
+  justify-content: right;
   height: 500px;
 }
 
-#sawy-infobar {
-  bottom: -130px;
-  height: 300px;
+#sawy-section:hover {
+  transform: scale(1.05);
+}
+#sawy-section:hover #sawy-blank {
+  transform: translateX(-125px);
 }
 
 #locations-section {
@@ -538,6 +565,13 @@ button.dropdown-toggle:hover .dropdown-toggle {
     width: 20%;
     padding: 90px 0 0 10%;
   }
+  #sawy-blank {
+    width: 20%;
+    padding: 100px 10% 0 0;
+  }
+  #sawy-section:hover #sawy-blank img {
+    transform: scale(1.2);
+  }
   #hero-links-div {
     width: 360px;
   }
@@ -558,6 +592,13 @@ button.dropdown-toggle:hover .dropdown-toggle {
   #hero-blank {
     width: 20%;
     padding: 90px 0 0 11%;
+  }
+  #sawy-blank {
+    width: 30%;
+    padding: 100px 11% 0 0;
+  }
+  #sawy-section:hover #sawy-blank img {
+    transform: translateX(-20px) scale(1.3);
   }
   #hero-links-div {
     width: 420px;
@@ -580,6 +621,13 @@ button.dropdown-toggle:hover .dropdown-toggle {
     width: 20%;
     padding: 90px 0 0 13%;
   }
+  #sawy-blank {
+    width: 40%;
+    padding: 100px 12% 0 0;
+  }
+  #sawy-section:hover #sawy-blank img {
+    transform: translateX(-20px) scale(1.4);
+  }
   #hero-links-div {
     width: 500px;
   }
@@ -600,6 +648,13 @@ button.dropdown-toggle:hover .dropdown-toggle {
   #hero-blank {
     width: 20%;
     padding: 90px 0 0 15%;
+  }
+  #sawy-blank {
+    width: 20%;
+    padding: 100px 12% 0 0;
+  }
+  #sawy-section:hover #sawy-blank img {
+    transform: translateX(-100px) scale(1.5);
   }
   #hero-links-div {
     width: 600px;

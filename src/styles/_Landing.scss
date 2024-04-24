@@ -134,15 +134,15 @@
     }
 }
 
-#hero-paragraph-div {
+.blank-paragraph-div {
     height: 80px;
-    width: 350px;
     p {
         color: white;
         font-size: small;
         line-height: 1.5;
         font-size: 1.2em;
         font-weight: lighter;
+        width: 350px;
     }
     transition: all 0.3s;
 }
@@ -176,19 +176,44 @@
     padding: 20px 0 0 0;  
 }
 
-#sawy-section {
+#sawy-blank {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    overflow: visible;
+    z-index: 1;
+    box-shadow: 0 0 500px 400px black;
     background-color: black;
-    flex-direction: row;
-    justify-content: center;
-    padding-top: 50px;
-    height: 500px
+    height: 100%;
+    text-align: right;
+    transition: all 0.3s;
+    img {
+        transition: all ease-in 0.2s;
+    }
+} 
+
+#sawy-title-div {
+    direction: rtl;
+    overflow: visible;
+    margin-bottom: 1em;
+    h2 {
+        width: 95%;
+        margin: 0;
+    }
 }
 
-#sawy-infobar {
-    $title-height: 170px;
-    $info-height: 130px;
-    bottom: -1 * $info-height;
-    height: $info-height + $title-height;
+#sawy-section {
+    background-color: white;
+    flex-direction: row;
+    justify-content: right;
+    height: 500px;
+}
+
+#sawy-section:hover {
+    transform: scale(1.05);
+    #sawy-blank {
+        transform: translateX(-125px);
+    } 
 }
 
 #locations-section {
@@ -209,6 +234,8 @@
 @media only screen and (max-width: 600px) {
     #hero-section { height: 730px }
     #hero-blank { width: 20%; padding: 90px 0 0 10% }
+    #sawy-blank { width: 20%; padding: 100px 10% 0 0 }
+    #sawy-section:hover { #sawy-blank { img { transform: scale(1.2) } } }
     #hero-links-div { width: 360px }
     .infobar { padding-left: 5%; h3 { font-size: 1.2rem}; p { width: 90% } }
 }
@@ -216,6 +243,8 @@
 @media only screen and (min-width: 600px) {
     #hero-section { height: 730px }
     #hero-blank { width: 20%; padding: 90px 0 0 11% }
+    #sawy-blank { width: 30%; padding: 100px 11% 0 0 }
+    #sawy-section:hover { #sawy-blank { img { transform: translateX(-20px) scale(1.3) } } }
     #hero-links-div { width: 420px }
     .infobar { padding-left: 5%; h3 { font-size: 1.2rem}; p { width: 90% } }
 }
@@ -223,6 +252,8 @@
 @media only screen and (min-width: 768px) {
     #hero-section { height: 730px }
     #hero-blank { width: 20%; padding: 90px 0 0 13% }
+    #sawy-blank { width: 40%; padding: 100px 12% 0 0 }
+    #sawy-section:hover { #sawy-blank { img { transform: translateX(-20px) scale(1.4) } } }
     #hero-links-div { width: 500px }
     .infobar { padding-left: 5%; h3 { font-size: 1.2rem}; p { width: 60% } }
 }
@@ -230,6 +261,8 @@
 @media only screen and (min-width: 992px) {
     #hero-section { height: 730px }
     #hero-blank { width: 20%; padding: 90px 0 0 15% }
+    #sawy-blank { width: 20%; padding: 100px 12% 0 0 }
+    #sawy-section:hover { #sawy-blank { img { transform: translateX(-100px) scale(1.5) } } }
     #hero-links-div { width: 600px }
     .infobar { padding-left: 5%; h3 { font-size: 1.2rem}; p { width: 60% } }
 }

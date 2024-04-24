@@ -14,7 +14,7 @@ export default function Landing() {
                     <div id="hero-title-div">
                         <h2>next-gen <br/>education</h2>
                     </div>
-                    <div id="hero-paragraph-div">
+                    <div className="blank-paragraph-div">
                         <p>
                             researching, designing, and implementing impactful and scalable steam solutions for your community
                         </p>
@@ -37,26 +37,17 @@ export default function Landing() {
                 <Slideshow style={{height: "730px"}} imageList={imageList} delay={10000}/>
             </div>
             <a id="sawy-section" className="section hover-section" href={"#" + SAWY_PATH}>
-                <div style={{display: "flex", flexDirection: "row", width: "100%"}}>
-                    <div style={{display: "flex", flexDirection: "collumn", flex: "1 1 0"}}>
-                        <img className="sawy-image" src={require("../res/pictures/gallery/3.jpg")} alt=""/>
+                <img style={{objectFit: "cover", width: "100%"}} src={require("../res/pictures/gallery/67.jpg")} alt="sawy-sawy thumbnail"/>
+                <div id="sawy-blank">
+                    <div id="sawy-title-div">
+                        <h2>subotix <br/>sawy-sawy</h2>
                     </div>
-                    <div style={{display: "flex", flexDirection: "collumn", flex: "1 1 0"}}>
-                        <img className="sawy-image" src={require("../res/pictures/gallery/40.jpg")} alt=""/>
+                    <div style={{direction: "rtl"}} className="blank-paragraph-div">
+                        <p>
+                            the sawy sawy brings interactivity to all ages, turning ordinary objects into tools for exploration and fun
+                        </p>
                     </div>
-                    <div style={{display: "flex", flexDirection: "collumn", flex: "1 1 0"}}>
-                        <img className="sawy-image" src={require("../res/pictures/gallery/61.jpg")} alt=""/>
-                    </div>
-                </div>
-                <div id="sawy-infobar" className="infobar">
-                    <div style={{ height: "170px" }}>
-                        <h2>sawy-sawy</h2>
-                        <h3>out of the box ready microcontroller</h3>
-                    </div>
-                    <p>
-                    the flagship subotix product. the sawy sawy brings interactivity to all ages, turning ordinary objects into tools for exploration and fun.
-                    unlock limitless creativity with sawy sawy.
-                    </p>
+                    <img style={{position: "absolute", right: "-60px", top: "150px"}} width="50px" src={require("../res/pictures/ui/arrow.png")} />
                 </div>
             </a>
             <div id="product-section" className="section">
