@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/static/css/main.5ea091d2.css",
+    "main.css": "/static/css/main.ef90956f.css",
     "main.js": "/static/js/main.e2e13f29.js",
     "static/media/sawy-sawy_commercial.mp4": "/static/media/sawy-sawy_commercial.03bc436ca826fe1bf1ee.mp4",
     "static/media/finger_robot.zip": "/static/media/finger_robot.051363f5a0cd50bbb0b6.zip",
@@ -75,11 +75,11 @@
     "static/media/line_follower_robot.zip": "/static/media/line_follower_robot.86ed4e5d0fd5fec092d2.zip",
     "index.html": "/index.html",
     "static/media/FB-logo.webp": "/static/media/FB-logo.ee7793fa5997b12f0afb.webp",
-    "main.5ea091d2.css.map": "/static/css/main.5ea091d2.css.map",
+    "main.ef90956f.css.map": "/static/css/main.ef90956f.css.map",
     "main.e2e13f29.js.map": "/static/js/main.e2e13f29.js.map"
   },
   "entrypoints": [
-    "static/css/main.5ea091d2.css",
+    "static/css/main.ef90956f.css",
     "static/js/main.e2e13f29.js"
   ]
 }
