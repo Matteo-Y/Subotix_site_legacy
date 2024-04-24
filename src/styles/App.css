@@ -679,7 +679,7 @@ button.dropdown-toggle:hover .dropdown-toggle {
 
 #showcase {
   flex-direction: row;
-  padding: 50px;
+  padding: 50px 0 50px 0;
   transition: all 0.3s;
 }
 #showcase h2 {
