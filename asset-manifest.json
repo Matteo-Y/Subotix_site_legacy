@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.f2e5688d.css",
-    "main.js": "/static/js/main.3d4e2821.js",
+    "main.css": "/static/css/main.5ea091d2.css",
+    "main.js": "/static/js/main.e2e13f29.js",
     "static/media/sawy-sawy_commercial.mp4": "/static/media/sawy-sawy_commercial.03bc436ca826fe1bf1ee.mp4",
     "static/media/finger_robot.zip": "/static/media/finger_robot.051363f5a0cd50bbb0b6.zip",
     "static/media/65.jpg": "/static/media/65.457f46a5bd52c6e1b5ee.jpg",
@@ -75,11 +75,11 @@
     "static/media/line_follower_robot.zip": "/static/media/line_follower_robot.86ed4e5d0fd5fec092d2.zip",
     "index.html": "/index.html",
     "static/media/FB-logo.webp": "/static/media/FB-logo.ee7793fa5997b12f0afb.webp",
-    "main.f2e5688d.css.map": "/static/css/main.f2e5688d.css.map",
-    "main.3d4e2821.js.map": "/static/js/main.3d4e2821.js.map"
+    "main.5ea091d2.css.map": "/static/css/main.5ea091d2.css.map",
+    "main.e2e13f29.js.map": "/static/js/main.e2e13f29.js.map"
   },
   "entrypoints": [
-    "static/css/main.f2e5688d.css",
-    "static/js/main.3d4e2821.js"
+    "static/css/main.5ea091d2.css",
+    "static/js/main.e2e13f29.js"
   ]
 }
