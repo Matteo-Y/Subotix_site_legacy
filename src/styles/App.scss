@@ -85,10 +85,13 @@ img {
     min-height: 100vh;
 }
 
-
+.collapsed {
+    height: 0 !important;
+}
 
 @import 'Header.scss';
 @import 'Footer.scss';
 @import 'Landing.scss';
 @import 'Sawy.scss';
 @import 'Slideshow.scss';
+@import 'Accordian.scss';

@@ -91,11 +91,23 @@
     width: 100%;
 }
 
+#two-column-container {
+    display: flex;
+    padding: 50px 0 0 0 
+}
+
+.filmstrip {
+    width: 0 !important;
+}
+
+
 .link-table {
-    margin: 80px auto 80px auto;
+    width: 80%;
+    margin: 0px auto 20px auto !important;
 }
 
 .download-tab {
+    display: flex;
     padding: 5px;
     border: solid;
     border-width: 1px;
@@ -103,6 +115,8 @@
 
 .download-link {
     all: initial;
+    width: 80%;
+    overflow: hidden;
     cursor: pointer;
     text-decoration: underline;
     color: blue;
@@ -117,28 +131,29 @@
 }
 
 @media only screen and (max-width: 600px) {
-    .link-table { width: 90% }
     #showcase { display: block }
     #showcase-textbox { width: 50%; padding: 0 10px 20px 30px }
     #sawy-svg { visibility: hidden; height: 0 }
     #content-section { flex-direction: column }
+    #two-column-container { flex-direction: column }
     .sawy-sub-section { width: 75%; height: 400px }
 }
 
 @media only screen and (min-width: 600px) {
-    .link-table { width: 90% }
     #showcase { display: block }
     #showcase-textbox { width: 60%; padding: 0 60px 30px 60px; h2 { padding-left: 30px } }
     #sawy-svg { visibility: hidden; height: 0 }
     #content-section { flex-direction: column }
+    #two-column-container { flex-direction: row }
     .sawy-sub-section { width: 75%; height: 400px }
 }
 
 @media only screen and (min-width: 1060px) {
-    .link-table { width: 60% }
     #showcase { display: flex }
     #showcase-textbox { width: 30%; padding: 10px 30px 0 30px }
     #sawy-svg { visibility: visible; height: auto }
     #content-section { flex-direction: row }
+    #two-column-container { flex-direction: row }
     .sawy-sub-section { width: 25%; height: 400px }
+    .link-table { width: 70% }
 }

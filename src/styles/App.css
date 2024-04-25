@@ -101,6 +101,10 @@ img {
   min-height: 100vh;
 }
 
+.collapsed {
+  height: 0 !important;
+}
+
 @media only screen and (max-width: 600px) {
   .head {
     height: 50px;
@@ -269,10 +273,6 @@ button.dropdown-toggle:hover .dropdown-toggle {
   overflow: hidden;
   height: 100px;
   transition: all 0.3s;
-}
-
-.collapsed {
-  height: 0;
 }
 
 .header-element {
@@ -761,11 +761,22 @@ button.dropdown-toggle:hover .dropdown-toggle {
   width: 100%;
 }
 
+#two-column-container {
+  display: flex;
+  padding: 50px 0 0 0;
+}
+
+.filmstrip {
+  width: 0 !important;
+}
+
 .link-table {
-  margin: 80px auto 80px auto;
+  width: 80%;
+  margin: 0px auto 20px auto !important;
 }
 
 .download-tab {
+  display: flex;
   padding: 5px;
   border: solid;
   border-width: 1px;
@@ -773,6 +784,8 @@ button.dropdown-toggle:hover .dropdown-toggle {
 
 .download-link {
   all: initial;
+  width: 80%;
+  overflow: hidden;
   cursor: pointer;
   text-decoration: underline;
   color: blue;
@@ -787,9 +800,6 @@ button.dropdown-toggle:hover .dropdown-toggle {
 }
 
 @media only screen and (max-width: 600px) {
-  .link-table {
-    width: 90%;
-  }
   #showcase {
     display: block;
   }
@@ -804,15 +814,15 @@ button.dropdown-toggle:hover .dropdown-toggle {
   #content-section {
     flex-direction: column;
   }
+  #two-column-container {
+    flex-direction: column;
+  }
   .sawy-sub-section {
     width: 75%;
     height: 400px;
   }
 }
 @media only screen and (min-width: 600px) {
-  .link-table {
-    width: 90%;
-  }
   #showcase {
     display: block;
   }
@@ -830,15 +840,15 @@ button.dropdown-toggle:hover .dropdown-toggle {
   #content-section {
     flex-direction: column;
   }
+  #two-column-container {
+    flex-direction: row;
+  }
   .sawy-sub-section {
     width: 75%;
     height: 400px;
   }
 }
 @media only screen and (min-width: 1060px) {
-  .link-table {
-    width: 60%;
-  }
   #showcase {
     display: flex;
   }
@@ -853,9 +863,15 @@ button.dropdown-toggle:hover .dropdown-toggle {
   #content-section {
     flex-direction: row;
   }
+  #two-column-container {
+    flex-direction: row;
+  }
   .sawy-sub-section {
     width: 25%;
     height: 400px;
+  }
+  .link-table {
+    width: 70%;
   }
 }
 .slideshow {
@@ -887,4 +903,53 @@ button.dropdown-toggle:hover .dropdown-toggle {
   z-index: 4;
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+.accordian-fold {
+  width: 80%;
+  margin: 0 auto 0 auto;
+  transition: all 0.3s;
+}
+
+.accordian-fold:hover {
+  transform: scale(1.01);
+}
+
+.accordian-tab {
+  display: flex;
+  flex-direction: row;
+  background-color: black;
+  height: 50px;
+  margin: 0;
+  cursor: pointer;
+}
+.accordian-tab p {
+  margin: 10px 0 0 0;
+  font-size: medium;
+  font-weight: lighter;
+}
+
+.accordian-content {
+  overflow: hidden;
+  transition: all 0.5s;
+}
+
+.accordian-label {
+  font-size: 20px;
+  margin: 10px 0 0 30px;
+}
+
+.accordian-icon {
+  text-align: center;
+  height: 45px !important;
+  width: 50px !important;
+  font-size: 50px !important;
+  margin: 0 !important;
+  padding: 5px 0 0 0 !important;
+  transform: rotateZ(90deg);
+  transition: all 0.2s;
+}
+
+.accordian-icon.collapsed {
+  transform: rotateZ(0deg);
 }/*# sourceMappingURL=App.css.map */

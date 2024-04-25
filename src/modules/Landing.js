@@ -1,6 +1,6 @@
 import { BASE_PATH, SAWY_PATH, STORE_PATH } from "../App";
 import ProductCard from "./ProductCard";
-import Slideshow from "./slide/Slideshow";
+import Slideshow from "./Slideshow";
 
 const imageFolder = require.context("../res/pictures/gallery/slideshow_1", true);
 const imageList = imageFolder.keys().map(image => imageFolder(image));
@@ -21,15 +21,15 @@ export default function Landing() {
                     </div>
                     <div id="hero-links-div">
                         <a className="hero-link" href={"#" + SAWY_PATH}>
-                            <img width="90%" src={require("../res/pictures/ui/sawy_wire.png")}/>
+                            <img width="90%" src={require("../res/pictures/ui/sawy_wire.png")} alt="sawy_ui"/>
                             <p>sawy-sawy</p>
                         </a>
                         <a className="hero-link" href={"#" + SAWY_PATH + "/downloads"}>
-                            <img width="40%" src={require("../res/pictures/ui/file_wire.png")}/>
+                            <img width="40%" src={require("../res/pictures/ui/file_wire.png")} alt="resources_ui"/>
                             <p>resources</p>
                         </a>
                         <a className="hero-link" href={"#" + STORE_PATH}>
-                            <img width="40%" src={require("../res/pictures/ui/bag_wire.png")}/>
+                            <img width="40%" src={require("../res/pictures/ui/bag_wire.png")} alt="shop_ui"/>
                             <p>store</p>
                         </a>
                     </div>
@@ -47,7 +47,7 @@ export default function Landing() {
                             the sawy sawy brings interactivity to all ages, turning ordinary objects into tools for exploration and fun
                         </p>
                     </div>
-                    <img style={{position: "absolute", right: "-60px", top: "150px"}} width="50px" src={require("../res/pictures/ui/arrow.png")} />
+                    <img style={{position: "absolute", right: "-60px", top: "150px"}} width="50px" src={require("../res/pictures/ui/arrow.png")} alt="arrow"/>
                 </div>
             </a>
             <div id="product-section" className="section">
