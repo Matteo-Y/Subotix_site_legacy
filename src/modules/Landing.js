@@ -40,7 +40,7 @@ export default function Landing() {
                 <img style={{objectFit: "cover", width: "100%"}} src={require("../res/pictures/gallery/67.jpg")} alt="sawy-sawy thumbnail"/>
                 <div id="sawy-blank">
                     <div id="sawy-title-div">
-                        <h2>subotix <br/>sawy-sawy</h2>
+                        <h2>subotix <br/>sawy-sawy<br/>initiative</h2>
                     </div>
                     <div style={{direction: "rtl"}} className="blank-paragraph-div">
                         <p>

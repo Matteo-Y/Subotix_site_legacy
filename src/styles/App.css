@@ -575,6 +575,9 @@ button.dropdown-toggle:hover .dropdown-toggle {
   #hero-links-div {
     width: 360px;
   }
+  #sawy-title-div h2 {
+    font-size: 2.5rem;
+  }
   .infobar {
     padding-left: 5%;
   }
@@ -602,6 +605,9 @@ button.dropdown-toggle:hover .dropdown-toggle {
   }
   #hero-links-div {
     width: 420px;
+  }
+  #sawy-title-div h2 {
+    font-size: 3rem;
   }
   .infobar {
     padding-left: 5%;
