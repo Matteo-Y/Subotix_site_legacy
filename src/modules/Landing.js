@@ -43,8 +43,9 @@ export default function Landing() {
                         <h2>subotix <br/>sawy-sawy<br/>initiative</h2>
                     </div>
                     <div style={{direction: "rtl"}} className="blank-paragraph-div">
-                        <p>
-                            the sawy sawy brings interactivity to all ages, turning ordinary objects into tools for exploration and fun
+                        <p style={{fontSize: "0.9em", width: "300px"}}>
+                            the sawysawy mass distribution is a msx initiative to develop 21st century skill sets to everyone by providing an impactful, 
+                            scalable, sticky and economical experience to millions of k12
                         </p>
                     </div>
                     <img style={{position: "absolute", right: "-60px", top: "150px"}} width="50px" src={require("../res/pictures/ui/arrow.png")} alt="arrow"/>

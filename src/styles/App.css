@@ -410,7 +410,7 @@ button.dropdown-toggle:hover .dropdown-toggle {
 }
 .hero-link img {
   height: 0;
-  transition: all 0.5s;
+  transition: all 0.2s;
 }
 
 .hero-link:hover {
@@ -433,7 +433,7 @@ button.dropdown-toggle:hover .dropdown-toggle {
   height: 230px;
 }
 #hero-section:hover #hero-links-div img {
-  height: auto;
+  height: 80px;
   margin: 0 auto 30px auto;
 }
 #hero-section:hover .hero-link {
@@ -805,6 +805,25 @@ button.dropdown-toggle:hover .dropdown-toggle {
   color: purple;
 }
 
+#sawy-disclaimer {
+  background-color: black;
+  text-align: center;
+  margin-bottom: 10px;
+  padding: 10px 0 50px 0;
+}
+
+#makeymakey-link {
+  text-decoration: underline;
+  transition: all 0.3s;
+  font-size: 1em;
+}
+
+#makeymakey-link:hover {
+  font-size: 1.2em !important;
+  color: #999 !important;
+  text-decoration: underline;
+}
+
 @media only screen and (max-width: 600px) {
   #showcase {
     display: block;
@@ -922,6 +941,7 @@ button.dropdown-toggle:hover .dropdown-toggle {
 }
 
 .accordian-tab {
+  position: relative;
   display: flex;
   flex-direction: row;
   background-color: black;
@@ -935,7 +955,15 @@ button.dropdown-toggle:hover .dropdown-toggle {
   font-weight: lighter;
 }
 
+.accordian-tab::before {
+  content: "";
+  position: absolute;
+  background-color: white;
+  inset: 48px 0 0 0;
+}
+
 .accordian-content {
+  background-color: black;
   overflow: hidden;
   transition: all 0.5s;
 }

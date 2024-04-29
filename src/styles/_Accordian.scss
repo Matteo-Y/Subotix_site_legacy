@@ -9,6 +9,7 @@
 }
 
 .accordian-tab {
+    position: relative;
     display: flex;
     flex-direction: row;
     background-color: black;
@@ -22,7 +23,15 @@
     }
 }
 
+.accordian-tab::before {
+    content: "";
+    position: absolute;
+    background-color: white;
+    inset: 48px 0 0 0;
+}
+
 .accordian-content {
+    background-color: black;
     overflow: hidden;
     transition: all 0.5s;
 }

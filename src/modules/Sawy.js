@@ -47,5 +47,10 @@ export default function Sawy() {
                 </div>
             </a>
         </div>
+        <div id="sawy-disclaimer">
+            <h2>disclaimer</h2>
+            <p style={{fontSize: "1em", fontWeight: "lighter", padding: "0", margin: "0 50px 20px 50px"}}>the "sawy-sawy" is a visually modified "makey-makey" board produced by joylabz</p>
+            <a id="makeymakey-link" style={{fontWeight: "lighter", color: "white"}} href="https://makeymakey.com/pages/about-us" target="none" rel="noreferrer noopener">learn more</a>
+        </div>
     </div>;
 }

@@ -5,7 +5,6 @@ export default function Accordian(props) {
 
     function toggleCollapsed() {
         setCollapsed(!collapsed);
-        console.log(collapsed);
     }
 
     return <div style={{width: props.width}} className="accordian-fold">

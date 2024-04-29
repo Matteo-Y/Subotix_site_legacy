@@ -81,7 +81,7 @@
     }
     img {
         height: 0;
-        transition: all 0.5s;
+        transition: all 0.2s;
     }
 }
 
@@ -103,7 +103,7 @@
     #hero-links-div {
         height: 230px;
         img {
-            height: auto;
+            height: 80px;
             margin: 0 auto 30px auto;
         }
     }
