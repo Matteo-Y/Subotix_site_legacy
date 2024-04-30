@@ -8,6 +8,7 @@ import Sawy from './modules/Sawy';
 import ScrollToTop from './modules/ScrollToTop';
 import './styles/App.css';
 import SawyDownloads from './modules/SawyDownloads';
+import SawyApps from './modules/SawyApps';
 
 const BASE_PATH = "/";
 const SAWY_PATH = BASE_PATH + "sawy-sawy";
@@ -32,7 +33,7 @@ export default function App() {
           <Routes>
             <Route path={BASE_PATH} element={<Landing/>}/>
             <Route path={SAWY_PATH} element={<Sawy/>}/>
-            <Route path={SAWY_PATH + "/web-apps"} element={<InDevelopment/>}/>
+            <Route path={SAWY_PATH + "/web-apps"} element={<SawyApps/>}/>
             <Route path={SAWY_PATH + "/downloads"} element={<SawyDownloads/>}/>
             <Route path={SAWY_PATH + "/gallery"} element={<InDevelopment/>}/>
             <Route path={STORE_PATH} element={<InDevelopment/>}/>

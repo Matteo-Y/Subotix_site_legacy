@@ -5,7 +5,7 @@ export default function Sawy() {
         <div id="sawy-landing" className="section">
             <video style={{maxWidth: "100%"}} src={require("../res/videos/sawy-sawy_commercial.mp4")} type="video/mp4" autoPlay muted loop/>
         </div>
-        <div id="showcase" className="section">
+        <div style={{visibility: "hidden"}} id="showcase" className="section collapsed">
             <div id="showcase-textbox">
                 <h2>sawy-sawy</h2><br/>
                 <ul>

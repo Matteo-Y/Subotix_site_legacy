@@ -8,16 +8,6 @@ export default function SawyDownloads() {
             <div style={{display: "flex", flexDirection: "column", flex: " 2 1 0", marginBottom: "50px"}}>
                 <Accordian contentHeight="1820px" label="the dito">
                     <div>
-                        <h3 style={{margin: "20px", height: "40px", textAlign: "center"}}>assembly video</h3>
-                        <iframe
-                            title="finger slideshow"
-                            id="embedded-slide"
-                            height="500px" 
-                            style={{width: "100%", margin: "0 auto 20px auto"}}
-                            src="https://docs.google.com/presentation/d/e/2PACX-1vSYg6regD27tFYnjJc9_9Zta40mbDLSsEcwlEIPOveqNOOy63jXBfoI6DdlUz5uRvrnEF0tnH3tkekA/embed?loop=true"
-                            allowFullScreen={true}
-                        />
-                        <hr style={{margin: "10px"}}/>
                         <h3 style={{margin: "20px", height: "40px", textAlign: "center"}}>upload code</h3>
                         <iframe
                             title="finger slideshow"
@@ -35,6 +25,16 @@ export default function SawyDownloads() {
                             height="500px" 
                             style={{width: "100%", margin: "0 auto 20px auto"}}
                             src="https://docs.google.com/presentation/d/e/2PACX-1vTdtoGy2skIJxsOCzhssWHuCg7SsrG4ia8iljzUE4nFrmJlzyJ928XZK8kdvy4hYxcsQmVr1CPPPX8O/embed?loop=true"
+                            allowFullScreen={true}
+                        />
+                        <hr style={{margin: "10px"}}/>
+                        <h3 style={{margin: "20px", height: "40px", textAlign: "center"}}>assembly video</h3>
+                        <iframe
+                            title="finger slideshow"
+                            id="embedded-slide"
+                            height="500px" 
+                            style={{width: "100%", margin: "0 auto 20px auto"}}
+                            src="https://docs.google.com/presentation/d/e/2PACX-1vT0Uk2_Ug4vuMhfU8VNaO09ke1MBXFdCAopYe9DpfZ53KehL-AKtSJ-XFsZ1OhOJd_lrrKF3whQh9jR/embed?loop=true"
                             allowFullScreen={true}
                         />
                     </div>
