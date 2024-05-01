@@ -927,6 +927,9 @@ button.dropdown-toggle:hover .dropdown-toggle {
   border-radius: 10px;
 }
 .piano-key span {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
   grid-column: 2/-2;
   grid-row: 2/-1;
   font-size: 15px;

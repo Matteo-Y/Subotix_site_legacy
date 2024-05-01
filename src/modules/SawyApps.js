@@ -4,20 +4,22 @@ export default function SawyApps() {
         e.preventDefault();
         let key = e.key;
         switch(key) {
-            case "w":
+            case "ArrowLeft":
                 playKey("note-1")
                 break;
-            case "a":
+            case "ArrowUp":
                 playKey("note-2")
                 break;
-            case "s":
+            case "ArrowRight":
                 playKey("note-3")
                 break;
-            case "d":
+            case "ArrowDown":
                 playKey("note-4")
                 break;
             case " ":
                 playKey("note-5")
+                break;
+            default:
                 break;
         }
     }
@@ -43,6 +45,8 @@ export default function SawyApps() {
             case "key-6":
                 playKey("note-6");
                 break;
+            default:
+                break;
         }
     }
 
@@ -67,6 +71,8 @@ export default function SawyApps() {
             case "note-6":
                 keyElement = "key-6";
                 break;
+            default:
+                break;
         }
         document.getElementById(keyElement).classList.remove("key-pressed");
         void document.getElementById(keyElement).offsetHeight;
@@ -89,10 +95,10 @@ export default function SawyApps() {
         <audio id="note-5" src={require("../res/audios/key22.mp3")}/>
         <audio id="note-6" src={require("../res/audios/key23.mp3")}/>
         <div id="piano">
-            <div id="key-1" className="piano-key" onClick={pianoClick}><span>w</span></div>
-            <div id="key-2" className="piano-key" onClick={pianoClick}><span>a</span></div>
-            <div id="key-3" className="piano-key" onClick={pianoClick}><span>s</span></div>
-            <div id="key-4" className="piano-key" onClick={pianoClick}><span>d</span></div>
+            <div id="key-1" className="piano-key" onClick={pianoClick}><span>{"\u2190"}</span></div>
+            <div id="key-2" className="piano-key" onClick={pianoClick}><span>{"\u2191"}</span></div>
+            <div id="key-3" className="piano-key" onClick={pianoClick}><span>{"\u2192"}</span></div>
+            <div id="key-4" className="piano-key" onClick={pianoClick}><span>{"\u2193"}</span></div>
             <div id="key-5" className="piano-key" onClick={pianoClick}><span>space</span></div>
             <div id="key-6" className="piano-key" onClick={pianoClick}><span>click</span></div>
         </div>
