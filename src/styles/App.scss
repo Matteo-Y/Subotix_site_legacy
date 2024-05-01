@@ -82,7 +82,7 @@ img {
 }
 
 #content {
-    min-height: 80vh;
+    min-height: 90vh;
 }
 
 .collapsed {
@@ -93,5 +93,6 @@ img {
 @import 'Footer.scss';
 @import 'Landing.scss';
 @import 'Sawy.scss';
+@import 'Piano.scss';
 @import 'Slideshow.scss';
 @import 'Accordian.scss';

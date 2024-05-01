@@ -98,7 +98,7 @@ img {
 }
 
 #content {
-  min-height: 80vh;
+  min-height: 90vh;
 }
 
 .collapsed {
@@ -824,6 +824,13 @@ button.dropdown-toggle:hover .dropdown-toggle {
   text-decoration: underline;
 }
 
+#web-app-page {
+  height: 100vh;
+  display: grid;
+  justify-items: center;
+  align-items: center;
+}
+
 @media only screen and (max-width: 600px) {
   #showcase {
     display: block;
@@ -897,6 +904,48 @@ button.dropdown-toggle:hover .dropdown-toggle {
   }
   .link-table {
     width: 70%;
+  }
+}
+#piano {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  gap: 5px;
+  background-color: black;
+  min-width: 400px;
+  min-height: 300px;
+  padding: 30px;
+  border-radius: 30px;
+}
+
+.piano-key {
+  display: grid;
+  grid-template-columns: 10px 1fr 10px;
+  grid-template-rows: 1fr 50px;
+  justify-items: center;
+  align-items: center;
+  background-color: white;
+  border-radius: 10px;
+}
+.piano-key span {
+  grid-column: 2/-2;
+  grid-row: 2/-1;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.key-pressed {
+  animation: piano-key-pressed 1s linear;
+}
+
+@keyframes piano-key-pressed {
+  0% {
+    background-color: white;
+  }
+  5% {
+    background-color: #999;
+  }
+  10% {
+    background-color: white;
   }
 }
 .slideshow {

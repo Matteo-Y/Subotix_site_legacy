@@ -149,6 +149,13 @@
     text-decoration: underline;
 }
 
+#web-app-page {
+    height: 100vh;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+}
+
 @media only screen and (max-width: 600px) {
     #showcase { display: block }
     #showcase-textbox { width: 50%; padding: 0 10px 20px 30px }

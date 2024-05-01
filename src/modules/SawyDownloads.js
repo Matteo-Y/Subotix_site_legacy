@@ -38,7 +38,6 @@ export default function SawyDownloads() {
                             allowFullScreen={true}
                         />
                     </div>
-                    
                 </Accordian>
             </div>
             <div style={{display: "flex", flexDirection: "column", flex: " 1 1 0"}}>
