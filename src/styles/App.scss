@@ -8,6 +8,11 @@
     src: url(./../res/fonts/MajorMonoDisplay-Regular.ttf);
 }
 
+@font-face {
+    font-family: bebas-neue;
+    src: url(./../res/fonts/BebasNeue-Regular.ttf);
+}
+
 $pallette-1: #222;
 $pallette-2: #777;
 $pallette-3: #f9f9f9;
@@ -91,7 +96,7 @@ img {
 
 @import 'Header.scss';
 @import 'Footer.scss';
-@import 'Landing.scss';
+@import '../modules/Landing/styles/Landing.scss';
 @import 'Sawy.scss';
 @import 'Piano.scss';
 @import 'Slideshow.scss';

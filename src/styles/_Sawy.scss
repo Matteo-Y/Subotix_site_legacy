@@ -36,7 +36,6 @@
     background-color: #f0f0f0;
     margin-left: 10%;
     margin-right: 20px;
-    border-radius: 50px;
     transition: all 0.3s;
 }
 
@@ -45,7 +44,6 @@
     flex-direction: row;
     justify-content: center;
     padding-bottom: 70px;
-    
 }
 
 #workshops {
@@ -59,13 +57,8 @@
     width: 25%;
     height: 400px;
     margin: 70px auto 0 auto;
-    border-radius: 20px;
     transition: all 0.25s;
     overflow: hidden;
-}
-
-.sawy-sub-section:hover {
-    transform: scale(1.20);
 }
 
 .back-to-sawy {

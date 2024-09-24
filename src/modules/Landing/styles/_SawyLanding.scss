@@ -1,0 +1,32 @@
+#sawy-blank {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    overflow: visible;
+    z-index: 1;
+    box-shadow: 0 0 500px 400px black;
+    background-color: black;
+    height: 100%;
+    text-align: right;
+    transition: all 0.3s;
+    img {
+        transition: all ease-in 0.2s;
+    }
+} 
+
+#sawy-title-div {
+    direction: rtl;
+    overflow: visible;
+    margin-bottom: 1em;
+    h2 {
+        width: 95%;
+        margin: 0;
+    }
+}
+
+#sawy-section {
+    background-color: white;
+    flex-direction: row;
+    justify-content: right;
+    height: 500px;
+}

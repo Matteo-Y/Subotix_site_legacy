@@ -1,0 +1,58 @@
+#hero-section {
+    background-color: black;
+    display: grid;
+    grid-template-columns: [c0] 1fr [c1] 1fr [c2] 1fr [c3] 1fr [c4] 1fr [c5]; 
+}
+
+#hero-slide {
+    grid-area: hero-slide;
+}
+
+#hero-title-div {
+    grid-area: hero-title;
+    overflow: visible;
+    margin-bottom: 1em;
+    padding: 2em;
+    text-align: center;
+    h2 {
+        margin: 0;
+    }
+}
+
+#blank-paragraph-div {
+    grid-area: hero-paragraph;
+    color: white;
+    font-size: small;
+    p { line-height: 1.5em; font-size: 1.4em; font-weight: lighter }
+    transition: all 0.3s;
+    padding: 2em;
+    text-align: center;
+}
+
+#hero-links-div {
+    grid-area: hero-links;
+    align-self: center;
+    background: none;
+    display: flex;
+    font-weight: bold;
+    transition: all 0.3s;
+    padding: 2em;
+    margin: auto;
+}
+
+.hero-link {
+    background-color: white;
+    position: relative;
+    width: 170px;
+    height: 50px;
+    margin:  0 auto 10px 0;
+    transition: all 0.2s;
+    font-size: large;
+    line-height: 50px;
+    text-align: center;
+    color: black;
+}
+
+.hero-link:hover {
+    background-color: $pallette-4;
+}

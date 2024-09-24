@@ -1,7 +1,7 @@
 import { HashRouter, Route, Routes } from 'react-router-dom';
 import Footer from './modules/Footer';
 import Header from './modules/Header';
-import Landing from './modules/Landing';
+import Landing from './modules/Landing/Landing';
 import PageNotFound from './modules/PageNotFound';
 import InDevelopment from './modules/InDevelopment'
 import Sawy from './modules/Sawy';
