@@ -4,11 +4,11 @@ import Header from './modules/Header';
 import Landing from './modules/Landing/Landing';
 import PageNotFound from './modules/PageNotFound';
 import InDevelopment from './modules/InDevelopment'
-import Sawy from './modules/Sawy';
+import Sawy from './modules/SawyPage/Sawy';
 import ScrollToTop from './modules/ScrollToTop';
 import './styles/App.css';
-import SawyDownloads from './modules/SawyDownloads';
-import SawyApps from './modules/SawyApps';
+import SawyDownloads from './modules/SawyPage/SawyDownloads';
+import SawyApps from './modules/SawyPage/SawyApps';
 
 const BASE_PATH = "/";
 const SAWY_PATH = BASE_PATH + "sawy-sawy";

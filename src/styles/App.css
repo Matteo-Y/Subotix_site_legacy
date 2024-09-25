@@ -595,6 +595,115 @@ button.dropdown-toggle:hover .dropdown-toggle {
   height: 300px;
 }
 
+@media only screen and (max-width: 600px) {
+  #content-section {
+    grid-template-rows: 200px 200px 200px;
+    grid-template-areas: "apps-link apps-link apps-link" "code-link code-link code-link" "gallery-link gallery-link gallery-link";
+  }
+  .content-panel {
+    height: 400px;
+  }
+  #two-column-container {
+    flex-direction: column;
+  }
+  .sawy-sub-section {
+    width: 75%;
+    height: 400px;
+  }
+}
+@media only screen and (min-width: 600px) {
+  #content-section {
+    grid-template-rows: 200px 200px 200px;
+    grid-template-areas: "apps-link apps-link apps-link" "code-link code-link code-link" "gallery-link gallery-link gallery-link";
+  }
+  .content-panel {
+    height: 400px;
+  }
+  #two-column-container {
+    flex-direction: row;
+  }
+  .sawy-sub-section {
+    width: 75%;
+    height: 400px;
+  }
+}
+@media only screen and (min-width: 768px) {
+  #content-section {
+    grid-template-rows: 200px 200px;
+    grid-template-areas: "apps-link code-link gallery-link" "apps-link code-link gallery-link";
+  }
+  #two-column-container {
+    flex-direction: row;
+  }
+  .sawy-sub-section {
+    width: 25%;
+    height: 400px;
+  }
+  .link-table {
+    width: 70%;
+  }
+}
+@media only screen and (min-width: 992px) {
+  #content-section {
+    grid-template-rows: 350px 350px;
+    grid-template-areas: "apps-link code-link    code-link" "apps-link gallery-link gallery-link";
+  }
+  #two-column-container {
+    flex-direction: row;
+  }
+  .sawy-sub-section {
+    width: 25%;
+    height: 400px;
+  }
+  .link-table {
+    width: 70%;
+  }
+}
+#piano {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  gap: 5px;
+  background-color: black;
+  min-width: 400px;
+  min-height: 300px;
+  padding: 30px;
+  border-radius: 30px;
+}
+
+.piano-key {
+  display: grid;
+  grid-template-columns: 10px 1fr 10px;
+  grid-template-rows: 1fr 50px;
+  justify-items: center;
+  align-items: center;
+  background-color: white;
+  border-radius: 10px;
+}
+.piano-key span {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+  grid-column: 2/-2;
+  grid-row: 2/-1;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.key-pressed {
+  animation: piano-key-pressed 1s linear;
+}
+
+@keyframes piano-key-pressed {
+  0% {
+    background-color: white;
+  }
+  5% {
+    background-color: #999;
+  }
+  10% {
+    background-color: white;
+  }
+}
 #sawy-landing {
   justify-content: center;
   background-color: black;
@@ -603,58 +712,42 @@ button.dropdown-toggle:hover .dropdown-toggle {
   max-height: 70vh;
 }
 
-#showcase {
-  flex-direction: row;
-  padding: 50px 0 50px 0;
-  transition: all 0.3s;
-}
-#showcase h2 {
-  color: black;
-}
-#showcase img {
-  transition: all 0.3s;
-}
-
-#showcase:hover {
-  transform: scale(1.05);
-}
-#showcase:hover img {
-  transform: scale(1.1) translateX(20px);
-}
-#showcase:hover #showcase-textbox {
-  color: white;
-  background-color: black;
-}
-#showcase:hover #showcase-textbox h2 {
-  color: white;
-}
-
-#showcase-textbox {
-  background-color: #f0f0f0;
-  margin-left: 10%;
-  margin-right: 20px;
-  transition: all 0.3s;
-}
-
 #content-section {
-  flex-direction: row;
-  justify-content: center;
-  padding-bottom: 70px;
+  display: grid;
+  gap: 10px;
+  grid-template-columns: 1fr 1fr 1fr;
+  padding: 20px 5% 20px 5%;
+  margin-bottom: 50px;
+  transition: all 0.2s;
+}
+
+.content-panel {
+  background-color: black;
+  color: white;
+  font-family: mono-display;
+  font-size: 2em;
+  line-height: 2em;
+  text-align: center;
+  width: 100%;
+  height: 100%;
+  border-radius: 30px;
+  justify-self: center;
+}
+
+#webapp-redirect {
+  grid-area: apps-link;
+}
+
+#code-redirect {
+  grid-area: code-link;
+}
+
+#gallery-redirect {
+  grid-area: gallery-link;
 }
 
 #workshops {
   margin-bottom: 30px;
-}
-
-.sawy-sub-section {
-  position: relative;
-  display: flex;
-  background-color: black;
-  width: 25%;
-  height: 400px;
-  margin: 70px auto 0 auto;
-  transition: all 0.25s;
-  overflow: hidden;
 }
 
 .back-to-sawy {
@@ -745,126 +838,6 @@ button.dropdown-toggle:hover .dropdown-toggle {
   align-items: center;
 }
 
-@media only screen and (max-width: 600px) {
-  #showcase {
-    display: block;
-  }
-  #showcase-textbox {
-    width: 50%;
-    padding: 0 10px 20px 30px;
-  }
-  #sawy-svg {
-    visibility: hidden;
-    height: 0;
-  }
-  #content-section {
-    flex-direction: column;
-  }
-  #two-column-container {
-    flex-direction: column;
-  }
-  .sawy-sub-section {
-    width: 75%;
-    height: 400px;
-  }
-}
-@media only screen and (min-width: 600px) {
-  #showcase {
-    display: block;
-  }
-  #showcase-textbox {
-    width: 60%;
-    padding: 0 60px 30px 60px;
-  }
-  #showcase-textbox h2 {
-    padding-left: 30px;
-  }
-  #sawy-svg {
-    visibility: hidden;
-    height: 0;
-  }
-  #content-section {
-    flex-direction: column;
-  }
-  #two-column-container {
-    flex-direction: row;
-  }
-  .sawy-sub-section {
-    width: 75%;
-    height: 400px;
-  }
-}
-@media only screen and (min-width: 1060px) {
-  #showcase {
-    display: flex;
-  }
-  #showcase-textbox {
-    width: 30%;
-    padding: 10px 30px 0 30px;
-  }
-  #sawy-svg {
-    visibility: visible;
-    height: auto;
-  }
-  #content-section {
-    flex-direction: row;
-  }
-  #two-column-container {
-    flex-direction: row;
-  }
-  .sawy-sub-section {
-    width: 25%;
-    height: 400px;
-  }
-  .link-table {
-    width: 70%;
-  }
-}
-#piano {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-  gap: 5px;
-  background-color: black;
-  min-width: 400px;
-  min-height: 300px;
-  padding: 30px;
-  border-radius: 30px;
-}
-
-.piano-key {
-  display: grid;
-  grid-template-columns: 10px 1fr 10px;
-  grid-template-rows: 1fr 50px;
-  justify-items: center;
-  align-items: center;
-  background-color: white;
-  border-radius: 10px;
-}
-.piano-key span {
-  -webkit-user-select: none;
-     -moz-user-select: none;
-          user-select: none;
-  grid-column: 2/-2;
-  grid-row: 2/-1;
-  font-size: 15px;
-  font-weight: bold;
-}
-
-.key-pressed {
-  animation: piano-key-pressed 1s linear;
-}
-
-@keyframes piano-key-pressed {
-  0% {
-    background-color: white;
-  }
-  5% {
-    background-color: #999;
-  }
-  10% {
-    background-color: white;
-  }
-}
 .slideshow {
   height: 100%;
   display: flex;

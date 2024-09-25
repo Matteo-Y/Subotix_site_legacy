@@ -88,12 +88,12 @@ export default function SawyApps() {
     }
 
     return <div id="web-app-page" onClick={playClick} onKeyDown={keyDown} tabIndex="0">
-        <audio id="note-1" src={require("../res/audios/key18.mp3")}/>
-        <audio id="note-2" src={require("../res/audios/key19.mp3")}/>
-        <audio id="note-3" src={require("../res/audios/key20.mp3")}/>
-        <audio id="note-4" src={require("../res/audios/key21.mp3")}/>
-        <audio id="note-5" src={require("../res/audios/key22.mp3")}/>
-        <audio id="note-6" src={require("../res/audios/key23.mp3")}/>
+        <audio id="note-1" src={require("../SawyPage/res/audio/C-converted.wav")}/>
+        <audio id="note-2" src={require("../SawyPage/res/audio/D-converted.wav")}/>
+        <audio id="note-3" src={require("../SawyPage/res/audio/E-converted.wav")}/>
+        <audio id="note-4" src={require("../SawyPage/res/audio/F-converted.wav")}/>
+        <audio id="note-5" src={require("../SawyPage/res/audio/G-converted.wav")}/>
+        <audio id="note-6" src={require("../SawyPage/res/audio/A-converted.wav")}/>
         <div id="piano">
             <div id="key-1" className="piano-key" onClick={pianoClick}><span>{"\u2190"}</span></div>
             <div id="key-2" className="piano-key" onClick={pianoClick}><span>{"\u2191"}</span></div>
