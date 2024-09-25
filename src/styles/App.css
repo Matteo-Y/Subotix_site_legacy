@@ -380,6 +380,7 @@ button.dropdown-toggle:hover .dropdown-toggle {
   width: 170px;
   height: 50px;
   margin: auto;
+  margin-bottom: 10px;
   transition: all 0.2s;
   font-size: large;
   line-height: 50px;
@@ -532,7 +533,6 @@ button.dropdown-toggle:hover .dropdown-toggle {
     flex-direction: row;
     visibility: visible;
     width: 600px;
-    margin: 0;
   }
   #blank-paragraph-div {
     display: block;
