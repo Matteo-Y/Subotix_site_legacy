@@ -6,7 +6,7 @@ export default function Header() {
         <div className="head">
             <div id="header-menu">
                 <a href={"#" + SAWY_PATH} className="header-element glow-on-hover">sawysawy</a>
-                <a href={"#" + STORE_PATH} className="header-element glow-on-hover">store</a>
+                {/*<a href={"#" + STORE_PATH} className="header-element glow-on-hover">store</a>*/}
                 <a href={""} className="header-element glow-on-hover">contact</a>
             </div>
             <div id="header-title">

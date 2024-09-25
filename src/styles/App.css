@@ -379,7 +379,7 @@ button.dropdown-toggle:hover .dropdown-toggle {
   position: relative;
   width: 170px;
   height: 50px;
-  margin: 0 auto 10px 0;
+  margin: auto;
   transition: all 0.2s;
   font-size: large;
   line-height: 50px;
