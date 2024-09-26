@@ -690,8 +690,74 @@ button.dropdown-toggle:hover .dropdown-toggle {
   max-height: 80vh;
 }
 
+#sawy-landing-content {
+  background-color: rgba(0, 0, 0, 0.7);
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: grid;
+  align-items: center;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  grid-template-areas: ". . . . . ." ". sawy-title sawy-title . . ." ". . . . . ." ". apps-link schem-link . . ." ". . . . . .";
+}
+
+#sawy-title {
+  grid-area: sawy-title;
+}
+
+#apps-link {
+  grid-area: apps-link;
+}
+
+#schem-link {
+  grid-area: schem-link;
+}
+
+.sawy-link-button {
+  background-color: white;
+  width: 200px;
+  height: 70px;
+  text-align: center;
+  line-height: 70px;
+  font-size: large;
+  font-weight: bold;
+  transition: all 0.2s;
+}
+
+.sawy-link-button:hover {
+  background-color: #999;
+}
+
 #workshops {
   margin-bottom: 30px;
+}
+
+#sawy-apps-modal-bg {
+  background-color: rgba(0, 0, 0, 0.6);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  display: flex;
+}
+
+#sawy-apps-modal {
+  background-color: white;
+  justify-content: center;
+  width: 1000px;
+  height: 700px;
+  margin: auto;
+  border-radius: 20px;
+}
+
+#piano {
+  width: 600px;
+  height: 400px;
+  margin: auto;
+}
+
+#piano:focus {
+  outline: none;
 }
 
 .back-to-sawy {

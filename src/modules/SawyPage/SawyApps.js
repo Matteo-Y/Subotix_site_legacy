@@ -1,5 +1,31 @@
-export default function SawyApps() {
+import {useState} from "react";
 
+export default function SawyApps() {
+    const [modalOpen, setModalOpen] = useState(false);
+    const [app, setApp] = useState(null);
+
+    function openApp(app) {
+        setModalOpen(true);
+        setApp(app);
+    }
+
+    function closeModal() {
+        setModalOpen(false);
+        setApp(null);
+    }
+
+    return <div id="web-app-page">
+        <button onClick={() => openApp(pianoApp)}>piano</button>
+        {modalOpen ? <div id="sawy-apps-modal-bg">
+            <div id="sawy-apps-modal">
+                <button onClick={closeModal}>X</button>
+                {app}
+            </div>
+        </div> : <></>}
+    </div>
+}
+
+function pianoApp() {
     function keyDown(e) {
         e.preventDefault();
         let key = e.key;
@@ -87,7 +113,7 @@ export default function SawyApps() {
         playKey("note-6");
     }
 
-    return <div id="web-app-page" onClick={playClick} onKeyDown={keyDown} tabIndex="0">
+    return <div onClick={playClick} onKeyDown={keyDown} tabIndex="0">
         <audio id="note-1" src={require("../SawyPage/res/audio/C-converted.wav")}/>
         <audio id="note-2" src={require("../SawyPage/res/audio/D-converted.wav")}/>
         <audio id="note-3" src={require("../SawyPage/res/audio/E-converted.wav")}/>

@@ -35,7 +35,6 @@ export default function App() {
             <Route path={SAWY_PATH} element={<Sawy/>}/>
             <Route path={SAWY_PATH + "/web-apps"} element={<SawyApps/>}/>
             <Route path={SAWY_PATH + "/downloads"} element={<SawyDownloads/>}/>
-            <Route path={SAWY_PATH + "/gallery"} element={<InDevelopment/>}/>
             <Route path={STORE_PATH} element={<InDevelopment/>}/>
             <Route path={"*"} element={<PageNotFound/>}/>
           </Routes>
