@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.45789cb3.css",
-    "main.js": "/static/js/main.3e7e4dac.js",
+    "main.css": "/static/css/main.8bb3a3d4.css",
+    "main.js": "/static/js/main.cff8cd97.js",
     "static/media/sawy-sawy_commercial.mp4": "/static/media/sawy-sawy_commercial.03bc436ca826fe1bf1ee.mp4",
     "static/media/finger_robot.zip": "/static/media/finger_robot.051363f5a0cd50bbb0b6.zip",
     "static/media/65.jpg": "/static/media/65.457f46a5bd52c6e1b5ee.jpg",
@@ -34,17 +34,17 @@
     "static/media/60.jpg": "/static/media/60.c7606f05dc9aa4f3b6be.jpg",
     "static/media/91.jpg": "/static/media/91.0ee679c8abe99133d411.jpg",
     "static/media/59.jpg": "/static/media/59.e0e0e22aa0562de91851.jpg",
+    "static/media/G-converted.wav": "/static/media/G-converted.06264f516e20f6615fd7.wav",
     "static/media/68.jpg": "/static/media/68.01d9dd83c3518ab03b24.jpg",
-    "static/media/key18.mp3": "/static/media/key18.435ec7601e99328375e5.mp3",
-    "static/media/key19.mp3": "/static/media/key19.98e2ccd071eaf7165106.mp3",
-    "static/media/key20.mp3": "/static/media/key20.bdbe29fe4f24fbae84aa.mp3",
-    "static/media/key21.mp3": "/static/media/key21.14d97bb40a4b8f716123.mp3",
-    "static/media/key22.mp3": "/static/media/key22.c22226f78af88fa22285.mp3",
-    "static/media/key23.mp3": "/static/media/key23.0a5ad6edad4817e1e3bf.mp3",
+    "static/media/A-converted.wav": "/static/media/A-converted.ab525795d4f1ecf87362.wav",
+    "static/media/E-converted.wav": "/static/media/E-converted.b5f2084f540bbaf80262.wav",
     "static/media/52.png": "/static/media/52.b6cf83f30ed87a1948d5.png",
     "static/media/74.jpg": "/static/media/74.760186ef6e5cc3783440.jpg",
     "static/media/67.jpg": "/static/media/67.a328c24aceb70cede451.jpg",
+    "static/media/C-converted.wav": "/static/media/C-converted.dad7d07dea5120e1d406.wav",
     "static/media/50.png": "/static/media/50.87e6808ea2d237dc5475.png",
+    "static/media/D-converted.wav": "/static/media/D-converted.09d4cc731341055e63d8.wav",
+    "static/media/F-converted.wav": "/static/media/F-converted.83322e6a4ffe269e9a5c.wav",
     "static/media/33.jpg": "/static/media/33.91bf163c549d387b441b.jpg",
     "static/media/80.jpg": "/static/media/80.ee80a86edcd341196805.jpg",
     "static/media/78.jpg": "/static/media/78.bd522c8b678143203404.jpg",
@@ -70,9 +70,7 @@
     "static/media/12.jpg": "/static/media/12.d5fd9ab51e21cfc91619.jpg",
     "static/media/BebasNeue-Regular.ttf": "/static/media/BebasNeue-Regular.12e3683f9192436a7be8.ttf",
     "static/media/45.jpg": "/static/media/45.6032ac1f961472900df6.jpg",
-    "static/media/Screenshot (2).png": "/static/media/Screenshot (2).f4e4bd21734b5b18a6b9.png",
     "static/media/5.jpg": "/static/media/5.70ee436337dd912eca3d.jpg",
-    "static/media/sawy.png": "/static/media/sawy.9ae1858b6f3cea3f0e3a.png",
     "static/media/Aerospace.ttf": "/static/media/Aerospace.0342d6f9ff59f84eda4b.ttf",
     "static/media/default_firmware.zip": "/static/media/default_firmware.5137837e7eb9e172b0a2.zip",
     "static/media/X-logo.webp": "/static/media/X-logo.4c8a3b47c6f341cc768e.webp",
@@ -80,11 +78,11 @@
     "static/media/YT-logo.webp": "/static/media/YT-logo.0db8c8a07c9d63d01e4f.webp",
     "index.html": "/index.html",
     "static/media/FB-logo.webp": "/static/media/FB-logo.ee7793fa5997b12f0afb.webp",
-    "main.45789cb3.css.map": "/static/css/main.45789cb3.css.map",
-    "main.3e7e4dac.js.map": "/static/js/main.3e7e4dac.js.map"
+    "main.8bb3a3d4.css.map": "/static/css/main.8bb3a3d4.css.map",
+    "main.cff8cd97.js.map": "/static/js/main.cff8cd97.js.map"
   },
   "entrypoints": [
-    "static/css/main.45789cb3.css",
-    "static/js/main.3e7e4dac.js"
+    "static/css/main.8bb3a3d4.css",
+    "static/js/main.cff8cd97.js"
   ]
 }
