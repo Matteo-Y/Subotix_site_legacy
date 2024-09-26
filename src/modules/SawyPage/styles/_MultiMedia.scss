@@ -1,56 +1,20 @@
 @media only screen and (max-width: 600px) {
-    #content-section {
-        grid-template-rows: 200px 200px 200px;
-        grid-template-areas: 
-            "apps-link apps-link apps-link"
-            "code-link code-link code-link"
-            "gallery-link gallery-link gallery-link";
-    }
-    .content-panel {
-        height: 400px;
-    }
-
     #two-column-container { flex-direction: column }
     .sawy-sub-section { width: 75%; height: 400px }
 }
 
 @media only screen and (min-width: 600px) {
-    #content-section {
-        grid-template-rows: 200px 200px 200px;
-        grid-template-areas: 
-            "apps-link apps-link apps-link"
-            "code-link code-link code-link"
-            "gallery-link gallery-link gallery-link";
-    }
-    .content-panel {
-        height: 400px;
-    }
-
     #two-column-container { flex-direction: row }
     .sawy-sub-section { width: 75%; height: 400px }
 }
 
 @media only screen and (min-width: 768px) {
-    #content-section {
-        grid-template-rows: 200px 200px;
-        grid-template-areas: 
-            "apps-link code-link gallery-link"
-            "apps-link code-link gallery-link";
-    }
-
     #two-column-container { flex-direction: row }
     .sawy-sub-section { width: 25%; height: 400px }
     .link-table { width: 70% }
 } 
 
 @media only screen and (min-width: 992px) {
-    #content-section {
-        grid-template-rows: 350px 350px;
-        grid-template-areas: 
-            "apps-link code-link    code-link"
-            "apps-link gallery-link gallery-link";
-    }
-
     #two-column-container { flex-direction: row }
     .sawy-sub-section { width: 25%; height: 400px }
     .link-table { width: 70% }

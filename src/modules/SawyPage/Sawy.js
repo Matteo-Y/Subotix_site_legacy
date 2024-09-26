@@ -2,13 +2,11 @@ import { SAWY_PATH } from "../../App";
 
 export default function Sawy() {
     return <div id="sawy-page">
-        <div id="content-section">
-            <a id="webapp-redirect" className="content-panel" href={"#" + SAWY_PATH + "/web-apps"}>apps </a>
-            <a id="code-redirect" className="content-panel" href={"#" + SAWY_PATH + "/downloads"}>schematics  </a>
-            <a id="gallery-redirect" className="content-panel" href={"#" + SAWY_PATH + "/gallery"}>gallery </a>
-        </div>
         <div id="sawy-landing" className="section">
             <video style={{maxWidth: "100%"}} src={require("../SawyPage/res/videos/sawy-sawy_commercial.mp4")} type="video/mp4" autoPlay muted loop/>
+            <div style={{position: "absolute", width: "100%", height: "100%", backgroundColor: "rgba(0, 0, 0, 0.3)"}}>
+
+            </div>
         </div>
         <div id="workshops">
             <a id="locations-section" className="section hover-section" href={"#" + SAWY_PATH}>
