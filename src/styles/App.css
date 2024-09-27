@@ -73,7 +73,7 @@ body {
   font-family: mono-display;
   margin: 0;
   transition: all 0.2s;
-  overflow-x: scroll;
+  overflow-x: auto;
 }
 
 p {
@@ -528,6 +528,7 @@ button.dropdown-toggle:hover .dropdown-toggle {
   font-family: roboto;
   font-weight: bold;
   margin-bottom: 30px;
+  padding: 10px;
 }
 .showcase-panel-text p {
   color: black;
