@@ -9,14 +9,12 @@
 .showcase-panel {
     background-color: $pallette-3;
     width: 70%;
-    height: 500px;
+    
     margin: 0 auto 100px auto;
 
     display: grid;
     align-items: center;
     justify-items: center;
-    grid-template-columns: 50% 50%;
-    grid-template-areas: "showcase-image showcase-text";
 }
 
 .showcase-panel-image {
@@ -29,9 +27,9 @@
 
     img {
         min-width: 100%;
-        max-width: 150%;
+        max-width: 200%;
         min-height: 100%;
-        max-height: 150%;
+        max-height: 200%;
     }
 }
 

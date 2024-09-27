@@ -13,14 +13,22 @@
     }
 
     #sawy-section {
-        height: 1050px;
-        grid-template-rows: 200px 200px 200px 200px 200px; 
+        height: 1150px;
+        grid-template-rows: 300px 200px 200px 200px 200px; 
         grid-template-areas: 
         "image-1 image-1 image-1 image-1 image-1"
         "sawy-title sawy-title sawy-title sawy-title sawy-title"
         "sawy-paragraph sawy-paragraph sawy-paragraph sawy-paragraph sawy-paragraph"
         "image-2 image-2 image-2 image-4 image-4"
         "image-3 image-3 image-3 image-4 image-4";
+    }
+
+    .showcase-panel {
+        width: 80%;
+        height: 800px;
+        grid-template-columns: auto;
+        grid-template-rows: 50% 50%;
+        grid-template-areas: "showcase-text" "showcase-image";
     }
 }
 
@@ -39,14 +47,22 @@
     }
 
     #sawy-section {
-        height: 1050px;
-        grid-template-rows: 200px 200px 200px 200px 200px; 
+        height: 1150px;
+        grid-template-rows: 300px 200px 200px 200px 200px; 
         grid-template-areas: 
         "image-1 image-1 image-1 image-1 image-1"
         "sawy-title sawy-title sawy-title sawy-title sawy-title"
         "sawy-paragraph sawy-paragraph sawy-paragraph sawy-paragraph sawy-paragraph"
         "image-2 image-2 image-2 image-4 image-4"
         "image-3 image-3 image-3 image-4 image-4";
+    }
+
+    .showcase-panel {
+        width: 80%;
+        height: 800px;
+        grid-template-columns: auto;
+        grid-template-rows: 50% 50%;
+        grid-template-areas: "showcase-text" "showcase-image";
     }
 }
 
@@ -65,13 +81,21 @@
     }
 
     #sawy-section {
-        height: 850px;
-        grid-template-rows: 200px 200px 200px 200px; 
+        height: 950px;
+        grid-template-rows: 200px 200px 200px 300px; 
         grid-template-areas: 
-        "image-1 image-1 image-1 image-1 image-1"
-        "sawy-title sawy-title sawy-title sawy-title image-4"
-        "sawy-paragraph sawy-paragraph sawy-paragraph sawy-paragraph image-4"
+        "image-1 image-1 image-1 image-4 image-4"
+        "sawy-title sawy-title sawy-title image-4 image-4"
+        "sawy-paragraph sawy-paragraph sawy-paragraph image-4 image-4"
         "image-2 image-2 image-2 image-3 image-3";
+    }
+
+    .showcase-panel {
+        width: 80%;
+        height: 800px;
+        grid-template-columns: auto;
+        grid-template-rows: 50% 50%;
+        grid-template-areas: "showcase-text" "showcase-image";
     }
 } 
 
@@ -95,5 +119,13 @@
         grid-template-areas: 
         "image-1 image-1 sawy-title sawy-title image-4"
         "image-2 image-3 sawy-paragraph sawy-paragraph image-4";
+    }
+
+    .showcase-panel {
+        width: 70%;
+        height: 500px;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: auto;
+        grid-template-areas: "showcase-image showcase-text";
     }
 }

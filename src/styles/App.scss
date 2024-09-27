@@ -19,36 +19,41 @@ $pallette-3: #f9f9f9;
 $pallette-4: #999;
 
 @media only screen and (max-width: 600px) {
+    body {min-width: 500px;}
     h1 {font-size: 50px }
     p { line-height: 1rem; padding-bottom: 30px }
     h2 { margin-bottom: 2rem }
 }
 
 @media only screen and (min-width: 600px) {
+    body {min-width: 500px;}
     h1 {font-size: 50px }
     p { line-height: 1rem; padding-bottom: 30px }
     h2 { margin-bottom: 2rem }
 }
 
 @media only screen and (min-width: 768px) {
+    body {min-width: 800px;}
     h1 {font-size: 50px }
     p { line-height: 1.5rem }
     h2 { margin-bottom: 0.5rem }
 }
 
 @media only screen and (min-width: 992px) {
+    body {min-width: 1500px;}
     h1 {font-size: 50px }
     p { line-height: 2rem }
     h2 { margin-bottom: 2rem }
 }
 
+
+
 body {
     background-color: $pallette-3;
     font-family: mono-display;
     margin: 0;
-    min-width: 500px;
     transition: all 0.2s;
-    overflow-x: hidden;
+    overflow-x: scroll;
 }
 
 p {

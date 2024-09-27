@@ -40,14 +40,14 @@
     display: flex;
     font-weight: bold;
     transition: all 0.3s;
-    padding: 2em;
     margin: auto;
 }
 
 .hero-link {
     background-color: white;
     position: relative;
-    width: 170px;
+    min-width: 150px;
+    width: 30%;
     height: 50px;
     margin:  auto;
     margin-bottom: 10px;
