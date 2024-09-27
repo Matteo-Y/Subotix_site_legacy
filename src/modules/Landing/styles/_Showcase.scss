@@ -1,7 +1,6 @@
 #showcase {
     background-color: black;
-    height: 2000px;
-    padding-top: 100px;
+    padding: 100px 0 100px 0;
 
     box-shadow: 0 5px 50px 50px black;
 }
@@ -19,23 +18,19 @@
 
 .showcase-panel-image {
     grid-area: showcase-image;
-    width: 80%;
-    height: 80%;
     overflow: hidden;
 
     border-radius: 10px;
 
     img {
-        min-width: 100%;
-        max-width: 200%;
-        min-height: 100%;
-        max-height: 200%;
+        width: 100%;
     }
 }
 
 .showcase-panel-text {
     grid-area: showcase-text;
     text-align: center;
-    h2{ color: black; text-align: center; font-family: roboto; font-weight: bold;}
-    p { color: black; text-align: center; width: 300px}
+    justify-content: center;
+    h2{ color: black; text-align: center; font-family: roboto; font-weight: bold; margin-bottom: 30px}
+    p { color: black; text-align: center; width: 60%; margin: auto }
 }

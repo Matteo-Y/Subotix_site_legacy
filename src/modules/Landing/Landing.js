@@ -48,17 +48,17 @@ export default function Landing() {
             
             <div id="showcase"> 
                 <div className="showcase-panel">
-                    <div className="showcase-panel-image"><img src={require("../Landing/res/images/showcase_thumbnails/1.jpeg")} alt="Al-Hammad Schools workshop"/></div>
+                    <div className="showcase-panel-image"><img src={require("../Landing/res/images/showcase_thumbnails/2.jpeg")} alt="Al-Hammad Schools workshop"/></div>
                     <div className="showcase-panel-text">
-                        <h2>STUFF</h2>
-                        <p>stuffstuffstuffstuffstuffstuff</p>
+                        <h2>SCHOOL INTEGRATION</h2>
+                        <p>subotix offers the sawy-sawy steam kit, engaging students in hands-on projects that promote creativity and critical thinking.</p>
                     </div>
                 </div>
                 <div className="showcase-panel">
-                    <div className="showcase-panel-image"><img src={require("../Landing/res/images/showcase_thumbnails/1.jpeg")} alt="Al-Hammad Schools workshop"/></div>
+                    <div className="showcase-panel-image"><img src={require("../Landing/res/images/showcase_thumbnails/3.jpg")} alt="Al-Hammad Schools workshop"/></div>
                     <div className="showcase-panel-text">
-                        <h2>OTHER STUFF</h2>
-                        <p>thingthing thingthi ngthingthing thingthingthi ngthing thingthingth ingthingthingt hingthin gthing</p>
+                        <h2>MAKER EVENTS</h2>
+                        <p>subotix empowers students to actively participate in maker events showcasing their projects and inspiring others with their innovative creations.</p>
                     </div>
                 </div>
             </div>
