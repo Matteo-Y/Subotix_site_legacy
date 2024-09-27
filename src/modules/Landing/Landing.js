@@ -50,8 +50,15 @@ export default function Landing() {
                 <div className="showcase-panel">
                     <div className="showcase-panel-image"><img src={require("../Landing/res/images/showcase_thumbnails/1.jpeg")} alt="Al-Hammad Schools workshop"/></div>
                     <div className="showcase-panel-text">
-                        <h2>stuff</h2>
+                        <h2>STUFF</h2>
                         <p>stuffstuffstuffstuffstuffstuff</p>
+                    </div>
+                </div>
+                <div className="showcase-panel">
+                    <div className="showcase-panel-image"><img src={require("../Landing/res/images/showcase_thumbnails/1.jpeg")} alt="Al-Hammad Schools workshop"/></div>
+                    <div className="showcase-panel-text">
+                        <h2>OTHER STUFF</h2>
+                        <p>thingthing thingthi ngthingthing thingthingthi ngthing thingthingth ingthingthingt hingthin gthing</p>
                     </div>
                 </div>
             </div>

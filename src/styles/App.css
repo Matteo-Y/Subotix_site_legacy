@@ -493,10 +493,11 @@ button.dropdown-toggle:hover .dropdown-toggle {
   background-color: #f9f9f9;
   width: 70%;
   height: 500px;
-  margin: auto;
+  margin: 0 auto 100px auto;
   display: grid;
   align-items: center;
   justify-items: center;
+  grid-template-columns: 50% 50%;
   grid-template-areas: "showcase-image showcase-text";
 }
 
@@ -505,6 +506,7 @@ button.dropdown-toggle:hover .dropdown-toggle {
   width: 80%;
   height: 80%;
   overflow: hidden;
+  border-radius: 10px;
 }
 .showcase-panel-image img {
   min-width: 100%;
@@ -515,12 +517,18 @@ button.dropdown-toggle:hover .dropdown-toggle {
 
 .showcase-panel-text {
   grid-area: showcase-text;
+  text-align: center;
 }
 .showcase-panel-text h2 {
   color: black;
+  text-align: center;
+  font-family: roboto;
+  font-weight: bold;
 }
 .showcase-panel-text p {
   color: black;
+  text-align: center;
+  width: 300px;
 }
 
 @media only screen and (max-width: 600px) {
