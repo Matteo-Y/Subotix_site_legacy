@@ -1,0 +1,39 @@
+#showcase {
+    background-color: black;
+    height: 2000px;
+    padding-top: 100px;
+
+    box-shadow: 0 5px 50px 50px black;
+}
+
+.showcase-panel {
+    background-color: $pallette-3;
+    width: 70%;
+    height: 500px;
+    margin: auto;
+
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    grid-template-areas: "showcase-image showcase-text";
+}
+
+.showcase-panel-image {
+    grid-area: showcase-image;
+    width: 80%;
+    height: 80%;
+    overflow: hidden;
+
+    img {
+        min-width: 100%;
+        max-width: 150%;
+        min-height: 100%;
+        max-height: 150%;
+    }
+}
+
+.showcase-panel-text {
+    grid-area: showcase-text;
+    h2{ color: black }
+    p { color: black }
+}

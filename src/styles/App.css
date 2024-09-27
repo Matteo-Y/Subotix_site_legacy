@@ -437,7 +437,7 @@ button.dropdown-toggle:hover .dropdown-toggle {
 #sawy-section {
   background-color: #f9f9f9;
   width: calc(100% - 50px);
-  margin: 150px auto 50px auto;
+  margin: 150px auto 150px auto;
   display: grid;
   justify-items: center;
   align-items: center;
@@ -464,10 +464,9 @@ button.dropdown-toggle:hover .dropdown-toggle {
 }
 
 .sawy-sec-thumbnail {
-  width: 95%;
-  height: 95%;
+  width: 100%;
+  height: 100%;
   border-radius: 10px;
-  box-shadow: 0 0 10px black;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -480,6 +479,47 @@ button.dropdown-toggle:hover .dropdown-toggle {
 }
 
 .sawy-sec-text {
+  color: black;
+}
+
+#showcase {
+  background-color: black;
+  height: 2000px;
+  padding-top: 100px;
+  box-shadow: 0 5px 50px 50px black;
+}
+
+.showcase-panel {
+  background-color: #f9f9f9;
+  width: 70%;
+  height: 500px;
+  margin: auto;
+  display: grid;
+  align-items: center;
+  justify-items: center;
+  grid-template-areas: "showcase-image showcase-text";
+}
+
+.showcase-panel-image {
+  grid-area: showcase-image;
+  width: 80%;
+  height: 80%;
+  overflow: hidden;
+}
+.showcase-panel-image img {
+  min-width: 100%;
+  max-width: 150%;
+  min-height: 100%;
+  max-height: 150%;
+}
+
+.showcase-panel-text {
+  grid-area: showcase-text;
+}
+.showcase-panel-text h2 {
+  color: black;
+}
+.showcase-panel-text p {
   color: black;
 }
 

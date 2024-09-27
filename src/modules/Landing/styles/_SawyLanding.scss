@@ -1,7 +1,7 @@
 #sawy-section {
     background-color: $pallette-3;
     width: calc(100% - 50px);
-    margin: 150px auto 50px auto;
+    margin: 150px auto 150px auto;
 
     display: grid;
     justify-items: center;
@@ -29,10 +29,9 @@
 }
 
 .sawy-sec-thumbnail {
-    width: 95%;
-    height: 95%;
+    width: 100%;
+    height: 100%;
     border-radius: 10px;
-    box-shadow: 0 0 10px black;
 
     display: flex;
     justify-content: center;
