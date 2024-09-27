@@ -13,8 +13,8 @@
     }
 
     #sawy-section {
-        height: 1150px;
-        grid-template-rows: 300px 200px 200px 200px 200px; 
+        height: 1100px;
+        grid-template-rows: 250px 200px 200px 175px 175px; 
         grid-template-areas: 
         "image-1 image-1 image-1 image-1 image-1"
         "sawy-title sawy-title sawy-title sawy-title sawy-title"
@@ -23,11 +23,11 @@
         "image-3 image-3 image-3 image-4 image-4";
     }
 
-    .showcase-panel-image { width: 350px; height: 250px }
+    .showcase-panel-image { width: 350px; height: 225px }
     .showcase-panel {
         width: 80%;
         grid-template-columns: auto;
-        grid-template-rows: 1fr 300px;
+        grid-template-rows: 1fr 325px;
         grid-template-areas: "showcase-text" "showcase-image";
     }
 }
@@ -47,8 +47,9 @@
     }
 
     #sawy-section {
-        height: 1150px;
-        grid-template-rows: 300px 200px 200px 200px 200px; 
+        height: 1250px;
+        grid-template-columns: 1fr 1fr 1fr 120px 120px;
+        grid-template-rows: 300px 200px 200px 250px 250px; 
         grid-template-areas: 
         "image-1 image-1 image-1 image-1 image-1"
         "sawy-title sawy-title sawy-title sawy-title sawy-title"
@@ -81,8 +82,9 @@
     }
 
     #sawy-section {
-        height: 950px;
-        grid-template-rows: 200px 200px 200px 300px; 
+        height: 1000px;
+        grid-template-columns: 1fr 1fr 1fr 140px 140px; 
+        grid-template-rows: 250px 200px 200px 300px; 
         grid-template-areas: 
         "image-1 image-1 image-1 image-4 image-4"
         "sawy-title sawy-title sawy-title image-4 image-4"
@@ -115,6 +117,7 @@
 
     #sawy-section {
         height: 650px;
+        grid-template-columns: 300px 300px 1fr 1fr 300px;
         grid-template-rows: 300px 300px; 
         grid-template-areas: 
         "image-1 image-1 sawy-title sawy-title image-4"

@@ -35,7 +35,7 @@ export default function Landing() {
                 <div id="sawy-title-div">
                     <h2 className="sawy-sec-text">subotix <br/>sawy-sawy<br/>initiative</h2>
                 </div>
-                <div id="sawy-paragraph-div" className="blank-paragraph-div">
+                <div id="sawy-paragraph-div">
                     <p className="sawy-sec-text" style={{fontSize: "1em", lineHeight: "1.7em", width: "350px", margin: "auto"}}>
                         a mass distribution of sawy-sawy steam kits, aimed to spread 21st century skills to students of all ages
                     </p>

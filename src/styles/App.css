@@ -466,6 +466,7 @@ button.dropdown-toggle:hover .dropdown-toggle {
   align-self: start;
   grid-area: sawy-paragraph;
   text-align: center;
+  height: fi;
 }
 
 #sawy-link {
@@ -478,15 +479,10 @@ button.dropdown-toggle:hover .dropdown-toggle {
   width: 100%;
   height: 100%;
   border-radius: 10px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   overflow: hidden;
 }
 .sawy-sec-thumbnail img {
-  flex-shrink: 0.6;
-  min-width: 100%;
-  min-height: 100% !important;
+  width: 120%;
 }
 
 .sawy-sec-text {
@@ -561,18 +557,18 @@ button.dropdown-toggle:hover .dropdown-toggle {
     grid-template-areas: "hero-slide hero-slide hero-slide hero-slide hero-slide" "hero-title hero-title hero-title hero-title hero-title" "hero-links hero-links hero-links hero-links hero-links";
   }
   #sawy-section {
-    height: 1150px;
-    grid-template-rows: 300px 200px 200px 200px 200px;
+    height: 1100px;
+    grid-template-rows: 250px 200px 200px 175px 175px;
     grid-template-areas: "image-1 image-1 image-1 image-1 image-1" "sawy-title sawy-title sawy-title sawy-title sawy-title" "sawy-paragraph sawy-paragraph sawy-paragraph sawy-paragraph sawy-paragraph" "image-2 image-2 image-2 image-4 image-4" "image-3 image-3 image-3 image-4 image-4";
   }
   .showcase-panel-image {
     width: 350px;
-    height: 250px;
+    height: 225px;
   }
   .showcase-panel {
     width: 80%;
     grid-template-columns: auto;
-    grid-template-rows: 1fr 300px;
+    grid-template-rows: 1fr 325px;
     grid-template-areas: "showcase-text" "showcase-image";
   }
 }
@@ -600,8 +596,9 @@ button.dropdown-toggle:hover .dropdown-toggle {
     grid-template-areas: "hero-slide hero-slide hero-slide hero-slide hero-slide" "hero-title hero-title hero-title hero-title hero-title" "hero-links hero-links hero-links hero-links hero-links";
   }
   #sawy-section {
-    height: 1150px;
-    grid-template-rows: 300px 200px 200px 200px 200px;
+    height: 1250px;
+    grid-template-columns: 1fr 1fr 1fr 120px 120px;
+    grid-template-rows: 300px 200px 200px 250px 250px;
     grid-template-areas: "image-1 image-1 image-1 image-1 image-1" "sawy-title sawy-title sawy-title sawy-title sawy-title" "sawy-paragraph sawy-paragraph sawy-paragraph sawy-paragraph sawy-paragraph" "image-2 image-2 image-2 image-4 image-4" "image-3 image-3 image-3 image-4 image-4";
   }
   .showcase-panel-image {
@@ -639,8 +636,9 @@ button.dropdown-toggle:hover .dropdown-toggle {
     grid-template-areas: "hero-title     hero-title     hero-title     hero-slide hero-slide" "hero-paragraph hero-paragraph hero-paragraph hero-slide hero-slide" "hero-links     hero-links     hero-links     hero-slide hero-slide";
   }
   #sawy-section {
-    height: 950px;
-    grid-template-rows: 200px 200px 200px 300px;
+    height: 1000px;
+    grid-template-columns: 1fr 1fr 1fr 140px 140px;
+    grid-template-rows: 250px 200px 200px 300px;
     grid-template-areas: "image-1 image-1 image-1 image-4 image-4" "sawy-title sawy-title sawy-title image-4 image-4" "sawy-paragraph sawy-paragraph sawy-paragraph image-4 image-4" "image-2 image-2 image-2 image-3 image-3";
   }
   .showcase-panel-image {
@@ -679,6 +677,7 @@ button.dropdown-toggle:hover .dropdown-toggle {
   }
   #sawy-section {
     height: 650px;
+    grid-template-columns: 300px 300px 1fr 1fr 300px;
     grid-template-rows: 300px 300px;
     grid-template-areas: "image-1 image-1 sawy-title sawy-title image-4" "image-2 image-3 sawy-paragraph sawy-paragraph image-4";
   }
