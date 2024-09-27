@@ -1,32 +1,51 @@
-#sawy-blank {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    overflow: visible;
-    z-index: 1;
-    box-shadow: 0 0 500px 400px black;
-    background-color: black;
-    height: 100%;
-    text-align: right;
-    transition: all 0.3s;
-    img {
-        transition: all ease-in 0.2s;
-    }
-} 
+#sawy-section {
+    background-color: $pallette-3;
+    width: calc(100% - 50px);
+    margin: 150px auto 50px auto;
+
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    gap: 10px;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
 
 #sawy-title-div {
-    direction: rtl;
+    grid-area: sawy-title;
+    text-align: center;
     overflow: visible;
-    margin-bottom: 1em;
-    h2 {
-        width: 95%;
-        margin: 0;
+}
+
+#sawy-paragraph-div {
+    align-self: start;
+    grid-area: sawy-paragraph;
+    text-align: center;
+}
+
+#sawy-link {
+    background-color: black;
+    color: white;
+    padding: 15px;
+}
+
+.sawy-sec-thumbnail {
+    width: 95%;
+    height: 95%;
+    border-radius: 10px;
+    box-shadow: 0 0 10px black;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+
+    img {
+        flex-shrink: .6;
+        min-width: 100%;
+        min-height: 100% !important;
     }
 }
 
-#sawy-section {
-    background-color: white;
-    flex-direction: row;
-    justify-content: right;
-    height: 500px;
+.sawy-sec-text {
+    color: black;
 }

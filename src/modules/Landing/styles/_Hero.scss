@@ -1,7 +1,11 @@
 #hero-section {
     background-color: black;
+    margin-bottom: 100px;
+
     display: grid;
     grid-template-columns: [c0] 1fr [c1] 1fr [c2] 1fr [c3] 1fr [c4] 1fr [c5]; 
+
+    box-shadow: 0 5px 50px 50px black;
 }
 
 #hero-slide {

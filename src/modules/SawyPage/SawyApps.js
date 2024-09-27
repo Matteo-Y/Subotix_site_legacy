@@ -16,6 +16,8 @@ export default function SawyApps() {
 
     return <div id="web-app-page">
         <button onClick={() => openApp(pianoApp)}>piano</button>
+        <button onClick={() => openApp(simonApp)}>simon</button>
+
         {modalOpen ? <div id="sawy-apps-modal-bg">
             <div id="sawy-apps-modal">
                 <button onClick={closeModal}>X</button>
@@ -128,5 +130,21 @@ function pianoApp() {
             <div id="key-5" className="piano-key" onClick={pianoClick}><span>space</span></div>
             <div id="key-6" className="piano-key" onClick={pianoClick}><span>click</span></div>
         </div>
+    </div>
+}
+
+function simonApp() {
+    
+
+
+    function pressKey(e) {
+
+    }
+
+    return <div id="simon">
+        <div className="simon-button" style={{gridArea: "simon-up"}}></div>
+        <div className="simon-button" style={{gridArea: "simon-down"}}></div>
+        <div className="simon-button" style={{gridArea: "simon-right"}}></div>
+        <div className="simon-button" style={{gridArea: "simon-left"}}></div>
     </div>
 }

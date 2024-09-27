@@ -1,14 +1,12 @@
-@import 'Hero.scss';
-@import 'SawyLanding.scss';
-@import 'MultiMedia.scss';
-
 .section {
+    background-color: $pallette-3;
+    width: 100%;
+    color: black;
+
     display: flex;
     position: relative;
-    width: 100%;
     overflow: hidden;
-    background-color: $pallette-3;
-    color: black;
+
     transition: transform 0.3s;
 }
 
@@ -40,20 +38,9 @@
     background-color: rgba(0, 0, 0, 0.9);
 }
 
-#locations-section {
-    background-color: black;
-    flex-direction: row;
-    justify-content: center;
-    padding-top: 50px;
-    height: 700px
-}
-
-#locations-infobar {
-    $title-height: 170px;
-    $info-height: 130px;
-    bottom: -1 * $info-height;
-    height: $info-height + $title-height;
-}
+@import 'Hero.scss';
+@import 'SawyLanding.scss';
+@import 'MultiMedia.scss';
 
 
 

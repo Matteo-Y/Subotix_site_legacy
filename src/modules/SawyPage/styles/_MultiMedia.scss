@@ -1,20 +1,57 @@
 @media only screen and (max-width: 600px) {
+    #sawy-landing-content {
+        grid-template-areas: 
+            ". . . . . ."
+            ". sawy-title sawy-title sawy-title sawy-title ."
+            ". schem-link . . . ."
+            ". apps-link . . . ."
+            ". . . . . .";
+    }
+
     #two-column-container { flex-direction: column }
     .sawy-sub-section { width: 75%; height: 400px }
+    
 }
 
 @media only screen and (min-width: 600px) {
+    #sawy-landing-content {
+        grid-template-areas: 
+            ". . . . . ."
+            ". sawy-title sawy-title sawy-title sawy-title ."
+            ". schem-link . . . ."
+            ". apps-link . . . ."
+            ". . . . . .";
+    }
+
     #two-column-container { flex-direction: row }
     .sawy-sub-section { width: 75%; height: 400px }
 }
 
 @media only screen and (min-width: 768px) {
+    #sawy-landing-content {
+        grid-template-areas: 
+            ". . . . . ."
+            ". sawy-title sawy-title sawy-title sawy-title ."
+            ". schem-link . . . ."
+            ". apps-link . . . ."
+            ". . . . . .";
+    }
+
     #two-column-container { flex-direction: row }
     .sawy-sub-section { width: 25%; height: 400px }
     .link-table { width: 70% }
 } 
 
 @media only screen and (min-width: 992px) {
+    #sawy-landing-content {
+        grid-template-areas: 
+            ". . . . . ."
+            ". sawy-title sawy-title sawy-title sawy-title ."
+            ". . . . . ."
+            ". apps-link schem-link . . ."
+            ". . . . . .";
+    }
+
     #two-column-container { flex-direction: row }
     .sawy-sub-section { width: 25%; height: 400px }
     .link-table { width: 70% }

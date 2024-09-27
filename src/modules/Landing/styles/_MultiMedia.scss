@@ -1,6 +1,4 @@
 @media only screen and (max-width: 600px) {
-    #sawy-blank { width: 20%; padding: 100px 10% 0 0 }
-    #sawy-title-div { h2 { font-size: 2.5rem } }
     .infobar { padding-left: 5%; h3 { font-size: 1.2rem}; p { width: 90% } }
 
     #hero-links-div { flex-direction: row; visibility: visible; width: 100% }
@@ -13,13 +11,22 @@
         "hero-title hero-title hero-title hero-title hero-title"
         "hero-links hero-links hero-links hero-links hero-links";
     }
+
+    #sawy-section {
+        height: 1050px;
+        grid-template-rows: 200px 200px 200px 200px 200px; 
+        grid-template-areas: 
+        "image-1 image-1 image-1 image-1 image-1"
+        "sawy-title sawy-title sawy-title sawy-title sawy-title"
+        "sawy-paragraph sawy-paragraph sawy-paragraph sawy-paragraph sawy-paragraph"
+        "image-2 image-2 image-2 image-4 image-4"
+        "image-3 image-3 image-3 image-4 image-4";
+    }
 }
 
 @media only screen and (min-width: 600px) {
-    #sawy-blank { width: 30%; padding: 100px 11% 0 0 }
-    #sawy-title-div { h2 { font-size: 3rem } }
     .infobar { padding-left: 5%; h3 { font-size: 1.2rem}; p { width: 90% } }
-
+    
     #hero-links-div { flex-direction: row; visibility: visible; width: 600px }
     #blank-paragraph-div {display: none}
     #hero-section {
@@ -30,10 +37,20 @@
         "hero-title hero-title hero-title hero-title hero-title"
         "hero-links hero-links hero-links hero-links hero-links";
     }
+
+    #sawy-section {
+        height: 1050px;
+        grid-template-rows: 200px 200px 200px 200px 200px; 
+        grid-template-areas: 
+        "image-1 image-1 image-1 image-1 image-1"
+        "sawy-title sawy-title sawy-title sawy-title sawy-title"
+        "sawy-paragraph sawy-paragraph sawy-paragraph sawy-paragraph sawy-paragraph"
+        "image-2 image-2 image-2 image-4 image-4"
+        "image-3 image-3 image-3 image-4 image-4";
+    }
 }
 
 @media only screen and (min-width: 768px) {
-    #sawy-blank { width: 40%; padding: 100px 12% 0 0 }
     .infobar { padding-left: 5%; h3 { font-size: 1.2rem}; p { width: 60% } }
 
     #hero-links-div { flex-direction: column; visibility: visible; width: 180px }
@@ -46,10 +63,19 @@
         "hero-paragraph hero-paragraph hero-paragraph hero-slide hero-slide"
         "hero-links     hero-links     hero-links     hero-slide hero-slide";
     }
+
+    #sawy-section {
+        height: 850px;
+        grid-template-rows: 200px 200px 200px 200px; 
+        grid-template-areas: 
+        "image-1 image-1 image-1 image-1 image-1"
+        "sawy-title sawy-title sawy-title sawy-title image-4"
+        "sawy-paragraph sawy-paragraph sawy-paragraph sawy-paragraph image-4"
+        "image-2 image-2 image-2 image-3 image-3";
+    }
 } 
 
 @media only screen and (min-width: 992px) {
-    #sawy-blank { width: 20%; padding: 100px 12% 0 0 }
     .infobar { padding-left: 5%; h3 { font-size: 1.2rem}; p { width: 60% } }
 
     #hero-links-div { flex-direction: row; visibility: visible; width: 600px }
@@ -61,5 +87,13 @@
         "hero-title     hero-title     hero-slide hero-slide hero-slide"
         "hero-paragraph hero-paragraph hero-slide hero-slide hero-slide"
         "hero-links     hero-links     hero-slide hero-slide hero-slide";
+    }
+
+    #sawy-section {
+        height: 650px;
+        grid-template-rows: 300px 300px; 
+        grid-template-areas: 
+        "image-1 image-1 sawy-title sawy-title image-4"
+        "image-2 image-3 sawy-paragraph sawy-paragraph image-4";
     }
 }

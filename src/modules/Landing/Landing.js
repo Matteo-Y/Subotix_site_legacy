@@ -1,7 +1,7 @@
 import { BASE_PATH, SAWY_PATH, STORE_PATH } from "../../App";
 import Slideshow from "../Slideshow";
 
-const imageFolder = require.context("../Landing/res/slideshow_1", true);
+const imageFolder = require.context("../Landing/res/images/hero_slidereel", true);
 const imageList = imageFolder.keys().map(image => imageFolder(image));
 
 export default function Landing() {
@@ -26,28 +26,29 @@ export default function Landing() {
                     <Slideshow style={{height: "100%"}} imageList={imageList} delay={10000}/>
                 </div>
             </div>
-            <a id="sawy-section" className="section" href={"#" + SAWY_PATH}>
-                <img style={{objectFit: "cover", width: "100%"}} src={require("../../res/pictures/gallery/67.jpg")} alt="sawy-sawy thumbnail"/>
-                <div id="sawy-blank">
-                    <div id="sawy-title-div">
-                        <h2>subotix <br/>sawy-sawy<br/>initiative</h2>
-                    </div>
-                    <div style={{direction: "rtl"}} className="blank-paragraph-div">
-                        <p style={{fontSize: "0.9em", width: "300px"}}>
-                            a mass distribution of sawy-sawy steam kits, aimed to spread 21st century skills to students of all ages
-                        </p>
-                    </div>
+
+            <div id="sawy-section" className="section">
+                <div class="sawy-sec-thumbnail" style={{gridArea: "image-1"}}><img src={require("../Landing/res/images/sawy_thumbnails/sawy_thumbnail.jpg")} alt="sawy-sawy thumbnail"/></div>
+                <div class="sawy-sec-thumbnail" style={{gridArea: "image-2"}}><img src={require("../Landing/res/images/sawy_thumbnails/1.jpg")} alt="sawy-sawy thumbnail"/></div>
+                <div class="sawy-sec-thumbnail" style={{gridArea: "image-3"}}><img src={require("../Landing/res/images/sawy_thumbnails/2.jpg")} alt="sawy-sawy thumbnail"/></div>
+                <div class="sawy-sec-thumbnail" style={{gridArea: "image-4"}}><img src={require("../Landing/res/images/sawy_thumbnails/3.jpg")} alt="sawy-sawy thumbnail"/></div>
+                <div id="sawy-title-div">
+                    <h2 className="sawy-sec-text">subotix <br/>sawy-sawy<br/>initiative</h2>
                 </div>
-            </a>
-            <a id="locations-section" className="section" href={"#" + BASE_PATH}>
-                <img className="banner" src={require("../../res/pictures/gallery/68.jpg")} alt=""/>
-                <div id="locations-infobar" className="infobar">
-                    <div style={{ height: "170px" }}>
-                        <h2>locations</h2>
-                        <h3>visit us</h3>
-                    </div>
+                <div id="sawy-paragraph-div" className="blank-paragraph-div">
+                    <p className="sawy-sec-text" style={{fontSize: "1em", lineHeight: "1.7em", width: "350px", margin: "auto"}}>
+                        a mass distribution of sawy-sawy steam kits, aimed to spread 21st century skills to students of all ages
+                    </p>
+                    <a id="sawy-link" href={"#" + SAWY_PATH}>learn more</a>
                 </div>
-            </a>
+                <div>
+
+                </div>
+            </div>
+            
+            <div id="showcase"> 
+
+            </div>
         </div>
     );
 }

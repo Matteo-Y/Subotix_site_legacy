@@ -201,6 +201,7 @@ img {
   flex-direction: row;
   background-color: black;
   overflow: hidden;
+  z-index: 1;
 }
 
 #header-menu {
@@ -328,10 +329,51 @@ button.dropdown-toggle:hover .dropdown-toggle {
   flex: 1 1 0;
 }
 
+.section {
+  background-color: #f9f9f9;
+  width: 100%;
+  color: black;
+  display: flex;
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.3s;
+}
+
+.banner {
+  position: absolute;
+  min-height: 100%;
+  min-width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.infobar {
+  position: absolute;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: white;
+  z-index: 1;
+  transition: 0.3s;
+}
+.infobar h2 {
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+.infobar h3 {
+  margin-bottom: 50px;
+}
+
+.infobar:hover {
+  bottom: 0 !important;
+  background-color: rgba(0, 0, 0, 0.9);
+}
+
 #hero-section {
   background-color: black;
+  margin-bottom: 100px;
   display: grid;
   grid-template-columns: [c0] 1fr [c1] 1fr [c2] 1fr [c3] 1fr [c4] 1fr [c5];
+  box-shadow: 0 5px 50px 50px black;
 }
 
 #hero-slide {
@@ -392,47 +434,56 @@ button.dropdown-toggle:hover .dropdown-toggle {
   background-color: #999;
 }
 
-#sawy-blank {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  overflow: visible;
-  z-index: 1;
-  box-shadow: 0 0 500px 400px black;
-  background-color: black;
-  height: 100%;
-  text-align: right;
-  transition: all 0.3s;
-}
-#sawy-blank img {
-  transition: all ease-in 0.2s;
+#sawy-section {
+  background-color: #f9f9f9;
+  width: calc(100% - 50px);
+  margin: 150px auto 50px auto;
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  gap: 10px;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
 }
 
 #sawy-title-div {
-  direction: rtl;
+  grid-area: sawy-title;
+  text-align: center;
   overflow: visible;
-  margin-bottom: 1em;
-}
-#sawy-title-div h2 {
-  width: 95%;
-  margin: 0;
 }
 
-#sawy-section {
-  background-color: white;
-  flex-direction: row;
-  justify-content: right;
-  height: 500px;
+#sawy-paragraph-div {
+  align-self: start;
+  grid-area: sawy-paragraph;
+  text-align: center;
+}
+
+#sawy-link {
+  background-color: black;
+  color: white;
+  padding: 15px;
+}
+
+.sawy-sec-thumbnail {
+  width: 95%;
+  height: 95%;
+  border-radius: 10px;
+  box-shadow: 0 0 10px black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+.sawy-sec-thumbnail img {
+  flex-shrink: 0.6;
+  min-width: 100%;
+  min-height: 100% !important;
+}
+
+.sawy-sec-text {
+  color: black;
 }
 
 @media only screen and (max-width: 600px) {
-  #sawy-blank {
-    width: 20%;
-    padding: 100px 10% 0 0;
-  }
-  #sawy-title-div h2 {
-    font-size: 2.5rem;
-  }
   .infobar {
     padding-left: 5%;
   }
@@ -455,15 +506,13 @@ button.dropdown-toggle:hover .dropdown-toggle {
     grid-template-rows: 500px 200px 200px;
     grid-template-areas: "hero-slide hero-slide hero-slide hero-slide hero-slide" "hero-title hero-title hero-title hero-title hero-title" "hero-links hero-links hero-links hero-links hero-links";
   }
+  #sawy-section {
+    height: 1050px;
+    grid-template-rows: 200px 200px 200px 200px 200px;
+    grid-template-areas: "image-1 image-1 image-1 image-1 image-1" "sawy-title sawy-title sawy-title sawy-title sawy-title" "sawy-paragraph sawy-paragraph sawy-paragraph sawy-paragraph sawy-paragraph" "image-2 image-2 image-2 image-4 image-4" "image-3 image-3 image-3 image-4 image-4";
+  }
 }
 @media only screen and (min-width: 600px) {
-  #sawy-blank {
-    width: 30%;
-    padding: 100px 11% 0 0;
-  }
-  #sawy-title-div h2 {
-    font-size: 3rem;
-  }
   .infobar {
     padding-left: 5%;
   }
@@ -486,12 +535,13 @@ button.dropdown-toggle:hover .dropdown-toggle {
     grid-template-rows: 500px 200px 200px;
     grid-template-areas: "hero-slide hero-slide hero-slide hero-slide hero-slide" "hero-title hero-title hero-title hero-title hero-title" "hero-links hero-links hero-links hero-links hero-links";
   }
+  #sawy-section {
+    height: 1050px;
+    grid-template-rows: 200px 200px 200px 200px 200px;
+    grid-template-areas: "image-1 image-1 image-1 image-1 image-1" "sawy-title sawy-title sawy-title sawy-title sawy-title" "sawy-paragraph sawy-paragraph sawy-paragraph sawy-paragraph sawy-paragraph" "image-2 image-2 image-2 image-4 image-4" "image-3 image-3 image-3 image-4 image-4";
+  }
 }
 @media only screen and (min-width: 768px) {
-  #sawy-blank {
-    width: 40%;
-    padding: 100px 12% 0 0;
-  }
   .infobar {
     padding-left: 5%;
   }
@@ -514,12 +564,13 @@ button.dropdown-toggle:hover .dropdown-toggle {
     grid-template-rows: 200px 200px 300px;
     grid-template-areas: "hero-title     hero-title     hero-title     hero-slide hero-slide" "hero-paragraph hero-paragraph hero-paragraph hero-slide hero-slide" "hero-links     hero-links     hero-links     hero-slide hero-slide";
   }
+  #sawy-section {
+    height: 850px;
+    grid-template-rows: 200px 200px 200px 200px;
+    grid-template-areas: "image-1 image-1 image-1 image-1 image-1" "sawy-title sawy-title sawy-title sawy-title image-4" "sawy-paragraph sawy-paragraph sawy-paragraph sawy-paragraph image-4" "image-2 image-2 image-2 image-3 image-3";
+  }
 }
 @media only screen and (min-width: 992px) {
-  #sawy-blank {
-    width: 20%;
-    padding: 100px 12% 0 0;
-  }
   .infobar {
     padding-left: 5%;
   }
@@ -542,60 +593,16 @@ button.dropdown-toggle:hover .dropdown-toggle {
     grid-template-rows: 250px 250px 150px;
     grid-template-areas: "hero-title     hero-title     hero-slide hero-slide hero-slide" "hero-paragraph hero-paragraph hero-slide hero-slide hero-slide" "hero-links     hero-links     hero-slide hero-slide hero-slide";
   }
+  #sawy-section {
+    height: 650px;
+    grid-template-rows: 300px 300px;
+    grid-template-areas: "image-1 image-1 sawy-title sawy-title image-4" "image-2 image-3 sawy-paragraph sawy-paragraph image-4";
+  }
 }
-.section {
-  display: flex;
-  position: relative;
-  width: 100%;
-  overflow: hidden;
-  background-color: #f9f9f9;
-  color: black;
-  transition: transform 0.3s;
-}
-
-.banner {
-  position: absolute;
-  min-height: 100%;
-  min-width: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-
-.infobar {
-  position: absolute;
-  width: 100%;
-  background-color: rgba(0, 0, 0, 0.7);
-  color: white;
-  z-index: 1;
-  transition: 0.3s;
-}
-.infobar h2 {
-  margin-top: 20px;
-  margin-bottom: 30px;
-}
-.infobar h3 {
-  margin-bottom: 50px;
-}
-
-.infobar:hover {
-  bottom: 0 !important;
-  background-color: rgba(0, 0, 0, 0.9);
-}
-
-#locations-section {
-  background-color: black;
-  flex-direction: row;
-  justify-content: center;
-  padding-top: 50px;
-  height: 700px;
-}
-
-#locations-infobar {
-  bottom: -130px;
-  height: 300px;
-}
-
 @media only screen and (max-width: 600px) {
+  #sawy-landing-content {
+    grid-template-areas: ". . . . . ." ". sawy-title sawy-title sawy-title sawy-title ." ". schem-link . . . ." ". apps-link . . . ." ". . . . . .";
+  }
   #two-column-container {
     flex-direction: column;
   }
@@ -605,6 +612,9 @@ button.dropdown-toggle:hover .dropdown-toggle {
   }
 }
 @media only screen and (min-width: 600px) {
+  #sawy-landing-content {
+    grid-template-areas: ". . . . . ." ". sawy-title sawy-title sawy-title sawy-title ." ". schem-link . . . ." ". apps-link . . . ." ". . . . . .";
+  }
   #two-column-container {
     flex-direction: row;
   }
@@ -614,6 +624,9 @@ button.dropdown-toggle:hover .dropdown-toggle {
   }
 }
 @media only screen and (min-width: 768px) {
+  #sawy-landing-content {
+    grid-template-areas: ". . . . . ." ". sawy-title sawy-title sawy-title sawy-title ." ". schem-link . . . ." ". apps-link . . . ." ". . . . . .";
+  }
   #two-column-container {
     flex-direction: row;
   }
@@ -626,6 +639,9 @@ button.dropdown-toggle:hover .dropdown-toggle {
   }
 }
 @media only screen and (min-width: 992px) {
+  #sawy-landing-content {
+    grid-template-areas: ". . . . . ." ". sawy-title sawy-title sawy-title sawy-title ." ". . . . . ." ". apps-link schem-link . . ." ". . . . . .";
+  }
   #two-column-container {
     flex-direction: row;
   }
@@ -685,9 +701,8 @@ button.dropdown-toggle:hover .dropdown-toggle {
 #sawy-landing {
   justify-content: center;
   background-color: black;
-  padding-bottom: 50px;
   max-width: 100%;
-  max-height: 80vh;
+  height: 80vh;
 }
 
 #sawy-landing-content {
@@ -699,7 +714,7 @@ button.dropdown-toggle:hover .dropdown-toggle {
   align-items: center;
   grid-template-columns: repeat(6, 1fr);
   grid-template-rows: repeat(5, 1fr);
-  grid-template-areas: ". . . . . ." ". sawy-title sawy-title . . ." ". . . . . ." ". apps-link schem-link . . ." ". . . . . .";
+  transition: all 0.2s;
 }
 
 #sawy-title {
@@ -716,7 +731,7 @@ button.dropdown-toggle:hover .dropdown-toggle {
 
 .sawy-link-button {
   background-color: white;
-  width: 200px;
+  width: 180px;
   height: 70px;
   text-align: center;
   line-height: 70px;
@@ -747,6 +762,7 @@ button.dropdown-toggle:hover .dropdown-toggle {
   width: 1000px;
   height: 700px;
   margin: auto;
+  padding: 20px;
   border-radius: 20px;
 }
 
@@ -758,6 +774,23 @@ button.dropdown-toggle:hover .dropdown-toggle {
 
 #piano:focus {
   outline: none;
+}
+
+#simon {
+  width: 400px;
+  height: 400px;
+  margin: 200px auto 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-areas: ". simon-up ." "simon-left . simon-right" ". simon-down .";
+}
+
+.simon-button {
+  background-color: black;
+  width: 50px;
+  height: 50px;
+  margin: auto;
 }
 
 .back-to-sawy {
