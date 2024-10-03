@@ -1,4 +1,5 @@
 import {useState} from "react";
+import { SAWY_PATH } from "../../App";
 
 export default function SawyApps() {
     const [modalOpen, setModalOpen] = useState(false);
@@ -15,9 +16,12 @@ export default function SawyApps() {
     }
 
     return <div id="web-app-page">
-        <button onClick={() => openApp(pianoApp)}>piano</button>
-        <button onClick={() => openApp(simonApp)}>simon</button>
-
+        <a className="back-to-sawy" href={"#" + SAWY_PATH}>{"\u2039"}back</a>
+        <div id="app-select-container">
+            <button className="app-select" onClick={() => openApp(PianoApp)}>piano</button>
+            <button className="app-select" onClick={() => openApp(SimonApp)}>simon</button>
+        </div>
+        
         {modalOpen ? <div id="sawy-apps-modal-bg">
             <div id="sawy-apps-modal">
                 <button onClick={closeModal}>X</button>
@@ -27,7 +31,7 @@ export default function SawyApps() {
     </div>
 }
 
-function pianoApp() {
+function PianoApp() {
     function keyDown(e) {
         e.preventDefault();
         let key = e.key;
@@ -115,7 +119,7 @@ function pianoApp() {
         playKey("note-6");
     }
 
-    return <div onClick={playClick} onKeyDown={keyDown} tabIndex="0">
+    return <div style={{width: "100%", height: "100%", outline: "none"}} onClick={playClick} onKeyDown={keyDown} tabIndex="0">
         <audio id="note-1" src={require("../SawyPage/res/audio/C-converted.wav")}/>
         <audio id="note-2" src={require("../SawyPage/res/audio/D-converted.wav")}/>
         <audio id="note-3" src={require("../SawyPage/res/audio/E-converted.wav")}/>
@@ -133,18 +137,19 @@ function pianoApp() {
     </div>
 }
 
-function simonApp() {
-    
-
+function SimonApp() {
 
     function pressKey(e) {
 
     }
 
-    return <div id="simon">
-        <div className="simon-button" style={{gridArea: "simon-up"}}></div>
-        <div className="simon-button" style={{gridArea: "simon-down"}}></div>
-        <div className="simon-button" style={{gridArea: "simon-right"}}></div>
-        <div className="simon-button" style={{gridArea: "simon-left"}}></div>
+    return <div style={{width: "100%", height: "100%", outline: "none"}}>
+        <button>start</button>
+        <div id="simon">
+            <div className="simon-button" style={{gridArea: "simon-up"}}></div>
+            <div className="simon-button" style={{gridArea: "simon-down"}}></div>
+            <div className="simon-button" style={{gridArea: "simon-right"}}></div>
+            <div className="simon-button" style={{gridArea: "simon-left"}}></div>
+        </div>
     </div>
 }

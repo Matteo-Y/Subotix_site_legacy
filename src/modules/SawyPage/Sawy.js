@@ -10,6 +10,9 @@ export default function Sawy() {
                 <a id="schem-link" className="sawy-link-button" href={"#" + SAWY_PATH + "/downloads"}>schematics</a>
             </div>
         </div>
+        <div style={{height: "500px"}}>
+
+        </div>
         {/*<div id="sawy-disclaimer">
             <h2>disclaimer</h2>
             <p style={{fontSize: "1em", fontWeight: "lighter", padding: "0", margin: "0 50px 20px 50px"}}>the "sawy-sawy" is a visually modified "makey-makey" board produced by joylabz</p>

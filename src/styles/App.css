@@ -748,15 +748,63 @@ button.dropdown-toggle:hover .dropdown-toggle {
     width: 70%;
   }
 }
+#web-app-page {
+  height: 1000px;
+  width: 100%;
+  margin: 100px 0 0 0;
+  padding: 0;
+}
+
+#app-select-container {
+  margin: 50px 20% 0 20%;
+}
+
+.app-select {
+  background-color: black;
+  color: white;
+  width: 300px;
+  height: 400px;
+  margin: 10px;
+  font-family: mono-display;
+  border: none;
+}
+
+#sawy-apps-modal-bg {
+  background-color: rgba(0, 0, 0, 0.6);
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+}
+
+#sawy-apps-modal {
+  background-color: white;
+  justify-content: center;
+  width: 1000px;
+  height: 700px;
+  margin: auto;
+  padding: 20px;
+  border-radius: 20px;
+}
+
 #piano {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-  gap: 5px;
   background-color: black;
   min-width: 400px;
   min-height: 300px;
+  width: 70%;
+  height: 60%;
   padding: 30px;
+  margin: 50px auto 0 auto;
   border-radius: 30px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  gap: 5px;
+}
+
+#piano:focus {
+  outline: none;
 }
 
 .piano-key {
@@ -793,11 +841,29 @@ button.dropdown-toggle:hover .dropdown-toggle {
     background-color: white;
   }
 }
+#simon {
+  width: 400px;
+  height: 400px;
+  margin: 200px auto 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-areas: ". simon-up ." "simon-left . simon-right" ". simon-down .";
+}
+
+.simon-button {
+  background-color: black;
+  width: 50px;
+  height: 50px;
+  margin: auto;
+}
+
 #sawy-landing {
   justify-content: center;
   background-color: black;
   max-width: 100%;
   height: 80vh;
+  box-shadow: 0 5px 50px 50px black;
 }
 
 #sawy-landing-content {
@@ -841,51 +907,6 @@ button.dropdown-toggle:hover .dropdown-toggle {
 
 #workshops {
   margin-bottom: 30px;
-}
-
-#sawy-apps-modal-bg {
-  background-color: rgba(0, 0, 0, 0.6);
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  display: flex;
-}
-
-#sawy-apps-modal {
-  background-color: white;
-  justify-content: center;
-  width: 1000px;
-  height: 700px;
-  margin: auto;
-  padding: 20px;
-  border-radius: 20px;
-}
-
-#piano {
-  width: 70%;
-  height: 60%;
-  margin: auto;
-}
-
-#piano:focus {
-  outline: none;
-}
-
-#simon {
-  width: 400px;
-  height: 400px;
-  margin: 200px auto 0 auto;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr;
-  grid-template-areas: ". simon-up ." "simon-left . simon-right" ". simon-down .";
-}
-
-.simon-button {
-  background-color: black;
-  width: 50px;
-  height: 50px;
-  margin: auto;
 }
 
 .back-to-sawy {
@@ -948,35 +969,6 @@ button.dropdown-toggle:hover .dropdown-toggle {
 
 .download-link:visited {
   color: purple;
-}
-
-#sawy-disclaimer {
-  background-color: black;
-  text-align: center;
-  margin-bottom: 10px;
-  padding: 10px 0 50px 0;
-}
-
-#makeymakey-link {
-  text-decoration: underline;
-  transition: all 0.3s;
-  font-size: 1em;
-}
-
-#makeymakey-link:hover {
-  font-size: 1.2em !important;
-  color: #999 !important;
-  text-decoration: underline;
-}
-
-#web-app-page {
-  height: 100vh;
-  width: 100%;
-  display: grid;
-  justify-items: center;
-  align-items: center;
-  margin: 0;
-  padding: 0;
 }
 
 .slideshow {
