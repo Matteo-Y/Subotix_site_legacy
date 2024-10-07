@@ -1,0 +1,56 @@
+#sawy-projects {
+    max-width: 1300px;
+    margin: 100px auto 100px auto;
+
+    display: grid;
+    gap: 20px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    
+}
+
+#sawy-projects-header {
+    grid-area: projects-header;
+    padding: 25px;
+}
+
+#sawy-projects-horizontals {
+    background-color: black;
+    grid-area: projects-horizontals;
+    padding: 25px;
+    margin-top: 50px;
+}
+
+#sawy-projects-verticals {
+    background-color: black;
+    grid-area: projects-verticals;
+    padding: 25px;
+}
+
+.sawy-project-card {
+    background-color: $pallette-3;
+    width: calc(100% - 40px);
+    min-width: 300px;
+    margin-bottom: 50px;
+    padding: 20px;
+}
+
+.sawy-project-card-title {
+    color: black;
+    text-align: center;
+    font-weight: bold;
+}
+
+.sawy-project-card-thumbnail {
+    filter: drop-shadow(0 0 5px black);
+    height: 200px;
+}
+
+.sawy-project-card-description {
+    color: black;
+    text-align: center;
+    max-width: 60%;
+    margin: auto;
+
+    text-wrap: balance;
+}

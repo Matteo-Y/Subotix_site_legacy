@@ -8,6 +8,13 @@
             ". . . . . .";
     }
 
+    #sawy-projects {
+        grid-template-areas: 
+        "projects-header projects-header"
+        "projects-horizontals projects-horizontals" 
+        "projects-verticals projects-verticals";
+    }
+
     #two-column-container { flex-direction: column }
     .sawy-sub-section { width: 75%; height: 400px }
     
@@ -21,6 +28,13 @@
             ". schem-link . . . ."
             ". apps-link . . . ."
             ". . . . . .";
+    }
+
+    #sawy-projects {
+        grid-template-areas: 
+        "projects-header projects-header"
+        "projects-horizontals projects-horizontals" 
+        "projects-verticals projects-verticals";
     }
 
     #two-column-container { flex-direction: row }
@@ -37,6 +51,12 @@
             ". . . . . .";
     }
 
+    #sawy-projects {
+        grid-template-areas: 
+        "projects-horizontals projects-header"
+        "projects-horizontals projects-verticals";
+    }
+
     #two-column-container { flex-direction: row }
     .sawy-sub-section { width: 25%; height: 400px }
     .link-table { width: 70% }
@@ -50,6 +70,12 @@
             ". . . . . ."
             ". apps-link schem-link . . ."
             ". . . . . .";
+    }
+
+    #sawy-projects {
+        grid-template-areas: 
+        "projects-horizontals projects-header"
+        "projects-horizontals projects-verticals";
     }
 
     #two-column-container { flex-direction: row }

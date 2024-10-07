@@ -698,6 +698,9 @@ button.dropdown-toggle:hover .dropdown-toggle {
   #sawy-landing-content {
     grid-template-areas: ". . . . . ." ". sawy-title sawy-title sawy-title sawy-title ." ". schem-link . . . ." ". apps-link . . . ." ". . . . . .";
   }
+  #sawy-projects {
+    grid-template-areas: "projects-header projects-header" "projects-horizontals projects-horizontals" "projects-verticals projects-verticals";
+  }
   #two-column-container {
     flex-direction: column;
   }
@@ -710,6 +713,9 @@ button.dropdown-toggle:hover .dropdown-toggle {
   #sawy-landing-content {
     grid-template-areas: ". . . . . ." ". sawy-title sawy-title sawy-title sawy-title ." ". schem-link . . . ." ". apps-link . . . ." ". . . . . .";
   }
+  #sawy-projects {
+    grid-template-areas: "projects-header projects-header" "projects-horizontals projects-horizontals" "projects-verticals projects-verticals";
+  }
   #two-column-container {
     flex-direction: row;
   }
@@ -721,6 +727,9 @@ button.dropdown-toggle:hover .dropdown-toggle {
 @media only screen and (min-width: 768px) {
   #sawy-landing-content {
     grid-template-areas: ". . . . . ." ". sawy-title sawy-title sawy-title sawy-title ." ". schem-link . . . ." ". apps-link . . . ." ". . . . . .";
+  }
+  #sawy-projects {
+    grid-template-areas: "projects-horizontals projects-header" "projects-horizontals projects-verticals";
   }
   #two-column-container {
     flex-direction: row;
@@ -736,6 +745,9 @@ button.dropdown-toggle:hover .dropdown-toggle {
 @media only screen and (min-width: 992px) {
   #sawy-landing-content {
     grid-template-areas: ". . . . . ." ". sawy-title sawy-title sawy-title sawy-title ." ". . . . . ." ". apps-link schem-link . . ." ". . . . . .";
+  }
+  #sawy-projects {
+    grid-template-areas: "projects-horizontals projects-header" "projects-horizontals projects-verticals";
   }
   #two-column-container {
     flex-direction: row;
@@ -856,6 +868,60 @@ button.dropdown-toggle:hover .dropdown-toggle {
   width: 50px;
   height: 50px;
   margin: auto;
+}
+
+#sawy-projects {
+  max-width: 1300px;
+  margin: 100px auto 100px auto;
+  display: grid;
+  gap: 20px;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto;
+}
+
+#sawy-projects-header {
+  grid-area: projects-header;
+  padding: 25px;
+}
+
+#sawy-projects-horizontals {
+  background-color: black;
+  grid-area: projects-horizontals;
+  padding: 25px;
+  margin-top: 50px;
+}
+
+#sawy-projects-verticals {
+  background-color: black;
+  grid-area: projects-verticals;
+  padding: 25px;
+}
+
+.sawy-project-card {
+  background-color: #f9f9f9;
+  width: calc(100% - 40px);
+  min-width: 300px;
+  margin-bottom: 50px;
+  padding: 20px;
+}
+
+.sawy-project-card-title {
+  color: black;
+  text-align: center;
+  font-weight: bold;
+}
+
+.sawy-project-card-thumbnail {
+  filter: drop-shadow(0 0 5px black);
+  height: 200px;
+}
+
+.sawy-project-card-description {
+  color: black;
+  text-align: center;
+  max-width: 60%;
+  margin: auto;
+  text-wrap: balance;
 }
 
 #sawy-landing {
