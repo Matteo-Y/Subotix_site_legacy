@@ -1,7 +1,7 @@
 import { BASE_PATH, SAWY_PATH, STORE_PATH } from "../../App";
 import Slideshow from "../Slideshow";
 
-const imageFolder = require.context("../Landing/res/images/hero_slidereel", true);
+const imageFolder = require.context("../Landing/res/images/hero_slidereel_converted", true);
 const imageList = imageFolder.keys().map(image => imageFolder(image));
 
 export default function Landing() {

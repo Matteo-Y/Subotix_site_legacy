@@ -32,7 +32,7 @@ export default function Sawy() {
                     vertical projects build on existing skills. they introduce complex concepts, encouraging <span style={{fontFamily: "roboto", fontWeight: "bolder"}}>CRITICAL THINKING</span> and <span style={{fontFamily: "roboto", fontWeight: "bolder"}}>INNOVATION</span>.
                 </ProjectCard>
                 <ProjectCard title="line-follower" reverse="true">
-                the line follower kit teaches you skills in robotics and automation. users will explore input/output concepts and optimize their robot’s performance.
+                    the line follower kit teaches you skills in robotics and automation. users will explore input/output concepts and optimize their robot’s performance.
                 </ProjectCard>
                 
             </div>
