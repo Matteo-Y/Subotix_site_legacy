@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.113e2e51.css",
-    "main.js": "/static/js/main.680c6dae.js",
+    "main.css": "/static/css/main.580c0f6f.css",
+    "main.js": "/static/js/main.c1d0c46e.js",
     "static/media/Sawy-banner-vid.mp4": "/static/media/Sawy-banner-vid.b2fcaa8522236a24283d.mp4",
     "static/media/finger_robot.zip": "/static/media/finger_robot.051363f5a0cd50bbb0b6.zip",
     "static/media/65.jpg": "/static/media/65.457f46a5bd52c6e1b5ee.jpg",
@@ -51,6 +51,7 @@
     "static/media/78.jpg": "/static/media/78.bd522c8b678143203404.jpg",
     "static/media/72.jpg": "/static/media/72.e6bec29b6d38eacdd22c.jpg",
     "static/media/93.jpg": "/static/media/93.4f4f7ae1d1c37d653d62.jpg",
+    "static/media/dito.png": "/static/media/dito.cb4c466f0fb309c9441d.png",
     "static/media/43.jpg": "/static/media/43.0f109b51bd4860994527.jpg",
     "static/media/1.jpg": "/static/media/1.c0cfd4d96d6f223a0739.jpg",
     "static/media/sawy_thumbnail.jpg": "/static/media/sawy_thumbnail.15c42afdb684bafeb925.jpg",
@@ -73,7 +74,9 @@
     "static/media/12.jpg": "/static/media/12.d5fd9ab51e21cfc91619.jpg",
     "static/media/BebasNeue-Regular.ttf": "/static/media/BebasNeue-Regular.12e3683f9192436a7be8.ttf",
     "static/media/45.jpg": "/static/media/45.6032ac1f961472900df6.jpg",
+    "static/media/sawy-piano.png": "/static/media/sawy-piano.7f4bd5281801b5b0e7ec.png",
     "static/media/5.jpg": "/static/media/5.70ee436337dd912eca3d.jpg",
+    "static/media/sawy.png": "/static/media/sawy.9ae1858b6f3cea3f0e3a.png",
     "static/media/Aerospace.ttf": "/static/media/Aerospace.0342d6f9ff59f84eda4b.ttf",
     "static/media/default_firmware.zip": "/static/media/default_firmware.5137837e7eb9e172b0a2.zip",
     "static/media/X-logo.webp": "/static/media/X-logo.4c8a3b47c6f341cc768e.webp",
@@ -81,11 +84,11 @@
     "static/media/YT-logo.webp": "/static/media/YT-logo.0db8c8a07c9d63d01e4f.webp",
     "index.html": "/index.html",
     "static/media/FB-logo.webp": "/static/media/FB-logo.ee7793fa5997b12f0afb.webp",
-    "main.113e2e51.css.map": "/static/css/main.113e2e51.css.map",
-    "main.680c6dae.js.map": "/static/js/main.680c6dae.js.map"
+    "main.580c0f6f.css.map": "/static/css/main.580c0f6f.css.map",
+    "main.c1d0c46e.js.map": "/static/js/main.c1d0c46e.js.map"
   },
   "entrypoints": [
-    "static/css/main.113e2e51.css",
-    "static/js/main.680c6dae.js"
+    "static/css/main.580c0f6f.css",
+    "static/js/main.c1d0c46e.js"
   ]
 }
