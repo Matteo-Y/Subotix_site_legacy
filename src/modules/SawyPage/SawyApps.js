@@ -1,5 +1,6 @@
-import {useState} from "react";
+import {useState, useEffect} from "react";
 import { SAWY_PATH } from "../../App";
+import { isVisible } from "@testing-library/user-event/dist/utils";
 
 export default function SawyApps() {
     const [modalOpen, setModalOpen] = useState(false);
@@ -18,20 +19,21 @@ export default function SawyApps() {
     return <div id="web-app-page">
         <a className="back-to-sawy" href={"#" + SAWY_PATH}>{"\u2039"}back</a>
         <div id="app-select-container">
-            <button className="app-select" onClick={() => openApp(PianoApp)}>piano</button>
-            <button className="app-select" onClick={() => openApp(SimonApp)}>simon</button>
+            <button className="app-select" onClick={() => openApp('piano')}>piano</button>
+            <button className="app-select" onClick={() => openApp('simon')}>simon</button>
         </div>
         
         {modalOpen ? <div id="sawy-apps-modal-bg">
             <div id="sawy-apps-modal">
-                <button onClick={closeModal}>X</button>
-                {app}
+                <button id="close-app-button" onClick={closeModal}>x</button>
+                <PianoApp show={app == 'piano' ? "default" : "none"}/>
+                <SimonApp show={app == 'simon' ? "default" : "none"}/>
             </div>
         </div> : <></>}
     </div>
 }
 
-function PianoApp() {
+function PianoApp(props) {
     function keyDown(e) {
         e.preventDefault();
         let key = e.key;
@@ -119,7 +121,7 @@ function PianoApp() {
         playKey("note-6");
     }
 
-    return <div style={{width: "100%", height: "100%", outline: "none"}} onClick={playClick} onKeyDown={keyDown} tabIndex="0">
+    return <div style={{width: "100%", height: "100%", outline: "none", display: props.show}} onClick={playClick} onKeyDown={keyDown} tabIndex="0">
         <audio id="note-1" src={require("../SawyPage/res/audio/C-converted.wav")}/>
         <audio id="note-2" src={require("../SawyPage/res/audio/D-converted.wav")}/>
         <audio id="note-3" src={require("../SawyPage/res/audio/E-converted.wav")}/>
@@ -137,19 +139,149 @@ function PianoApp() {
     </div>
 }
 
-function SimonApp() {
+const directions = ['up', 'right', 'down', 'left'];
 
-    function pressKey(e) {
+function SimonApp(props) {
+    const [gameSequence, setGameSequence] = useState([]);
+    const [playerSequence, setPlayerSequence] = useState([]);
+    const [isPlayerTurn, setIsPlayerTurn] = useState(false);
+    const [currentRound, setCurrentRound] = useState(0);
+    const [message, setMessage] = useState('round: 0');
+    const [timeoutId, setTimeoutId] = useState(null);
+    const [isGameActive, setIsGameActive] = useState(false);
 
+    function getRandomDirection() {
+        return directions[Math.floor(Math.random() * directions.length)];
     }
 
-    return <div style={{width: "100%", height: "100%", outline: "none"}}>
-        <button>start</button>
-        <div id="simon">
-            <div className="simon-button" style={{gridArea: "simon-up"}}></div>
-            <div className="simon-button" style={{gridArea: "simon-down"}}></div>
-            <div className="simon-button" style={{gridArea: "simon-right"}}></div>
-            <div className="simon-button" style={{gridArea: "simon-left"}}></div>
+    function nextRound() {
+        const nextDirection = generateUniqueDirection();
+        setGameSequence((prevSequence) => [...prevSequence, nextDirection]);
+        setPlayerSequence([]);
+        setMessage(`round: ${currentRound + 1}`);
+        setCurrentRound((prevRound) => prevRound + 1);
+        setIsPlayerTurn(false);
+    }
+
+    function generateUniqueDirection() {
+        let newDirection;
+        do {
+            newDirection = getRandomDirection();
+        } while (gameSequence.length > 0 && newDirection === gameSequence[gameSequence.length - 1]);
+        return newDirection;
+    }
+
+    useEffect(() => {
+        if (gameSequence.length > 0) {
+            playGameSequence();
+        }
+    }, [gameSequence]);
+
+    async function playGameSequence() {
+        for (let i = 0; i < gameSequence.length; i++) {
+            await flashButton(gameSequence[i]);
+        }
+        setIsPlayerTurn(true);
+        startTimeout();
+    }
+
+    function flashButton(direction) {
+        return new Promise((resolve) => {
+            const button = document.getElementById(direction);
+            button.classList.add('active');
+            setTimeout(() => {
+                button.classList.remove('active');
+                resolve();
+            }, 600);
+        });
+    }
+
+    function handlePlayerClick(direction) {
+        if (!isPlayerTurn) return;
+
+        const newPlayerSequence = [...playerSequence, direction];
+        setPlayerSequence(newPlayerSequence);
+        clearTimeout(timeoutId);
+
+        const index = newPlayerSequence.length - 1;
+        if (newPlayerSequence[index] !== gameSequence[index]) {
+            setMessage('wrong! game over!');
+            resetGame();
+            return;
+        }
+
+        if (newPlayerSequence.length === gameSequence.length) {
+            setMessage('correct! next round!');
+            setTimeout(nextRound, 1000);
+        } else {
+            startTimeout();
+        }
+
+        flashButton(direction);
+    }
+
+    function startTimeout() {
+        clearTimeout(timeoutId);
+        const id = setTimeout(() => {
+            setMessage('time ran out! game over!');
+            resetGame();
+        }, 3000);
+        setTimeoutId(id);
+    }
+
+    function resetGame() {
+        setTimeout(() => {
+            setGameSequence([]);
+            setPlayerSequence([]);
+            setIsPlayerTurn(false);
+            setCurrentRound(0);
+            setMessage('round: 0');
+            setIsGameActive(false);
+        }, 1000);
+    }
+
+    function startGame() {
+        setIsGameActive(true);
+        setMessage('starting game...');
+        nextRound();
+    }
+
+    useEffect(() => {
+        function handleKeyPress(event) {
+            const keyToDirection = {
+                ArrowUp: 'up',
+                ArrowRight: 'right',
+                ArrowDown: 'down',
+                ArrowLeft: 'left',
+            };
+            const direction = keyToDirection[event.key];
+            if (direction) {
+                event.preventDefault();
+                handlePlayerClick(direction);
+            }
+        }
+
+        window.addEventListener('keydown', handleKeyPress);
+        return () => {
+            window.removeEventListener('keydown', handleKeyPress);
+        };
+    }, [isPlayerTurn, playerSequence]);
+
+    return (
+        <div className="simon-game" style={{display: props.show}}>
+            <div className="message">{message}</div>
+            <div className="board">
+                <div />
+                <div id="up" className="direction-button up" onClick={() => handlePlayerClick('up')}><span>↑</span></div>
+                <div />
+                <div id="left" className="direction-button left" onClick={() => handlePlayerClick('left')}><span>←</span></div>
+                <div />
+                <div id="right" className="direction-button right" onClick={() => handlePlayerClick('right')}><span>→</span></div>
+                <div />
+                <div id="down" className="direction-button down" onClick={() => handlePlayerClick('down')}><span>↓</span></div>
+                <div />
+            </div>
+            <button onClick={startGame} className="start-button" disabled={isGameActive}>start</button>
         </div>
-    </div>
-}
+    );
+};

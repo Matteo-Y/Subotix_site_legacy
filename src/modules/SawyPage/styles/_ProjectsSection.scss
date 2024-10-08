@@ -1,6 +1,7 @@
 #sawy-projects {
     max-width: 1300px;
     margin: 100px auto 100px auto;
+    padding: 10px;
 
     display: grid;
     gap: 20px;
@@ -17,22 +18,27 @@
 #sawy-projects-horizontals {
     background-color: black;
     grid-area: projects-horizontals;
-    padding: 25px;
+
+    padding: 0 20px 0 20px;
     margin-top: 50px;
+    height: fit-content
 }
 
 #sawy-projects-verticals {
     background-color: black;
     grid-area: projects-verticals;
-    padding: 25px;
+
+    padding: 0 20px 0 20px;
+    height: fit-content
 }
 
 .sawy-project-card {
     background-color: $pallette-3;
     width: calc(100% - 40px);
     min-width: 300px;
-    margin-bottom: 50px;
+    margin: 20px auto 20px auto;
     padding: 20px;
+    border-radius: 10px;
 }
 
 .sawy-project-card-title {

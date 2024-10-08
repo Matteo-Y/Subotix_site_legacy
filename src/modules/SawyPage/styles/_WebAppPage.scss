@@ -1,3 +1,5 @@
+@import 'Simon.scss';
+
 #web-app-page {
     height: 1000px;
     width: 100%;
@@ -17,8 +19,15 @@
     margin: 10px;
 
     font-family: mono-display;
+    font-size: 2em;
 
     border: none;
+    transition: all 0.2s;
+}
+
+.app-select:hover {
+    background-color: $pallette-4;
+    color: black;
 }
 
 #sawy-apps-modal-bg {
@@ -39,6 +48,24 @@
     margin: auto;
     padding: 20px;
     border-radius: 20px;
+}
+
+#close-app-button {
+    background-color: white;
+    color: black;
+    border-radius: 5px;
+    border: none;
+
+    font-family: mono-display;
+    font-weight: bold;
+    font-size: 1.3em;
+    line-height: 1.5em;
+    transition: all 0.2S;
+}
+
+#close-app-button:hover {
+    background-color: black;
+    color: white;
 }
 
 #piano {
@@ -85,26 +112,4 @@
     0% {background-color: white}
     5% {background-color: $pallette-4}
     10% {background-color: white}
-}
-
-
-#simon {
-    width: 400px;
-    height: 400px;
-    margin: 200px auto 0 auto;
-
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
-    grid-template-areas: 
-    ". simon-up ."
-    "simon-left . simon-right"
-    ". simon-down .";
-}
-
-.simon-button {
-    background-color: black;
-    width: 50px;
-    height: 50px;
-    margin: auto;
 }

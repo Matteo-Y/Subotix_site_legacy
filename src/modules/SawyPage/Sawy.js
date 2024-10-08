@@ -1,4 +1,6 @@
 import { SAWY_PATH } from "../../App";
+import gearBg from "../SawyPage/res/images/gear.png"
+import puzzleBg from "../SawyPage/res/images/puzzle.png"
 
 export default function Sawy() {
     return <div id="sawy-page">
@@ -17,21 +19,21 @@ export default function Sawy() {
                 </ProjectCard>
             </div>
             <div id="sawy-projects-horizontals">
-                <ProjectCard title="horizontal kits" reverse="false">
+                <ProjectCard bg={puzzleBg} title="horizontal kits" reverse="false">
                     horizontal projects are user-friendly. they are perfect for beginners. with a focus on basic <span style={{fontFamily: "roboto", fontWeight: "bolder"}}>STEAM</span> principles.
                 </ProjectCard>
-                <ProjectCard title="sawy-sawy piano" image={require("../SawyPage/res/images/sawy-piano.png")} imageAlt="piano-thumbnail" reverse="false">
+                <ProjectCard bg={puzzleBg} title="sawy-sawy piano" image={require("../SawyPage/res/images/sawy-piano.png")} imageAlt="piano-thumbnail" reverse="false">
                     the sawy-sawy piano kit is easy to use. it teaches basic concepts like conductivity, circuits and inputs.
                 </ProjectCard>
-                <ProjectCard title="the saqar" image={require("../SawyPage/res/images/dito.png")} imageAlt="dito-thumbnail" reverse="false">
+                <ProjectCard bg={puzzleBg} title="the saqar" image={require("../SawyPage/res/images/dito.png")} imageAlt="dito-thumbnail" reverse="false">
                     the sawy-sawy robot finger kit teaches essential skills in mechanics and actuators, equipping users for more advanced robotics projects.
                 </ProjectCard>
             </div>
             <div id="sawy-projects-verticals">
-                <ProjectCard title="vertical kits" reverse="true">
+                <ProjectCard bg={gearBg} title="vertical kits" reverse="true">
                     vertical projects build on existing skills. they introduce complex concepts, encouraging <span style={{fontFamily: "roboto", fontWeight: "bolder"}}>CRITICAL THINKING</span> and <span style={{fontFamily: "roboto", fontWeight: "bolder"}}>INNOVATION</span>.
                 </ProjectCard>
-                <ProjectCard title="line-follower" reverse="true">
+                <ProjectCard bg={gearBg} title="line-follower" reverse="true">
                     the line follower kit teaches you skills in robotics and automation. users will explore input/output concepts and optimize their robot’s performance.
                 </ProjectCard>
                 
@@ -42,7 +44,7 @@ export default function Sawy() {
 }
 
 function ProjectCard(props) {
-    return <div className="sawy-project-card">
+    return <div className="sawy-project-card" style={{backgroundImage: `url(${props.bg})`, backgroundSize: "cover"}}>
         <h3 className="sawy-project-card-title">{props.title}</h3>
         <div style={props.reverse == "true" ? {display: "flex", flexDirection: "row-reverse"} : {display: "flex", flexDirection: "row"}}>
             <img className="sawy-project-card-thumbnail" src={props.image} alt={props.imageAlt}/>

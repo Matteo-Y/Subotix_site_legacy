@@ -760,6 +760,84 @@ button.dropdown-toggle:hover .dropdown-toggle {
     width: 70%;
   }
 }
+.simon-game {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: black;
+  padding: 50px;
+  margin-top: 30px;
+  color: white;
+  border-radius: 20px;
+}
+
+.board {
+  display: grid;
+  grid-template-columns: repeat(3, 100px);
+  grid-template-rows: repeat(3, 100px);
+  grid-gap: 10px;
+}
+
+.direction-button {
+  width: 100px;
+  height: 100px;
+  border-radius: 10px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+  background-color: white;
+  transition: background-color 0.3s, color 0.3s;
+}
+.direction-button span {
+  color: black;
+  transition: color 0.3s;
+}
+.direction-button.active {
+  background-color: rgb(65, 65, 65);
+}
+.direction-button.active span {
+  color: white;
+}
+.direction-button.up {
+  grid-column: 2;
+  grid-row: 1;
+}
+.direction-button.right {
+  grid-column: 3;
+  grid-row: 2;
+}
+.direction-button.down {
+  grid-column: 2;
+  grid-row: 3;
+}
+.direction-button.left {
+  grid-column: 1;
+  grid-row: 2;
+}
+
+.start-button {
+  background-color: white;
+  border: none;
+  border-radius: none;
+  margin-top: 20px;
+  padding: 10px 20px;
+  font-size: 2em;
+  font-family: mono-display;
+  transition: all 0.2s;
+}
+
+.start-button:hover {
+  background-color: #999;
+}
+
+.message {
+  margin-bottom: 20px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
 #web-app-page {
   height: 1000px;
   width: 100%;
@@ -778,7 +856,14 @@ button.dropdown-toggle:hover .dropdown-toggle {
   height: 400px;
   margin: 10px;
   font-family: mono-display;
+  font-size: 2em;
   border: none;
+  transition: all 0.2s;
+}
+
+.app-select:hover {
+  background-color: #999;
+  color: black;
 }
 
 #sawy-apps-modal-bg {
@@ -799,6 +884,23 @@ button.dropdown-toggle:hover .dropdown-toggle {
   margin: auto;
   padding: 20px;
   border-radius: 20px;
+}
+
+#close-app-button {
+  background-color: white;
+  color: black;
+  border-radius: 5px;
+  border: none;
+  font-family: mono-display;
+  font-weight: bold;
+  font-size: 1.3em;
+  line-height: 1.5em;
+  transition: all 0.2S;
+}
+
+#close-app-button:hover {
+  background-color: black;
+  color: white;
 }
 
 #piano {
@@ -853,26 +955,10 @@ button.dropdown-toggle:hover .dropdown-toggle {
     background-color: white;
   }
 }
-#simon {
-  width: 400px;
-  height: 400px;
-  margin: 200px auto 0 auto;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr;
-  grid-template-areas: ". simon-up ." "simon-left . simon-right" ". simon-down .";
-}
-
-.simon-button {
-  background-color: black;
-  width: 50px;
-  height: 50px;
-  margin: auto;
-}
-
 #sawy-projects {
   max-width: 1300px;
   margin: 100px auto 100px auto;
+  padding: 10px;
   display: grid;
   gap: 20px;
   grid-template-columns: 1fr 1fr;
@@ -887,22 +973,27 @@ button.dropdown-toggle:hover .dropdown-toggle {
 #sawy-projects-horizontals {
   background-color: black;
   grid-area: projects-horizontals;
-  padding: 25px;
+  padding: 0 20px 0 20px;
   margin-top: 50px;
+  height: -moz-fit-content;
+  height: fit-content;
 }
 
 #sawy-projects-verticals {
   background-color: black;
   grid-area: projects-verticals;
-  padding: 25px;
+  padding: 0 20px 0 20px;
+  height: -moz-fit-content;
+  height: fit-content;
 }
 
 .sawy-project-card {
   background-color: #f9f9f9;
   width: calc(100% - 40px);
   min-width: 300px;
-  margin-bottom: 50px;
+  margin: 20px auto 20px auto;
   padding: 20px;
+  border-radius: 10px;
 }
 
 .sawy-project-card-title {
