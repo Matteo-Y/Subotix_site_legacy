@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.580c0f6f.css",
-    "main.js": "/static/js/main.4872de1b.js",
+    "main.css": "/static/css/main.326bbff3.css",
+    "main.js": "/static/js/main.bc361b18.js",
     "static/media/Sawy-banner-vid.mp4": "/static/media/Sawy-banner-vid.b2fcaa8522236a24283d.mp4",
     "static/media/finger_robot.zip": "/static/media/finger_robot.051363f5a0cd50bbb0b6.zip",
     "static/media/3.jpg": "/static/media/3.f08b709f16168ee9528d.jpg",
@@ -77,7 +77,9 @@
     "static/media/sawy.png": "/static/media/sawy.9ae1858b6f3cea3f0e3a.png",
     "static/media/51.avif": "/static/media/51.a961eddadcbc6a775c52.avif",
     "static/media/5.avif": "/static/media/5.75bcc96e1bc7a3977fb6.avif",
+    "static/media/gear.png": "/static/media/gear.82df89099bf13d2a33cb.png",
     "static/media/52.avif": "/static/media/52.a6b77c2dd72aed253766.avif",
+    "static/media/puzzle.png": "/static/media/puzzle.04748ac6edf8eb523580.png",
     "static/media/Aerospace.ttf": "/static/media/Aerospace.0342d6f9ff59f84eda4b.ttf",
     "static/media/default_firmware.zip": "/static/media/default_firmware.5137837e7eb9e172b0a2.zip",
     "static/media/X-logo.webp": "/static/media/X-logo.4c8a3b47c6f341cc768e.webp",
@@ -85,11 +87,11 @@
     "static/media/YT-logo.webp": "/static/media/YT-logo.0db8c8a07c9d63d01e4f.webp",
     "index.html": "/index.html",
     "static/media/FB-logo.webp": "/static/media/FB-logo.ee7793fa5997b12f0afb.webp",
-    "main.580c0f6f.css.map": "/static/css/main.580c0f6f.css.map",
-    "main.4872de1b.js.map": "/static/js/main.4872de1b.js.map"
+    "main.326bbff3.css.map": "/static/css/main.326bbff3.css.map",
+    "main.bc361b18.js.map": "/static/js/main.bc361b18.js.map"
   },
   "entrypoints": [
-    "static/css/main.580c0f6f.css",
-    "static/js/main.4872de1b.js"
+    "static/css/main.326bbff3.css",
+    "static/js/main.bc361b18.js"
   ]
 }
