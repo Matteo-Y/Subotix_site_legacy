@@ -7,9 +7,10 @@ export default function Sawy() {
         <div id="sawy-landing" className="section">
             <video style={{maxWidth: "100%", height: "100%"}} src={require("../SawyPage/res/videos/Sawy-banner-vid.mp4")} type="video/mp4" autoPlay muted loop/>
             <div id="sawy-landing-content">
-                <h2 id="sawy-title">the sawy-sawy</h2>
+                <h2 id="sawy-title">the <span style={{display: "inline-block"}}>sawy-sawy</span></h2>
                 <a id="apps-link"  className="sawy-link-button" href={"#" + SAWY_PATH + "/web-apps"}> web-apps</a>
                 <a id="schem-link" className="sawy-link-button" href={"#" + SAWY_PATH + "/downloads"}>schematics</a>
+                <video id="sawy-video" src={require("../SawyPage/res/videos/sawy-sawy_commercial.mp4")} type="video/mp4" autoPlay muted loop/>
             </div>
         </div>
         <div id="sawy-projects">

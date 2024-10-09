@@ -696,7 +696,9 @@ button.dropdown-toggle:hover .dropdown-toggle {
 }
 @media only screen and (max-width: 600px) {
   #sawy-landing-content {
-    grid-template-areas: ". . . . . ." ". sawy-title sawy-title sawy-title sawy-title ." ". schem-link . . . ." ". apps-link . . . ." ". . . . . .";
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 20px 1fr 1fr 1fr 1fr;
+    grid-template-areas: ". . . . . " ". sawy-title sawy-title sawy-title . " ". schem-link . apps-link . " ". sawy-video sawy-video sawy-video . " ". sawy-video sawy-video sawy-video . ";
   }
   #sawy-projects {
     grid-template-areas: "projects-header projects-header" "projects-horizontals projects-horizontals" "projects-verticals projects-verticals";
@@ -710,8 +712,13 @@ button.dropdown-toggle:hover .dropdown-toggle {
   }
 }
 @media only screen and (min-width: 600px) {
+  #sawy-title {
+    font-size: 2em;
+  }
   #sawy-landing-content {
-    grid-template-areas: ". . . . . ." ". sawy-title sawy-title sawy-title sawy-title ." ". schem-link . . . ." ". apps-link . . . ." ". . . . . .";
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 20px 1fr 1fr 1fr 1fr;
+    grid-template-areas: ". . . . . " ". sawy-title sawy-title sawy-title . " ". schem-link . apps-link . " ". sawy-video sawy-video sawy-video . " ". sawy-video sawy-video sawy-video . ";
   }
   #sawy-projects {
     grid-template-areas: "projects-header projects-header" "projects-horizontals projects-horizontals" "projects-verticals projects-verticals";
@@ -725,8 +732,13 @@ button.dropdown-toggle:hover .dropdown-toggle {
   }
 }
 @media only screen and (min-width: 768px) {
+  #sawy-title {
+    font-size: 3em;
+  }
   #sawy-landing-content {
-    grid-template-areas: ". . . . . ." ". sawy-title sawy-title sawy-title sawy-title ." ". schem-link . . . ." ". apps-link . . . ." ". . . . . .";
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 20px 1fr 1fr 1fr 1fr;
+    grid-template-areas: ". . . . . " ". sawy-title sawy-title sawy-title . " ". schem-link . apps-link . " ". sawy-video sawy-video sawy-video . " ". sawy-video sawy-video sawy-video . ";
   }
   #sawy-projects {
     grid-template-areas: "projects-horizontals projects-header" "projects-horizontals projects-verticals";
@@ -744,7 +756,9 @@ button.dropdown-toggle:hover .dropdown-toggle {
 }
 @media only screen and (min-width: 992px) {
   #sawy-landing-content {
-    grid-template-areas: ". . . . . ." ". sawy-title sawy-title sawy-title sawy-title ." ". . . . . ." ". apps-link schem-link . . ." ". . . . . .";
+    grid-template-columns: 16% 17% 17% 17% 17% 16%;
+    grid-template-rows: 5% 30% 30% 30% 5%;
+    grid-template-areas: ". . . . . ." ". sawy-title sawy-title sawy-video sawy-video ." ". apps-link schem-link sawy-video sawy-video ." ". . . . . ." ". . . . . .";
   }
   #sawy-projects {
     grid-template-areas: "projects-horizontals projects-header" "projects-horizontals projects-verticals";
@@ -961,7 +975,7 @@ button.dropdown-toggle:hover .dropdown-toggle {
   padding: 10px;
   display: grid;
   gap: 20px;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 50% 50%;
   grid-template-rows: auto;
 }
 
@@ -990,7 +1004,7 @@ button.dropdown-toggle:hover .dropdown-toggle {
 .sawy-project-card {
   background-color: #f9f9f9;
   width: calc(100% - 40px);
-  min-width: 300px;
+  min-width: 280px;
   margin: 20px auto 20px auto;
   padding: 20px;
   border-radius: 10px;
@@ -1004,7 +1018,7 @@ button.dropdown-toggle:hover .dropdown-toggle {
 
 .sawy-project-card-thumbnail {
   filter: drop-shadow(0 0 5px black);
-  height: 200px;
+  height: 150px;
 }
 
 .sawy-project-card-description {
@@ -1024,27 +1038,49 @@ button.dropdown-toggle:hover .dropdown-toggle {
 }
 
 #sawy-landing-content {
-  background-color: rgba(0, 0, 0, 0.4);
+  background-color: rgba(0, 0, 0, 0.9);
   position: absolute;
   width: 100%;
   height: 100%;
   display: grid;
   align-items: center;
-  grid-template-columns: repeat(6, 1fr);
-  grid-template-rows: repeat(5, 1fr);
+  gap: 30px;
   transition: all 0.2s;
 }
 
 #sawy-title {
   grid-area: sawy-title;
+  background-color: black;
+  color: white;
+  width: calc(100% - 100px);
+  padding: 50px;
+  margin: auto;
+  border-radius: 20px;
+  text-align: center;
+  transition: all 0.4s;
+}
+
+#sawy-title:hover {
+  background-color: white;
+  color: black;
 }
 
 #apps-link {
   grid-area: apps-link;
+  margin: auto;
 }
 
 #schem-link {
   grid-area: schem-link;
+  margin: auto;
+}
+
+#sawy-video {
+  grid-area: sawy-video;
+  max-width: 100%;
+  max-height: 100%;
+  margin: auto;
+  border-radius: 20px;
 }
 
 .sawy-link-button {

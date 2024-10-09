@@ -6,7 +6,6 @@ export default function Header() {
         <div className="head">
             <div id="header-menu">
                 <a href={"#" + SAWY_PATH} className="header-element glow-on-hover">sawysawy</a>
-                
             </div>
             <div id="header-title">
                 <a href="#/"><h1>SUBOTIX</h1></a>
