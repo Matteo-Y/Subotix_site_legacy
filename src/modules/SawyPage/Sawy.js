@@ -23,10 +23,10 @@ export default function Sawy() {
                     horizontal projects are user-friendly. they are perfect for beginners. with a focus on basic <span style={{fontFamily: "roboto", fontWeight: "bolder"}}>STEAM</span> principles.
                 </ProjectCard>
                 <ProjectCard bg={puzzleBg} title="sawy-sawy piano" image={require("../SawyPage/res/images/sawy-piano.png")} imageAlt="piano-thumbnail" reverse="false">
-                    the sawy-sawy piano kit is easy to use. it teaches basic concepts like conductivity, circuits and inputs.
+                the piano kit is easy to use and teaches basic circuitry and conductivity.
                 </ProjectCard>
                 <ProjectCard bg={puzzleBg} title="the saqar" image={require("../SawyPage/res/images/dito.png")} imageAlt="dito-thumbnail" reverse="false">
-                    the sawy-sawy robot finger kit teaches essential skills in mechanics and actuators, equipping users for more advanced robotics projects.
+                    the saqar kit teaches mechanics and equips students for robotics development.
                 </ProjectCard>
             </div>
             <div id="sawy-projects-verticals">
@@ -34,7 +34,7 @@ export default function Sawy() {
                     vertical projects build on existing skills. they introduce complex concepts, encouraging <span style={{fontFamily: "roboto", fontWeight: "bolder"}}>CRITICAL THINKING</span> and <span style={{fontFamily: "roboto", fontWeight: "bolder"}}>INNOVATION</span>.
                 </ProjectCard>
                 <ProjectCard bg={gearBg} title="line-follower" reverse="true">
-                    the line follower kit teaches you skills in robotics and automation. users will explore input/output concepts and optimize their robot’s performance.
+                    the line follower teaches students input/output concepts, and optimization.
                 </ProjectCard>
                 
             </div>
