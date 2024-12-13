@@ -9,9 +9,11 @@ import ScrollToTop from './modules/ScrollToTop';
 import './styles/App.css';
 import SawyDownloads from './modules/SawyPage/SawyDownloads';
 import SawyApps from './modules/SawyPage/SawyApps';
+import PrivacyPolicy from './modules/PrivacyPolicy/PrivacyPolicy';
 
 const BASE_PATH = "/";
 const SAWY_PATH = BASE_PATH + "sawy-sawy";
+const PRIVACY_PATH = BASE_PATH + "privacy";
 const STORE_PATH = BASE_PATH + "store";
 
 const SOCIALS = {
@@ -35,6 +37,7 @@ export default function App() {
             <Route path={SAWY_PATH} element={<Sawy/>}/>
             <Route path={SAWY_PATH + "/web-apps"} element={<SawyApps/>}/>
             <Route path={SAWY_PATH + "/downloads"} element={<SawyDownloads/>}/>
+            <Route path={PRIVACY_PATH} element={<PrivacyPolicy/>}/>
             <Route path={STORE_PATH} element={<InDevelopment/>}/>
             <Route path={"*"} element={<PageNotFound/>}/>
           </Routes>

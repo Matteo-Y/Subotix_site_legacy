@@ -1,0 +1,27 @@
+.privacy-policy-page {
+  margin: 0;
+  padding: 30px;
+  background-color: white;
+  width: 100%;
+}
+.privacy-policy-page h1 {
+  font-size: 2em;
+  font-family: arial;
+  color: black;
+  text-align: center;
+}
+.privacy-policy-page h2 {
+  font-size: 1.5em;
+}
+.privacy-policy-page h3 {
+  font-size: 1.17em;
+}
+.privacy-policy-page p, .privacy-policy-page h2, .privacy-policy-page h3 {
+  font-family: arial;
+  color: black;
+  padding: none;
+}
+.privacy-policy-page .text-body {
+  margin: auto;
+  width: clamp(300px, 70vw, 800px);
+}/*# sourceMappingURL=style.css.map */
