@@ -1,6 +1,5 @@
 import {useState, useEffect} from "react";
 import { SAWY_PATH } from "../../App";
-import { isVisible } from "@testing-library/user-event/dist/utils";
 
 export default function SawyApps() {
     const [modalOpen, setModalOpen] = useState(false);
@@ -26,8 +25,8 @@ export default function SawyApps() {
         {modalOpen ? <div id="sawy-apps-modal-bg">
             <div id="sawy-apps-modal">
                 <button id="close-app-button" onClick={closeModal}>x</button>
-                <PianoApp show={app == 'piano' ? "default" : "none"}/>
-                <SimonApp show={app == 'simon' ? "default" : "none"}/>
+                <PianoApp show={app === 'piano' ? "default" : "none"}/>
+                <SimonApp show={app === 'simon' ? "default" : "none"}/>
             </div>
         </div> : <></>}
     </div>
@@ -122,12 +121,12 @@ function PianoApp(props) {
     }
 
     return <div style={{width: "100%", height: "100%", outline: "none", display: props.show}} onClick={playClick} onKeyDown={keyDown} tabIndex="0">
-        <audio id="note-1" src={require("../SawyPage/res/audio/C-converted.wav")}/>
-        <audio id="note-2" src={require("../SawyPage/res/audio/D-converted.wav")}/>
-        <audio id="note-3" src={require("../SawyPage/res/audio/E-converted.wav")}/>
-        <audio id="note-4" src={require("../SawyPage/res/audio/F-converted.wav")}/>
-        <audio id="note-5" src={require("../SawyPage/res/audio/G-converted.wav")}/>
-        <audio id="note-6" src={require("../SawyPage/res/audio/A-converted.wav")}/>
+        <audio id="note-1" src={require("../SawyPage/res/audio/1.wav")}/>
+        <audio id="note-2" src={require("../SawyPage/res/audio/2.wav")}/>
+        <audio id="note-3" src={require("../SawyPage/res/audio/3.wav")}/>
+        <audio id="note-4" src={require("../SawyPage/res/audio/4.wav")}/>
+        <audio id="note-5" src={require("../SawyPage/res/audio/5.wav")}/>
+        <audio id="note-6" src={require("../SawyPage/res/audio/6.wav")}/>
         <div id="piano">
             <div id="key-1" className="piano-key" onClick={pianoClick}><span>{"\u2190"}</span></div>
             <div id="key-2" className="piano-key" onClick={pianoClick}><span>{"\u2191"}</span></div>
